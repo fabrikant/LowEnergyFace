@@ -843,6 +843,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -862,6 +863,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -881,6 +883,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -900,6 +903,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -919,6 +923,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -938,6 +943,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -957,6 +963,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 
@@ -976,6 +983,7 @@
 			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
 

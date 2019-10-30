@@ -38,28 +38,39 @@ class WeatherField extends WatchUi.Layer {
 		mImageFont = params.get(:imageFont);
 		coordinates[:owner] = {:x => 0, :y => 0,:w => params.get(:w), :h => params.get(:h)};
 		var targetDc = getDc();
-
+		///////////////////////////////////////////////////////////////////////
+		//ICON CLOUD
 		var x = 0;
 		var w = targetDc.getTextWidthInPixels("1", weatherFont);
 		coordinates[:iCloud] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]}; //iCloud -lol. icon cloud
 
+		///////////////////////////////////////////////////////////////////////
+		//TEMPERATURE
 		x += w;
 		w = targetDc.getTextWidthInPixels("-40°", Graphics.FONT_SYSTEM_LARGE);
 		coordinates[:temp] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
 
+		///////////////////////////////////////////////////////////////////////
+		//WIND
 		x += w;
 		w = targetDc.getTextWidthInPixels("999", Graphics.FONT_NUMBER_MEDIUM)-7;
 		var halfH = coordinates[:owner][:h]/2;
 		coordinates[:wind] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
 
-		x += w;
+		///////////////////////////////////////////////////////////////////////
+		//ICONS HIMIDITY AND PRESSURE
+		x += w + 0.3*halfH;
 		coordinates[:iHum] = {:x => x, :y => 0, :w => halfH, :h => halfH};
 		coordinates[:iPres]  = {:x => x, :y => halfH, :w => halfH, :h => halfH};
 
+		///////////////////////////////////////////////////////////////////////
+		//TEXT FIELDS HIMIDITY AND PRESSURE
 		x += coordinates[:iPres][:w];
 		w = coordinates[:owner][:w] - x;
 		coordinates[:hum] = {:x => x, :y => 0, :w => w, :h => halfH};
 		coordinates[:pres] = {:x => x, :y => halfH, :w => w, :h => halfH};
+
+
 		Application.Storage.setValue(Application.getApp().STORAGE_KEY_WEATHER_OLD, null);
 
     }
@@ -68,16 +79,12 @@ class WeatherField extends WatchUi.Layer {
 	function draw(settingsChanged, sunEventCalculator){
 
 		var app = Application.getApp();
-		/////////////////////////////////////////////////////////////
-		// DEBAG
-		//Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, null);
-		////////////////////////////////////////////////////////////
 
 		var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
 		if (data == null){
 			/////////////////////////////////////////////////////////////
-			// DEBAG
-			System.println("data null");
+			// DEBUG
+//			System.println("data null");
 			/////////////////////////////////////////////////////////////
 			return;
 		}
@@ -89,8 +96,8 @@ class WeatherField extends WatchUi.Layer {
 
 		if (dataInvalid(data, app)){
 			/////////////////////////////////////////////////////////////
-			// DEBAG
-			System.println("data invalid");
+			// DEBUG
+//			System.println("data invalid");
 			/////////////////////////////////////////////////////////////
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
 			Application.Storage.setValue(app.STORAGE_KEY_WEATHER, null);
@@ -100,15 +107,17 @@ class WeatherField extends WatchUi.Layer {
 
 		var oldData = Application.Storage.getValue(app.STORAGE_KEY_WEATHER_OLD);
 		/////////////////////////////////////////////////////////////
-		// DEBAG
-		System.println("old: "+data);
-		System.println("new: "+oldData);
+		// DEBUG
+//		System.println("new: "+data);
+//		System.println("old: "+oldData);
+//		System.println("settingsChanged: "+settingsChanged);
+//		System.println("dataEqual(data, oldData, app): "+dataEqual(data, oldData, app));
 		/////////////////////////////////////////////////////////////
 
 		if (!settingsChanged && dataEqual(data, oldData, app)){
 			/////////////////////////////////////////////////////////////
-			// DEBAG
-			System.println("data Equal");
+			// DEBUG
+//			System.println("data Equal");
 			/////////////////////////////////////////////////////////////
 			return;
 		}
@@ -214,6 +223,10 @@ class WeatherField extends WatchUi.Layer {
 			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY, str, Graphics.TEXT_JUSTIFY_LEFT);
 		}
 
+		Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, data);
+
+		/////////////////////////////////////////////////////////////
+		// DEBUG
 
 //		border(coordinates[:owner]);
 //		border(coordinates[:iCloud]);
@@ -223,8 +236,8 @@ class WeatherField extends WatchUi.Layer {
 //		border(coordinates[:pres]);
 //		border(coordinates[:iHum]);
 //		border(coordinates[:hum]);
+		/////////////////////////////////////////////////////////////
 
-		Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, data);
 
 	}
 
@@ -314,7 +327,7 @@ class WeatherField extends WatchUi.Layer {
 		if (oldData == null){
 			result = false;
 		}else{
-			if (oldData[fieldKey] != data[fieldKey]) {
+			if (data[fieldKey] != oldData[fieldKey]) {
 				result = false;
 			}
 		}
@@ -327,13 +340,12 @@ class WeatherField extends WatchUi.Layer {
 			result = false;
 		} else {
 			if (data[app.STORAGE_KEY_DT]!=data[app.STORAGE_KEY_DT]){
-				result = result
-					&& (data[app.STORAGE_KEY_TEMP]==oldData[app.STORAGE_KEY_TEMP])
-					&& (data[app.STORAGE_KEY_PRESSURE]==oldData[app.STORAGE_KEY_PRESSURE])
-					&& (data[app.STORAGE_KEY_HUMIDITY]==oldData[app.STORAGE_KEY_HUMIDITY])
-					&& (data[app.STORAGE_KEY_ICON]==oldData[app.STORAGE_KEY_ICON])
-					&& (data[app.STORAGE_KEY_WIND_SPEED]==oldData[app.STORAGE_KEY_WIND_SPEED])
-					&& (data[app.STORAGE_KEY_WIND_DEG]==oldData[app.STORAGE_KEY_WIND_DEG]);
+				result = (data[app.STORAGE_KEY_TEMP]==oldData[app.STORAGE_KEY_TEMP])
+						&& (data[app.STORAGE_KEY_PRESSURE]==oldData[app.STORAGE_KEY_PRESSURE])
+						&& (data[app.STORAGE_KEY_HUMIDITY]==oldData[app.STORAGE_KEY_HUMIDITY])
+						&& (data[app.STORAGE_KEY_ICON]==oldData[app.STORAGE_KEY_ICON])
+						&& (data[app.STORAGE_KEY_WIND_SPEED]==oldData[app.STORAGE_KEY_WIND_SPEED])
+						&& (data[app.STORAGE_KEY_WIND_DEG]==oldData[app.STORAGE_KEY_WIND_DEG]);
 			}
 		}
 		return result;

@@ -3,4 +3,6 @@
 		filename="watch-face-images/watch-face-images-14.fnt" />
 	<font id="weather" scope="foreground"
 		filename="weather-images/wath-face-weather-36.fnt" />
+	<font id="moon" scope="foreground"
+		filename="moon-phase-images/moon-phase-images-14.fnt" />
 </fonts>

@@ -112,6 +112,7 @@
 	<string id="FIELD_TYPE_SUN_EVENT" scope="foreground">Sun event</string>
 	<string id="FIELD_TYPE_SUNRISE" scope="foreground">Sunrise</string>
 	<string id="FIELD_TYPE_SUNSET" scope="foreground">Sunset</string>
+	<string id="FIELD_TYPE_MOON_PHASE" scope="foreground">Moon Phase</string>
 
 	<!--FIELD NAMES -->
 	<string id="F1" scope="foreground">Field 1</string>

@@ -59,8 +59,11 @@ class LowEnergyFaceApp extends Application.AppBase {
 	///////////////////////////////////////////////////////////////////////////
 	// Background
 	function onBackgroundData(data) {
-        System.println("onBackgroundData");
-        System.println(data);
+     	///////////////////////////////////////////////////////////////////////
+    	//DEBUG
+//        System.println("onBackgroundData");
+//        System.println(data);
+     	///////////////////////////////////////////////////////////////////////
         if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
         	Application.Storage.setValue(STORAGE_KEY_WEATHER, data);
         }
@@ -73,6 +76,15 @@ class LowEnergyFaceApp extends Application.AppBase {
     }
 
 	function registerTimeEvent(){
+
+		var kewOw = Application.Properties.getValue("keyOW");
+		if (kewOw.length() == 0){
+			return;
+		}
+
+		if (Application.Properties.getValue("Lat")==0 && Application.Properties.getValue("Lon")){
+			return;
+		}
 
 		var lastTime = Background.getLastTemporalEventTime();
 		var duration = new Time.Duration(600);

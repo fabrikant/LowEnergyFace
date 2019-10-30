@@ -1,114 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
 <pcToLineNum>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="28" pc="268436545" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="30" pc="268436549" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="31" pc="268436573" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="38" pc="268436701" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="41" pc="268436722" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="43" pc="268436726" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="44" pc="268436730" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="48" pc="268436743" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="49" pc="268436763" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="51" pc="268436789" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="52" pc="268436809" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="54" pc="268436841" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="55" pc="268436861" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="57" pc="268436893" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="58" pc="268436913" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="62" pc="268436939" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="63" pc="268436961" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="64" pc="268436989" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="65" pc="268437002" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="66" pc="268437028" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="67" pc="268437040" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="69" pc="268437099" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="70" pc="268437126" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="71" pc="268437152" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="76" pc="268437211" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="64" pc="268437222" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="66" pc="268437226" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="67" pc="268437250" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="68" pc="268437274" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="71" pc="268437298" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="78" pc="268437410" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="81" pc="268437431" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="83" pc="268437435" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="84" pc="268437456" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="87" pc="268437505" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="88" pc="268437526" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="91" pc="268437563" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="93" pc="268437591" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="94" pc="268437604" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="95" pc="268437636" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="96" pc="268437651" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="98" pc="268437674" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="100" pc="268437694" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="103" pc="268437711" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="104" pc="268437718" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="105" pc="268437738" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="106" pc="268437745" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="107" pc="268437801" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="108" pc="268437808" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="109" pc="268437821" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="110" pc="268437828" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="111" pc="268437841" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="116" pc="268437872" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="118" pc="268437892" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="119" pc="268437915" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="120" pc="268437926" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="123" pc="268437962" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="124" pc="268437982" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="125" pc="268437989" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="126" pc="268438045" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="127" pc="268438052" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="128" pc="268438065" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="129" pc="268438072" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="130" pc="268438085" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="131" pc="268438104" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="136" pc="268438143" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="138" pc="268438163" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="139" pc="268438170" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="140" pc="268438226" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="141" pc="268438233" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="142" pc="268438246" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="143" pc="268438253" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="144" pc="268438266" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="148" pc="268438305" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="150" pc="268438325" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="152" pc="268438351" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="154" pc="268438371" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="156" pc="268438414" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="158" pc="268438434" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="160" pc="268438460" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="161" pc="268438480" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="162" pc="268438487" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="163" pc="268438543" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="164" pc="268438550" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="165" pc="268438563" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="166" pc="268438570" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="167" pc="268438583" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="172" pc="268438619" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="173" pc="268438630" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="175" pc="268438669" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="178" pc="268438690" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="180" pc="268438710" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="181" pc="268438733" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="182" pc="268438740" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="184" pc="268438750" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="187" pc="268438768" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="189" pc="268438788" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="190" pc="268438811" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="191" pc="268438818" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="193" pc="268438828" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="196" pc="268438846" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="198" pc="268438866" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="199" pc="268438889" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="200" pc="268438896" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="204" pc="268438906" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="205" pc="268438945" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="207" pc="268438963" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="213" pc="268439000" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="28" pc="268436629" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="30" pc="268436633" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="31" pc="268436657" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="3" lineNum="38" pc="268436785" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="41" pc="268436806" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="43" pc="268436810" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="44" pc="268436814" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="48" pc="268436827" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="49" pc="268436847" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="51" pc="268436873" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="52" pc="268436893" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="54" pc="268436925" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="55" pc="268436945" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="57" pc="268436977" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="58" pc="268436997" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="62" pc="268437023" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="63" pc="268437045" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="64" pc="268437073" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="65" pc="268437086" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="66" pc="268437112" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="67" pc="268437124" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="69" pc="268437183" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="70" pc="268437210" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="71" pc="268437236" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceStatusField.mc" id="4" lineNum="76" pc="268437295" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="65" pc="268437306" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="67" pc="268437310" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="68" pc="268437334" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="69" pc="268437358" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="72" pc="268437382" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="6" lineNum="79" pc="268437494" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="82" pc="268437515" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="84" pc="268437519" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="85" pc="268437540" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="88" pc="268437589" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="89" pc="268437610" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="92" pc="268437647" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="94" pc="268437675" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="95" pc="268437688" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="96" pc="268437720" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="97" pc="268437735" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="99" pc="268437758" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="100" pc="268437778" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="101" pc="268437795" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="103" pc="268437815" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="104" pc="268437848" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="106" pc="268437876" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="107" pc="268437911" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="111" pc="268437932" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="112" pc="268437939" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="113" pc="268437959" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="114" pc="268437966" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="115" pc="268438022" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="116" pc="268438029" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="117" pc="268438042" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="118" pc="268438049" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="119" pc="268438062" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="124" pc="268438093" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="126" pc="268438113" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="127" pc="268438136" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="128" pc="268438147" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="131" pc="268438183" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="132" pc="268438203" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="133" pc="268438210" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="134" pc="268438266" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="135" pc="268438273" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="136" pc="268438286" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="137" pc="268438293" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="138" pc="268438306" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="139" pc="268438325" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="144" pc="268438364" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="146" pc="268438384" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="147" pc="268438391" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="148" pc="268438447" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="149" pc="268438454" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="150" pc="268438467" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="151" pc="268438474" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="152" pc="268438487" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="156" pc="268438526" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="158" pc="268438546" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="160" pc="268438572" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="162" pc="268438592" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="164" pc="268438635" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="166" pc="268438655" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="168" pc="268438681" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="169" pc="268438701" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="170" pc="268438708" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="171" pc="268438764" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="172" pc="268438771" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="173" pc="268438784" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="174" pc="268438791" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="175" pc="268438804" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="180" pc="268438840" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="181" pc="268438851" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="183" pc="268438890" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="186" pc="268438911" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="188" pc="268438931" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="189" pc="268438954" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="190" pc="268438961" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="192" pc="268438971" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="195" pc="268438989" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="197" pc="268439009" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="198" pc="268439032" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="199" pc="268439039" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="201" pc="268439049" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="204" pc="268439067" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="206" pc="268439087" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="207" pc="268439110" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="208" pc="268439117" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="212" pc="268439127" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="213" pc="268439166" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="215" pc="268439184" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceDataField.mc" id="7" lineNum="220" pc="268439221" symbol="draw"/>
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="17" lineNum="32" pc="268435456" symbol="initialize"/>
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="17" lineNum="33" pc="268435460" symbol="initialize"/>
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="18" lineNum="38" pc="268435479" symbol="onStart"/>
@@ -121,548 +126,588 @@
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="21" lineNum="55" pc="268435567" symbol="onSettingsChanged"/>
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="21" lineNum="56" pc="268435585" symbol="onSettingsChanged"/>
 <entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="61" pc="268435602" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="62" pc="268435606" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="63" pc="268435627" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="64" pc="268435645" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="65" pc="268435674" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="67" pc="268435709" symbol="onBackgroundData"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="23" lineNum="71" pc="268435722" symbol="getServiceDelegate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="23" lineNum="72" pc="268435726" symbol="getServiceDelegate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="75" pc="268435764" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="77" pc="268435768" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="78" pc="268435785" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="79" pc="268435818" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="81" pc="268435835" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="82" pc="268435842" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="84" pc="268435863" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="85" pc="268435890" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="87" pc="268435911" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="88" pc="268435926" symbol="registerTimeEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="7" pc="268440899" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="9" pc="268440911" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="10" pc="268440915" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="12" pc="268440943" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="13" pc="268440954" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="14" pc="268440996" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="15" pc="268441007" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="16" pc="268441049" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="17" pc="268441060" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="18" pc="268441102" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="19" pc="268441113" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="20" pc="268441140" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="21" pc="268441151" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="22" pc="268441178" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="23" pc="268441189" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="26" pc="268441216" symbol="pressure"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="29" pc="268441220" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="31" pc="268441232" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="32" pc="268441236" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="33" pc="268441264" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="34" pc="268441275" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="35" pc="268441300" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="36" pc="268441311" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="38" pc="268441339" symbol="temperature"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="41" pc="268441357" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="42" pc="268441369" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="43" pc="268441373" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="44" pc="268441401" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="45" pc="268441412" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="46" pc="268441425" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="47" pc="268441436" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="49" pc="268441449" symbol="distance"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="52" pc="268441467" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="54" pc="268441479" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="55" pc="268441483" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="57" pc="268441511" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="58" pc="268441522" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="61" pc="268441535" symbol="elevation"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="64" pc="268441539" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="66" pc="268441551" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="67" pc="268441555" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="69" pc="268441583" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="70" pc="268441594" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="71" pc="268441607" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="72" pc="268441618" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="73" pc="268441631" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="74" pc="268441642" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="76" pc="268441655" symbol="speed"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="79" pc="268441659" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="81" pc="268441671" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="82" pc="268441708" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="84" pc="268441736" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="85" pc="268441747" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="86" pc="268441787" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="87" pc="268441798" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="88" pc="268441838" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="89" pc="268441849" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="91" pc="268441889" symbol="speedUnitName"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="28" pc="268441893" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="29" pc="268441897" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="36" pc="268442001" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="38" pc="268442021" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="39" pc="268442045" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="40" pc="268442139" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="42" pc="268442152" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="43" pc="268442159" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="44" pc="268442185" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="46" pc="268442266" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="47" pc="268442273" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="48" pc="268442303" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="50" pc="268442384" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="51" pc="268442391" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="52" pc="268442427" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="53" pc="268442455" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="55" pc="268442536" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="56" pc="268442543" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="57" pc="268442606" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="59" pc="268442666" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="60" pc="268442691" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="61" pc="268442716" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="62" pc="268442779" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="33" lineNum="63" pc="268442839" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="68" pc="268442884" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="70" pc="268442888" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="76" pc="268442905" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="77" pc="268442936" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="80" pc="268442943" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="82" pc="268442964" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="85" pc="268442968" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="86" pc="268442981" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="87" pc="268443002" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="90" pc="268443039" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="93" pc="268443057" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="95" pc="268443078" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="96" pc="268443114" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="97" pc="268443145" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="98" pc="268443176" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="101" pc="268443180" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="104" pc="268443211" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="105" pc="268443235" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="108" pc="268443259" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="111" pc="268443288" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="113" pc="268443309" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="116" pc="268443313" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="118" pc="268443341" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="119" pc="268443356" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="120" pc="268443392" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="128" pc="268443531" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="140" pc="268443649" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="141" pc="268443659" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="143" pc="268443688" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="155" pc="268443834" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="156" pc="268443844" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="158" pc="268443873" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="170" pc="268444027" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="171" pc="268444037" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="173" pc="268444066" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="185" pc="268444240" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="186" pc="268444250" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="188" pc="268444279" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="201" pc="268444430" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="202" pc="268444494" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="203" pc="268444530" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="204" pc="268444556" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="205" pc="268444662" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="207" pc="268444676" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="208" pc="268444729" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="209" pc="268444804" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="211" pc="268444849" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="212" pc="268444868" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="213" pc="268444943" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="214" pc="268445014" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="34" lineNum="227" pc="268445059" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="43" lineNum="14" pc="268446623" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="43" lineNum="16" pc="268446627" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="43" lineNum="23" pc="268446755" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="26" pc="268446776" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="27" pc="268446780" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="28" pc="268446885" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="30" pc="268446907" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="31" pc="268446935" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="32" pc="268446948" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="33" pc="268446974" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="35" pc="268446986" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="36" pc="268447043" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="37" pc="268447093" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="44" lineNum="40" pc="268447147" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="25" pc="268447158" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="27" pc="268447162" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="28" pc="268447198" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="30" pc="268447234" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="37" pc="268447302" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="38" pc="268447402" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="39" pc="268447438" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="40" pc="268447472" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="41" pc="268447524" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="42" pc="268447583" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="46" pc="268447626" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="47" pc="268447666" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="52" pc="268447712" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="54" pc="268447737" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="56" pc="268447766" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="57" pc="268447788" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="59" pc="268447874" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="60" pc="268447885" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="61" pc="268447940" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="62" pc="268447961" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="65" pc="268447993" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="66" pc="268448001" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="70" pc="268448011" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="71" pc="268448039" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="72" pc="268448058" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="74" pc="268448077" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="75" pc="268448200" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="76" pc="268448323" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="77" pc="268448446" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="78" pc="268448569" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="79" pc="268448692" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="80" pc="268448815" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="81" pc="268448938" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="85" pc="268449061" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="86" pc="268449117" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="90" pc="268449245" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="91" pc="268449262" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="92" pc="268449403" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="93" pc="268449547" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="94" pc="268449697" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="98" pc="268449847" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="99" pc="268449860" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="100" pc="268449867" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="101" pc="268449959" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="103" pc="268449972" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="106" pc="268450070" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="46" lineNum="107" pc="268450091" symbol="resizeView"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="112" pc="268450134" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="114" pc="268450138" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="115" pc="268450155" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="117" pc="268450202" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="119" pc="268450230" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="122" pc="268450280" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="123" pc="268450287" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="124" pc="268450297" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="125" pc="268450322" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="126" pc="268450333" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="129" pc="268450349" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="130" pc="268450378" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="133" pc="268450388" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="134" pc="268450417" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="137" pc="268450438" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="140" pc="268450503" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="47" lineNum="142" pc="268450532" symbol="drawTime"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="145" pc="268450543" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="147" pc="268450547" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="149" pc="268450591" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="150" pc="268450625" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="151" pc="268450675" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="160" pc="268450767" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="162" pc="268450796" symbol="drawDate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="165" pc="268450813" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="167" pc="268450817" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="172" pc="268450836" symbol="onLayout"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="173" pc="268450840" symbol="onLayout"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="174" pc="268450877" symbol="onLayout"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="175" pc="268450891" symbol="onLayout"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="51" lineNum="181" pc="268450917" symbol="onShow"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="185" pc="268450922" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="187" pc="268450926" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="188" pc="268450938" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="191" pc="268450950" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="192" pc="268450971" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="194" pc="268451021" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="195" pc="268451041" symbol="onUpdate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="53" lineNum="201" pc="268451052" symbol="onHide"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="205" pc="268451057" symbol="onExitSleep"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="55" lineNum="211" pc="268451062" symbol="onEnterSleep"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="57" lineNum="7" pc="268451067" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="57" lineNum="8" pc="268451071" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="57" lineNum="12" pc="268451092" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="58" lineNum="15" pc="268451113" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="58" lineNum="17" pc="268451117" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="58" lineNum="18" pc="268451170" symbol="draw"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="60" lineNum="82" pc="268451183" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="60" lineNum="83" pc="268451187" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="60" lineNum="84" pc="268451196" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="61" lineNum="87" pc="268451206" symbol="fromJulian"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="61" lineNum="88" pc="268451210" symbol="fromJulian"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="91" pc="268451264" symbol="round"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="92" pc="268451268" symbol="round"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="93" pc="268451279" symbol="round"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="95" pc="268451309" symbol="round"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="100" pc="268451337" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="101" pc="268451341" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="102" pc="268451396" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="103" pc="268451427" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="105" pc="268451469" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="106" pc="268451512" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="107" pc="268451540" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="108" pc="268451571" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="109" pc="268451674" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="110" pc="268451714" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="111" pc="268451751" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="112" pc="268451803" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="113" pc="268451858" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="114" pc="268451868" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="117" pc="268451881" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="118" pc="268451895" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="121" pc="268451918" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="123" pc="268452030" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="124" pc="268452055" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="127" pc="268452060" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="129" pc="268452115" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="130" pc="268452158" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="131" pc="268452172" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="134" pc="268452189" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="136" pc="268452211" symbol="calculate"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="65" lineNum="9" pc="268435945" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="65" lineNum="10" pc="268435949" symbol="initialize"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="13" pc="268435968" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="15" pc="268435972" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="16" pc="268435979" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="17" pc="268436009" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="18" pc="268436039" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="66" lineNum="19" pc="268436069" symbol="onTemporalEvent"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="77" pc="268436159" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="79" pc="268436163" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="80" pc="268436163" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="82" pc="268436182" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="83" pc="268436193" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="95" pc="268436429" symbol="responseCallback"/>
-<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="101" pc="268436487" symbol="responseCallback"/>
-<entry filename="Rez" id="73" lineNum="17" pc="268452226" symbol="WatchFace"/>
-<entry filename="Rez" id="73" lineNum="19" pc="268452238" symbol="WatchFace"/>
-<entry filename="Rez" id="73" lineNum="20" pc="268452262" symbol="WatchFace"/>
-<entry filename="Rez" id="73" lineNum="21" pc="268452405" symbol="WatchFace"/>
-<entry filename="Rez" id="73" lineNum="23" pc="268452518" symbol="WatchFace"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="67" pc="268435606" symbol="onBackgroundData"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="68" pc="268435635" symbol="onBackgroundData"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="22" lineNum="70" pc="268435670" symbol="onBackgroundData"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="23" lineNum="74" pc="268435683" symbol="getServiceDelegate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="23" lineNum="75" pc="268435687" symbol="getServiceDelegate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="78" pc="268435725" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="80" pc="268435729" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="81" pc="268435757" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="82" pc="268435777" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="85" pc="268435781" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="86" pc="268435848" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="89" pc="268435852" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="90" pc="268435869" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="91" pc="268435902" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="93" pc="268435919" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="94" pc="268435926" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="96" pc="268435947" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="97" pc="268435974" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="99" pc="268435995" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceApp.mc" id="24" lineNum="100" pc="268436010" symbol="registerTimeEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="8" pc="268441120" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="10" pc="268441132" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="11" pc="268441136" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="13" pc="268441164" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="14" pc="268441175" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="15" pc="268441217" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="16" pc="268441228" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="17" pc="268441270" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="18" pc="268441281" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="19" pc="268441323" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="20" pc="268441334" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="21" pc="268441361" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="22" pc="268441372" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="23" pc="268441399" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="24" pc="268441410" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="26" lineNum="27" pc="268441437" symbol="pressure"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="30" pc="268441441" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="32" pc="268441453" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="33" pc="268441457" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="34" pc="268441485" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="35" pc="268441496" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="36" pc="268441521" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="37" pc="268441532" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="27" lineNum="39" pc="268441560" symbol="temperature"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="42" pc="268441578" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="43" pc="268441590" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="44" pc="268441594" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="45" pc="268441622" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="46" pc="268441633" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="47" pc="268441646" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="48" pc="268441657" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="28" lineNum="50" pc="268441670" symbol="distance"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="53" pc="268441688" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="55" pc="268441700" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="56" pc="268441704" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="58" pc="268441732" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="59" pc="268441743" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="29" lineNum="62" pc="268441756" symbol="elevation"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="65" pc="268441760" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="67" pc="268441772" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="68" pc="268441776" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="70" pc="268441804" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="71" pc="268441815" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="72" pc="268441828" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="73" pc="268441839" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="74" pc="268441852" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="75" pc="268441863" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="30" lineNum="77" pc="268441876" symbol="speed"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="80" pc="268441880" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="82" pc="268441892" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="83" pc="268441929" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="85" pc="268441957" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="86" pc="268441968" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="87" pc="268442008" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="88" pc="268442019" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="89" pc="268442059" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="90" pc="268442070" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="31" lineNum="92" pc="268442110" symbol="speedUnitName"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="95" pc="268442114" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="98" pc="268442126" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="101" pc="268442163" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="102" pc="268442170" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="103" pc="268442177" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="106" pc="268442181" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="107" pc="268442191" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="108" pc="268442201" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="110" pc="268442211" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="111" pc="268442215" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="112" pc="268442219" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="113" pc="268442223" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="114" pc="268442227" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="115" pc="268442231" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="116" pc="268442235" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="117" pc="268442239" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="120" pc="268442243" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="121" pc="268442271" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="122" pc="268442281" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="123" pc="268442292" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="125" pc="268442305" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="126" pc="268442330" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="127" pc="268442355" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="129" pc="268442401" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="130" pc="268442417" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="131" pc="268442428" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="135" pc="268442438" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="136" pc="268442465" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="32" lineNum="138" pc="268442475" symbol="moonPhase"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="33" lineNum="142" pc="268442488" symbol="normalize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="33" lineNum="144" pc="268442500" symbol="normalize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="33" lineNum="145" pc="268442516" symbol="normalize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="33" lineNum="146" pc="268442527" symbol="normalize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceValuesConverter.mc" id="33" lineNum="148" pc="268442540" symbol="normalize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="28" pc="268442544" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="29" pc="268442548" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="36" pc="268442652" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="38" pc="268442672" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="39" pc="268442696" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="40" pc="268442790" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="43" pc="268442803" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="44" pc="268442810" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="45" pc="268442836" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="49" pc="268442917" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="50" pc="268442924" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="51" pc="268442954" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="55" pc="268443035" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="56" pc="268443042" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="57" pc="268443078" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="58" pc="268443106" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="62" pc="268443187" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="63" pc="268443203" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="64" pc="268443266" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="68" pc="268443326" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="69" pc="268443351" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="70" pc="268443376" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="71" pc="268443439" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="35" lineNum="74" pc="268443499" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="79" pc="268443544" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="81" pc="268443548" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="83" pc="268443565" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="84" pc="268443596" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="89" pc="268443603" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="92" pc="268443607" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="93" pc="268443620" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="94" pc="268443641" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="97" pc="268443678" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="102" pc="268443696" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="103" pc="268443732" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="104" pc="268443763" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="105" pc="268443794" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="108" pc="268443798" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="117" pc="268443829" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="122" pc="268443858" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="125" pc="268443862" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="127" pc="268443890" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="128" pc="268443905" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="129" pc="268443941" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="137" pc="268444080" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="149" pc="268444198" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="150" pc="268444208" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="152" pc="268444237" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="164" pc="268444383" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="165" pc="268444393" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="167" pc="268444422" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="179" pc="268444576" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="180" pc="268444586" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="182" pc="268444615" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="194" pc="268444789" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="195" pc="268444799" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="197" pc="268444828" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="210" pc="268444979" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="211" pc="268445043" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="212" pc="268445079" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="213" pc="268445105" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="214" pc="268445211" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="216" pc="268445225" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="217" pc="268445278" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="218" pc="268445353" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="220" pc="268445398" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="221" pc="268445417" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="222" pc="268445492" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="223" pc="268445563" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceWeatherField.mc" id="36" lineNum="226" pc="268445608" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="45" lineNum="14" pc="268447164" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="45" lineNum="16" pc="268447168" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="45" lineNum="23" pc="268447296" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="26" pc="268447317" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="27" pc="268447321" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="28" pc="268447426" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="30" pc="268447448" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="31" pc="268447476" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="32" pc="268447489" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="33" pc="268447515" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="35" pc="268447527" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="36" pc="268447584" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="37" pc="268447634" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceAmPmField.mc" id="46" lineNum="40" pc="268447688" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="25" pc="268447699" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="27" pc="268447703" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="28" pc="268447739" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="30" pc="268447775" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="37" pc="268447843" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="38" pc="268447943" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="39" pc="268447979" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="40" pc="268448013" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="41" pc="268448065" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="42" pc="268448124" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="46" pc="268448167" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="47" pc="268448207" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="52" pc="268448253" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="54" pc="268448278" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="56" pc="268448307" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="57" pc="268448329" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="59" pc="268448415" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="60" pc="268448426" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="61" pc="268448481" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="62" pc="268448502" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="65" pc="268448534" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="66" pc="268448542" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="70" pc="268448552" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="71" pc="268448580" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="72" pc="268448599" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="74" pc="268448618" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="75" pc="268448741" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="76" pc="268448864" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="77" pc="268448987" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="78" pc="268449110" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="79" pc="268449233" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="80" pc="268449356" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="81" pc="268449479" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="85" pc="268449602" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="86" pc="268449658" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="90" pc="268449786" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="91" pc="268449803" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="92" pc="268449944" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="93" pc="268450088" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="94" pc="268450238" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="98" pc="268450388" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="99" pc="268450401" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="100" pc="268450408" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="101" pc="268450500" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="103" pc="268450513" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="106" pc="268450611" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="48" lineNum="107" pc="268450632" symbol="resizeView"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="112" pc="268450675" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="114" pc="268450679" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="115" pc="268450696" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="117" pc="268450743" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="119" pc="268450771" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="122" pc="268450821" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="123" pc="268450828" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="124" pc="268450838" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="125" pc="268450863" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="126" pc="268450874" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="129" pc="268450890" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="130" pc="268450919" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="133" pc="268450929" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="134" pc="268450958" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="137" pc="268450979" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="140" pc="268451044" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="49" lineNum="142" pc="268451073" symbol="drawTime"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="145" pc="268451084" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="147" pc="268451088" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="149" pc="268451132" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="150" pc="268451166" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="151" pc="268451216" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="160" pc="268451308" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="50" lineNum="162" pc="268451337" symbol="drawDate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="51" lineNum="165" pc="268451354" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="51" lineNum="167" pc="268451358" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="172" pc="268451377" symbol="onLayout"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="173" pc="268451381" symbol="onLayout"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="174" pc="268451418" symbol="onLayout"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="52" lineNum="175" pc="268451432" symbol="onLayout"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="53" lineNum="181" pc="268451458" symbol="onShow"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="185" pc="268451463" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="187" pc="268451467" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="188" pc="268451479" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="191" pc="268451491" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="192" pc="268451512" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="194" pc="268451562" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="54" lineNum="195" pc="268451582" symbol="onUpdate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="55" lineNum="201" pc="268451593" symbol="onHide"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="205" pc="268451598" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="208" pc="268451602" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="209" pc="268451619" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="210" pc="268451650" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="220" pc="268451656" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="56" lineNum="221" pc="268451718" symbol="onExitSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceView.mc" id="57" lineNum="226" pc="268451734" symbol="onEnterSleep"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="59" lineNum="7" pc="268451739" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="59" lineNum="8" pc="268451743" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="59" lineNum="12" pc="268451764" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="60" lineNum="15" pc="268451785" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="60" lineNum="17" pc="268451789" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackground.mc" id="60" lineNum="18" pc="268451842" symbol="draw"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="82" pc="268451855" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="83" pc="268451859" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="62" lineNum="84" pc="268451868" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="87" pc="268451878" symbol="fromJulian"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="63" lineNum="88" pc="268451882" symbol="fromJulian"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="64" lineNum="91" pc="268451936" symbol="round"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="64" lineNum="92" pc="268451940" symbol="round"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="64" lineNum="93" pc="268451951" symbol="round"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="64" lineNum="95" pc="268451981" symbol="round"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="100" pc="268452009" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="101" pc="268452013" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="102" pc="268452068" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="103" pc="268452099" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="105" pc="268452141" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="106" pc="268452184" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="107" pc="268452212" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="108" pc="268452243" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="109" pc="268452346" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="110" pc="268452386" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="111" pc="268452423" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="112" pc="268452475" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="113" pc="268452530" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="114" pc="268452540" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="117" pc="268452553" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="118" pc="268452567" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="121" pc="268452590" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="123" pc="268452702" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="124" pc="268452727" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="127" pc="268452732" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="129" pc="268452787" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="130" pc="268452830" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="131" pc="268452844" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="134" pc="268452861" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceSunEvents.mc" id="65" lineNum="136" pc="268452883" symbol="calculate"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="9" pc="268436029" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="67" lineNum="10" pc="268436033" symbol="initialize"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="13" pc="268436052" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="15" pc="268436056" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="16" pc="268436063" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="17" pc="268436093" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="18" pc="268436123" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="68" lineNum="19" pc="268436153" symbol="onTemporalEvent"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="77" pc="268436243" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="79" pc="268436247" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="80" pc="268436247" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="82" pc="268436266" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="83" pc="268436277" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="95" pc="268436513" symbol="responseCallback"/>
+<entry filename="/home/artem/eclipse-projects/LowEnergyFace/source/LowEnergyFaceBackgroundService.mc" id="69" lineNum="101" pc="268436571" symbol="responseCallback"/>
+<entry filename="Rez" id="75" lineNum="18" pc="268452898" symbol="WatchFace"/>
+<entry filename="Rez" id="75" lineNum="20" pc="268452910" symbol="WatchFace"/>
+<entry filename="Rez" id="75" lineNum="21" pc="268452934" symbol="WatchFace"/>
+<entry filename="Rez" id="75" lineNum="22" pc="268453077" symbol="WatchFace"/>
+<entry filename="Rez" id="75" lineNum="24" pc="268453190" symbol="WatchFace"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="175" symbol="&lt;globals/StatusField/&lt;&gt;oldValue&gt;"/>
+<entry field="true" id="177" symbol="&lt;globals/StatusField/&lt;&gt;oldValue&gt;"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry field="true" id="50" symbol="STORAGE_KEY_WEATHER_OLD"/>
 <entry id="8389346" symbol="text"/>
-<entry field="true" id="137" symbol="MesFCol"/>
-<entry id="88" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;drawValue&gt;"/>
+<entry field="true" id="139" symbol="MesFCol"/>
+<entry id="89" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;drawValue&gt;"/>
 <entry field="true" id="8389163" symbol="COLOR_ORANGE"/>
 <entry field="true" id="36" symbol="STATUS_TYPE_MESSAGE"/>
-<entry id="190" method="true" symbol="drawDate"/>
-<entry field="true" id="111" symbol="EUMeter"/>
-<entry field="true" id="103" symbol="SRICol"/>
-<entry field="true" id="97" symbol="images"/>
+<entry id="194" method="true" symbol="drawDate"/>
+<entry field="true" id="113" symbol="EUMeter"/>
+<entry field="true" id="105" symbol="SRICol"/>
+<entry field="true" id="98" symbol="images"/>
 <entry field="true" id="62" symbol="FIELD_TYPE_ELEVATION"/>
-<entry id="221" symbol="temp"/>
+<entry field="true" id="66" symbol="FIELD_TYPE_MOON_PHASE"/>
+<entry id="225" symbol="temp"/>
 <entry field="true" id="55" symbol="FIELD_TYPE_HR"/>
-<entry field="true" id="172" symbol="DateCol"/>
-<entry id="178" method="true" symbol="speedUnitName"/>
+<entry field="true" id="174" symbol="DateCol"/>
+<entry id="180" method="true" symbol="speedUnitName"/>
+<entry id="182" method="true" symbol="normalize"/>
 <entry id="8389683" method="true" symbol="onSettingsChanged"/>
-<entry field="true" id="114" symbol="SETCol"/>
-<entry field="true" id="112" symbol="SpeedUnitFtSec"/>
-<entry field="true" id="192" symbol="PI2"/>
+<entry field="true" id="116" symbol="SETCol"/>
+<entry field="true" id="114" symbol="SpeedUnitFtSec"/>
+<entry field="true" id="196" symbol="PI2"/>
 <entry field="true" id="24" symbol="GOLDEN_HOUR_PM"/>
-<entry id="225" symbol="hum"/>
+<entry id="229" symbol="hum"/>
 <entry field="true" id="38" symbol="STATUS_TYPE_ALARM"/>
 <entry field="true" id="63" symbol="FIELD_TYPE_SUN_EVENT"/>
-<entry field="true" id="123" symbol="ConFCol"/>
+<entry field="true" id="125" symbol="ConFCol"/>
 <entry field="true" id="8389158" symbol="COLOR_LT_GRAY"/>
 <entry field="true" id="8389159" symbol="COLOR_DK_GRAY"/>
-<entry field="true" id="162" symbol="SpeedUnitMileH"/>
+<entry field="true" id="164" symbol="SpeedUnitMileH"/>
 <entry field="true" id="22" symbol="GOLDEN_HOUR_AM"/>
-<entry field="true" id="107" symbol="MilitaryFormatTitle"/>
-<entry field="true" id="213" symbol="&lt;globals/AmPmField/&lt;&gt;oldValue&gt;"/>
-<entry field="true" id="122" symbol="TUFahrenheit"/>
+<entry field="true" id="109" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="217" symbol="&lt;globals/AmPmField/&lt;&gt;oldValue&gt;"/>
+<entry field="true" id="124" symbol="TUFahrenheit"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
-<entry field="true" id="127" symbol="DNDFCol"/>
+<entry field="true" id="129" symbol="DNDFCol"/>
 <entry field="true" id="30" symbol="NIGHT"/>
-<entry field="true" id="181" symbol="imageFont"/>
-<entry id="77" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawOrdinaryField&gt;"/>
+<entry field="true" id="185" symbol="imageFont"/>
+<entry id="78" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawOrdinaryField&gt;"/>
 <entry field="true" id="54" symbol="FIELD_TYPE_BAT"/>
-<entry field="true" id="70" symbol="&lt;globals/DataField/&lt;&gt;mHeight&gt;"/>
+<entry field="true" id="71" symbol="&lt;globals/DataField/&lt;&gt;mHeight&gt;"/>
 <entry field="true" id="37" symbol="STATUS_TYPE_DND"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="194" symbol="J1970"/>
-<entry field="true" id="67" symbol="fieldSignatures"/>
-<entry field="true" id="170" symbol="HrICol"/>
-<entry field="true" id="100" symbol="TUCelsius"/>
-<entry field="true" id="174" symbol="App"/>
+<entry field="true" id="198" symbol="J1970"/>
+<entry field="true" id="68" symbol="fieldSignatures"/>
+<entry field="true" id="172" symbol="HrICol"/>
+<entry field="true" id="102" symbol="TUCelsius"/>
+<entry field="true" id="176" symbol="App"/>
 <entry field="true" id="8388962" method="true" symbol="temperature"/>
-<entry id="189" method="true" symbol="drawTime"/>
-<entry field="true" id="197" symbol="TIMES"/>
+<entry id="193" method="true" symbol="drawTime"/>
+<entry field="true" id="201" symbol="TIMES"/>
 <entry field="true" id="51" symbol="gView"/>
-<entry field="true" id="141" symbol="PrUMmHg"/>
-<entry field="true" id="108" symbol="TTCol"/>
+<entry field="true" id="143" symbol="PrUMmHg"/>
+<entry field="true" id="110" symbol="TTCol"/>
 <entry field="true" id="8389168" symbol="COLOR_DK_BLUE"/>
 <entry id="33" object="true" symbol="BackgroundService"/>
-<entry field="true" id="142" symbol="StTCol"/>
-<entry field="true" id="163" symbol="AppName"/>
+<entry field="true" id="144" symbol="StTCol"/>
+<entry field="true" id="165" symbol="AppName"/>
 <entry id="8388633" module="true" symbol="ActivityMonitor"/>
-<entry field="true" id="140" symbol="DUMile"/>
-<entry id="230" symbol="date"/>
-<entry id="224" symbol="iPres"/>
+<entry field="true" id="142" symbol="DUMile"/>
+<entry id="234" symbol="date"/>
+<entry id="228" symbol="iPres"/>
 <entry field="true" id="8389162" symbol="COLOR_DK_RED"/>
-<entry field="true" id="124" symbol="BatTCol"/>
-<entry field="true" id="184" symbol="settingsChanged"/>
+<entry field="true" id="126" symbol="BatTCol"/>
+<entry field="true" id="188" symbol="settingsChanged"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry field="true" id="8389157" symbol="COLOR_WHITE"/>
-<entry field="true" id="120" symbol="PrTCol"/>
+<entry field="true" id="122" symbol="PrTCol"/>
 <entry field="true" id="47" symbol="STORAGE_KEY_WIND_SPEED"/>
-<entry field="true" id="138" symbol="DNDTrCol"/>
-<entry field="true" id="183" symbol="fieldLayers"/>
-<entry field="true" id="129" symbol="AmPm"/>
+<entry field="true" id="140" symbol="DNDTrCol"/>
+<entry field="true" id="187" symbol="fieldLayers"/>
+<entry field="true" id="131" symbol="AmPm"/>
 <entry field="true" id="8389160" symbol="COLOR_BLACK"/>
-<entry field="true" id="203" symbol="sinM"/>
-<entry field="true" id="212" symbol="pmString"/>
+<entry field="true" id="207" symbol="sinM"/>
+<entry field="true" id="216" symbol="pmString"/>
 <entry id="8388947" method="true" symbol="value"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry field="true" id="20" symbol="SUNRISE"/>
 <entry field="true" id="8388964" method="true" symbol="pressure"/>
-<entry field="true" id="113" symbol="FICol"/>
-<entry id="218" symbol="propNameImageColor"/>
+<entry field="true" id="115" symbol="FICol"/>
+<entry id="222" symbol="propNameImageColor"/>
 <entry field="true" id="8389170" symbol="COLOR_PINK"/>
-<entry field="true" id="171" symbol="CICol"/>
+<entry field="true" id="173" symbol="CICol"/>
 <entry id="8390148" method="true" symbol="onTemporalEvent"/>
-<entry field="true" id="85" symbol="weatherText"/>
+<entry field="true" id="86" symbol="weatherText"/>
 <entry field="true" id="48" symbol="STORAGE_KEY_WIND_DEG"/>
-<entry field="true" id="160" symbol="PrUKPa"/>
+<entry field="true" id="162" symbol="PrUKPa"/>
 <entry id="8389024" object="true" symbol="DataField"/>
 <entry field="true" id="16" symbol="NIGHT_END"/>
 <entry field="true" id="29" symbol="NAUTICAL_DUSK"/>
-<entry id="228" symbol="coord"/>
+<entry id="232" symbol="coord"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
-<entry field="true" id="72" symbol="&lt;globals/DataField/&lt;&gt;backgroundColor&gt;"/>
+<entry field="true" id="73" symbol="&lt;globals/DataField/&lt;&gt;backgroundColor&gt;"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
-<entry field="true" id="143" symbol="PrUPsi"/>
+<entry field="true" id="145" symbol="PrUPsi"/>
 <entry field="true" id="8389161" symbol="COLOR_RED"/>
-<entry field="true" id="158" symbol="SSTCol"/>
+<entry field="true" id="160" symbol="SSTCol"/>
 <entry id="8388764" method="true" symbol="format"/>
 <entry id="8389719" method="true" symbol="round"/>
-<entry field="true" id="69" symbol="&lt;globals/DataField/&lt;&gt;mWidth&gt;"/>
+<entry field="true" id="70" symbol="&lt;globals/DataField/&lt;&gt;mWidth&gt;"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389314" symbol="latitude"/>
 <entry field="true" id="8389348" symbol="font"/>
 <entry field="true" id="8389067" symbol="height"/>
 <entry id="8390169" method="true" symbol="getServiceDelegate"/>
-<entry field="true" id="71" symbol="&lt;globals/DataField/&lt;&gt;oldValue&gt;"/>
-<entry id="95" module="true" symbol="Menus"/>
-<entry field="true" id="144" symbol="BkGdColTitle"/>
+<entry field="true" id="72" symbol="&lt;globals/DataField/&lt;&gt;oldValue&gt;"/>
+<entry id="96" module="true" symbol="Menus"/>
+<entry field="true" id="146" symbol="BkGdColTitle"/>
 <entry field="true" id="46" symbol="STORAGE_KEY_ICON"/>
 <entry field="true" id="27" symbol="BLUE_HOUR_PM"/>
 <entry field="true" id="8389066" symbol="width"/>
-<entry id="81" method="true" symbol="&lt;globals/DataField/&lt;&gt;fillPicturePlace&gt;"/>
+<entry id="82" method="true" symbol="&lt;globals/DataField/&lt;&gt;fillPicturePlace&gt;"/>
 <entry field="true" id="57" symbol="FIELD_TYPE_PRESSURE"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry field="true" id="65" symbol="FIELD_TYPE_SUNSET"/>
 <entry id="8389376" method="true" symbol="onEnterSleep"/>
-<entry field="true" id="117" symbol="SEICol"/>
+<entry field="true" id="119" symbol="SEICol"/>
 <entry field="true" id="45" symbol="STORAGE_KEY_HUMIDITY"/>
-<entry id="216" symbol="id"/>
+<entry field="true" id="100" symbol="moon"/>
+<entry id="220" symbol="id"/>
 <entry field="true" id="8389063" symbol="identifier"/>
-<entry id="229" symbol="time"/>
+<entry id="233" symbol="time"/>
 <entry id="11" object="true" symbol="LowEnergyFaceApp"/>
 <entry field="true" id="59" symbol="FIELD_TYPE_CALORIES"/>
 <entry id="8389349" symbol="justification"/>
-<entry field="true" id="126" symbol="DUKilometer"/>
+<entry field="true" id="128" symbol="DUKilometer"/>
 <entry field="true" id="17" symbol="NAUTICAL_DAWN"/>
-<entry field="true" id="201" symbol="ds"/>
+<entry field="true" id="205" symbol="ds"/>
 <entry field="true" id="61" symbol="FIELD_TYPE_FLOOR"/>
-<entry id="226" symbol="pres"/>
+<entry id="230" symbol="pres"/>
 <entry field="true" id="44" symbol="STORAGE_KEY_PRESSURE"/>
-<entry id="89" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;border&gt;"/>
-<entry id="90" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;clearField&gt;"/>
+<entry id="90" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;border&gt;"/>
+<entry id="91" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;clearField&gt;"/>
 <entry field="true" id="42" symbol="STORAGE_KEY_RECIEVE"/>
 <entry field="true" id="19" symbol="BLUE_HOUR_AM"/>
 <entry field="true" id="28" symbol="DUSK"/>
-<entry id="92" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;fieldEqual&gt;"/>
+<entry id="93" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;fieldEqual&gt;"/>
 <entry id="34" method="true" symbol="responseCallback"/>
 <entry field="true" id="26" symbol="SUNSET"/>
 <entry field="true" id="8388911" method="true" symbol="distance"/>
-<entry id="209" method="true" symbol="fromJulian"/>
-<entry field="true" id="176" symbol="&lt;globals/StatusField/&lt;&gt;mImageFont&gt;"/>
+<entry id="213" method="true" symbol="fromJulian"/>
+<entry field="true" id="178" symbol="&lt;globals/StatusField/&lt;&gt;mImageFont&gt;"/>
 <entry id="8388637" module="true" symbol="Communications"/>
 <entry id="14" object="true" symbol="AmPmField"/>
 <entry id="8390170" method="true" symbol="onBackgroundData"/>
-<entry field="true" id="169" symbol="WU"/>
-<entry field="true" id="206" symbol="sin2L"/>
-<entry field="true" id="180" symbol="countFields"/>
-<entry field="true" id="139" symbol="EIColor"/>
-<entry id="220" symbol="iCloud"/>
+<entry field="true" id="171" symbol="WU"/>
+<entry field="true" id="210" symbol="sin2L"/>
+<entry field="true" id="184" symbol="countFields"/>
+<entry field="true" id="141" symbol="EIColor"/>
+<entry id="224" symbol="iCloud"/>
 <entry id="8389809" symbol="order"/>
 <entry id="8389177" method="true" symbol="clear"/>
-<entry field="true" id="131" symbol="TU"/>
-<entry field="true" id="121" symbol="SpeedUnitKmH"/>
-<entry field="true" id="106" symbol="Pm"/>
+<entry field="true" id="133" symbol="TU"/>
+<entry field="true" id="123" symbol="SpeedUnitKmH"/>
+<entry field="true" id="108" symbol="Pm"/>
 <entry id="15" object="true" symbol="LowEnergyFaceView"/>
 <entry field="true" id="8388893" symbol="PI"/>
-<entry field="true" id="104" symbol="BatLPCol"/>
+<entry field="true" id="106" symbol="BatLPCol"/>
 <entry field="true" id="31" symbol="NUM_RESULTS"/>
 <entry field="true" id="58" symbol="FIELD_TYPE_TEMPERATURE"/>
-<entry field="true" id="161" symbol="ETColor"/>
-<entry field="true" id="198" symbol="lastD"/>
-<entry id="231" symbol="fields"/>
-<entry field="true" id="193" symbol="DAYS"/>
-<entry field="true" id="102" symbol="TICol"/>
-<entry field="true" id="99" symbol="AlTrCol"/>
-<entry field="true" id="119" symbol="StICol"/>
+<entry field="true" id="163" symbol="ETColor"/>
+<entry field="true" id="202" symbol="lastD"/>
+<entry id="235" symbol="fields"/>
+<entry field="true" id="197" symbol="DAYS"/>
+<entry field="true" id="104" symbol="TICol"/>
+<entry field="true" id="101" symbol="AlTrCol"/>
+<entry field="true" id="121" symbol="StICol"/>
 <entry field="true" id="18" symbol="DAWN"/>
-<entry field="true" id="146" symbol="ConTrCol"/>
-<entry field="true" id="196" symbol="J0"/>
-<entry id="177" method="true" symbol="elevation"/>
+<entry field="true" id="148" symbol="ConTrCol"/>
+<entry field="true" id="200" symbol="J0"/>
+<entry id="179" method="true" symbol="elevation"/>
 <entry id="8389377" method="true" symbol="onExitSleep"/>
 <entry id="8388644" module="true" symbol="System"/>
-<entry id="188" method="true" symbol="resizeView"/>
+<entry id="192" method="true" symbol="resizeView"/>
 <entry id="8389315" symbol="longitude"/>
-<entry field="true" id="134" symbol="BatICol"/>
-<entry field="true" id="73" symbol="&lt;globals/DataField/&lt;&gt;type&gt;"/>
-<entry field="true" id="128" symbol="PrICol"/>
+<entry field="true" id="136" symbol="BatICol"/>
+<entry field="true" id="74" symbol="&lt;globals/DataField/&lt;&gt;type&gt;"/>
+<entry field="true" id="130" symbol="PrICol"/>
 <entry field="true" id="60" symbol="FIELD_TYPE_DISTANCE"/>
-<entry id="210" method="true" symbol="calculate"/>
-<entry field="true" id="155" symbol="F8"/>
-<entry field="true" id="154" symbol="F7"/>
-<entry field="true" id="153" symbol="F6"/>
-<entry field="true" id="152" symbol="EU"/>
+<entry id="214" method="true" symbol="calculate"/>
+<entry field="true" id="157" symbol="F8"/>
+<entry field="true" id="156" symbol="F7"/>
+<entry field="true" id="155" symbol="F6"/>
+<entry field="true" id="154" symbol="EU"/>
 <entry field="true" id="41" symbol="STORAGE_KEY_RESPONCE_CODE"/>
-<entry field="true" id="151" symbol="F5"/>
-<entry field="true" id="149" symbol="F4"/>
-<entry field="true" id="148" symbol="F3"/>
-<entry field="true" id="147" symbol="F2"/>
-<entry field="true" id="145" symbol="F1"/>
-<entry id="74" method="true" symbol="&lt;globals/DataField/&lt;&gt;getMomentView&gt;"/>
+<entry field="true" id="153" symbol="F5"/>
+<entry field="true" id="151" symbol="F4"/>
+<entry field="true" id="150" symbol="F3"/>
+<entry field="true" id="149" symbol="F2"/>
+<entry field="true" id="147" symbol="F1"/>
+<entry id="75" method="true" symbol="&lt;globals/DataField/&lt;&gt;getMomentView&gt;"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry field="true" id="135" symbol="DU"/>
+<entry field="true" id="137" symbol="DU"/>
 <entry field="true" id="64" symbol="FIELD_TYPE_SUNRISE"/>
 <entry field="true" id="8389166" symbol="COLOR_DK_GREEN"/>
-<entry field="true" id="110" symbol="DTCol"/>
-<entry field="true" id="199" symbol="lastLng"/>
-<entry field="true" id="115" symbol="Am"/>
-<entry field="true" id="208" symbol="Jnoon"/>
-<entry field="true" id="116" symbol="PrUBar"/>
-<entry id="80" method="true" symbol="&lt;globals/DataField/&lt;&gt;fillTextPlace&gt;"/>
-<entry field="true" id="82" symbol="&lt;globals/WeatherField/&lt;&gt;mImageFont&gt;"/>
-<entry id="93" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;dataEqual&gt;"/>
-<entry field="true" id="159" symbol="BatLPVal"/>
+<entry field="true" id="112" symbol="DTCol"/>
+<entry field="true" id="203" symbol="lastLng"/>
+<entry field="true" id="117" symbol="Am"/>
+<entry field="true" id="212" symbol="Jnoon"/>
+<entry field="true" id="118" symbol="PrUBar"/>
+<entry id="81" method="true" symbol="&lt;globals/DataField/&lt;&gt;fillTextPlace&gt;"/>
+<entry field="true" id="83" symbol="&lt;globals/WeatherField/&lt;&gt;mImageFont&gt;"/>
+<entry id="94" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;dataEqual&gt;"/>
+<entry field="true" id="161" symbol="BatLPVal"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="91" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;dataInvalid&gt;"/>
+<entry id="92" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;dataInvalid&gt;"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry id="79" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawSimpleTextValue&gt;"/>
-<entry field="true" id="96" symbol="LauncherIcon"/>
+<entry id="80" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawSimpleTextValue&gt;"/>
+<entry field="true" id="97" symbol="LauncherIcon"/>
 <entry id="10" object="true" symbol="StatusField"/>
 <entry id="8389123" method="true" symbol="onShow"/>
 <entry field="true" id="8389167" symbol="COLOR_BLUE"/>
-<entry field="true" id="84" symbol="weatherFont"/>
-<entry field="true" id="109" symbol="SRTCol"/>
-<entry field="true" id="187" symbol="oldDate"/>
-<entry id="227" symbol="targetDc"/>
-<entry field="true" id="132" symbol="SSICol"/>
-<entry field="true" id="68" symbol="&lt;globals/DataField/&lt;&gt;mImageFont&gt;"/>
-<entry field="true" id="157" symbol="TimeCol"/>
-<entry field="true" id="167" symbol="AlFCol"/>
-<entry id="219" symbol="owner"/>
-<entry field="true" id="105" symbol="SetBkGdCol"/>
+<entry field="true" id="85" symbol="weatherFont"/>
+<entry field="true" id="111" symbol="SRTCol"/>
+<entry field="true" id="191" symbol="oldDate"/>
+<entry id="231" symbol="targetDc"/>
+<entry field="true" id="134" symbol="SSICol"/>
+<entry field="true" id="69" symbol="&lt;globals/DataField/&lt;&gt;mImageFont&gt;"/>
+<entry field="true" id="159" symbol="TimeCol"/>
+<entry field="true" id="169" symbol="AlFCol"/>
+<entry id="223" symbol="owner"/>
+<entry field="true" id="107" symbol="SetBkGdCol"/>
 <entry field="true" id="8388958" method="true" symbol="speed"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
-<entry field="true" id="83" symbol="&lt;globals/WeatherField/&lt;&gt;mBackgroundColor&gt;"/>
+<entry field="true" id="84" symbol="&lt;globals/WeatherField/&lt;&gt;mBackgroundColor&gt;"/>
 <entry field="true" id="49" symbol="STORAGE_KEY_DT"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="43" symbol="STORAGE_KEY_TEMP"/>
@@ -671,286 +716,312 @@
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="52" method="true" symbol="registerTimeEvent"/>
 <entry field="true" id="53" symbol="FIELD_TYPE_EMPTY"/>
-<entry field="true" id="156" symbol="EUFoot"/>
+<entry field="true" id="158" symbol="EUFoot"/>
 <entry id="8389808" symbol="period"/>
 <entry id="8388641" module="true" symbol="Math"/>
 <entry field="true" id="25" symbol="SUNSET_START"/>
-<entry field="true" id="166" symbol="PrUhPa"/>
-<entry field="true" id="179" symbol="countColumns"/>
+<entry field="true" id="168" symbol="PrUhPa"/>
+<entry field="true" id="183" symbol="countColumns"/>
 <entry field="true" id="8389169" symbol="COLOR_PURPLE"/>
-<entry field="true" id="195" symbol="J2000"/>
-<entry field="true" id="66" symbol="imageText"/>
-<entry id="78" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawSimpleImage&gt;"/>
-<entry field="true" id="207" symbol="dec"/>
+<entry field="true" id="199" symbol="J2000"/>
+<entry field="true" id="67" symbol="imageText"/>
+<entry id="79" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawSimpleImage&gt;"/>
+<entry field="true" id="211" symbol="dec"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry field="true" id="191" symbol="RAD"/>
+<entry field="true" id="195" symbol="RAD"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="13" object="true" symbol="WeatherField"/>
 <entry id="8389347" symbol="color"/>
 <entry field="true" id="8389164" symbol="COLOR_YELLOW"/>
 <entry field="true" id="21" symbol="SUNRISE_END"/>
-<entry field="true" id="150" symbol="HFt01"/>
+<entry id="181" method="true" symbol="moonPhase"/>
+<entry field="true" id="152" symbol="HFt01"/>
 <entry id="8389781" module="true" symbol="SensorHistory"/>
 <entry field="true" id="56" symbol="FIELD_TYPE_STEPS"/>
-<entry id="75" method="true" symbol="&lt;globals/DataField/&lt;&gt;getSunEvent&gt;"/>
+<entry id="76" method="true" symbol="&lt;globals/DataField/&lt;&gt;getSunEvent&gt;"/>
 <entry field="true" id="8389165" symbol="COLOR_GREEN"/>
-<entry field="true" id="125" symbol="PrU"/>
-<entry field="true" id="173" symbol="HrTCol"/>
-<entry id="94" module="true" symbol="Layouts"/>
+<entry field="true" id="127" symbol="PrU"/>
+<entry field="true" id="175" symbol="HrTCol"/>
+<entry id="95" module="true" symbol="Layouts"/>
 <entry id="8389317" symbol="degrees"/>
-<entry field="true" id="185" symbol="sunEventCalculator"/>
-<entry id="222" symbol="wind"/>
-<entry field="true" id="186" symbol="oldTime"/>
-<entry field="true" id="101" symbol="SpeedUnitMSec"/>
-<entry field="true" id="98" symbol="weather"/>
+<entry field="true" id="189" symbol="sunEventCalculator"/>
+<entry id="226" symbol="wind"/>
+<entry field="true" id="190" symbol="oldTime"/>
+<entry field="true" id="103" symbol="SpeedUnitMSec"/>
+<entry field="true" id="99" symbol="weather"/>
 <entry id="8388642" module="true" symbol="Position"/>
-<entry id="223" symbol="iHum"/>
-<entry id="87" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;windDirection&gt;"/>
-<entry field="true" id="168" symbol="BatHPCol"/>
+<entry id="227" symbol="iHum"/>
+<entry id="88" method="true" symbol="&lt;globals/WeatherField/&lt;&gt;windDirection&gt;"/>
+<entry field="true" id="170" symbol="BatHPCol"/>
 <entry field="true" id="8389743" symbol="backgroundColor"/>
 <entry id="32" object="true" symbol="SunCalc"/>
 <entry field="true" id="39" symbol="STORAGE_POSITION_KEY"/>
-<entry field="true" id="182" symbol="cViews"/>
-<entry field="true" id="165" symbol="PrUInchHg"/>
+<entry field="true" id="186" symbol="cViews"/>
+<entry field="true" id="167" symbol="PrUInchHg"/>
 <entry id="8389125" method="true" symbol="onHide"/>
 <entry field="true" id="23" symbol="NOON"/>
-<entry id="217" symbol="propNameTextColor"/>
-<entry field="true" id="130" symbol="TUKelvin"/>
-<entry field="true" id="164" symbol="FTCol"/>
+<entry id="221" symbol="propNameTextColor"/>
+<entry field="true" id="132" symbol="TUKelvin"/>
+<entry field="true" id="166" symbol="FTCol"/>
 <entry id="8388635" module="true" symbol="Application"/>
 <entry field="true" id="8390079" symbol="y"/>
 <entry field="true" id="8390078" symbol="x"/>
-<entry id="214" symbol="w"/>
-<entry id="76" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawBattery&gt;"/>
-<entry field="true" id="200" symbol="n"/>
-<entry id="215" symbol="h"/>
-<entry field="true" id="211" symbol="amString"/>
+<entry id="218" symbol="w"/>
+<entry id="77" method="true" symbol="&lt;globals/DataField/&lt;&gt;drawBattery&gt;"/>
+<entry field="true" id="204" symbol="n"/>
+<entry id="219" symbol="h"/>
+<entry field="true" id="215" symbol="amString"/>
 <entry field="true" id="40" symbol="STORAGE_KEY_WEATHER"/>
-<entry field="true" id="86" symbol="coordinates"/>
-<entry field="true" id="202" symbol="M"/>
-<entry field="true" id="205" symbol="L"/>
-<entry field="true" id="136" symbol="CTCol"/>
-<entry field="true" id="204" symbol="C"/>
-<entry field="true" id="118" symbol="DICol"/>
-<entry field="true" id="133" symbol="MesTrCol"/>
+<entry field="true" id="87" symbol="coordinates"/>
+<entry field="true" id="206" symbol="M"/>
+<entry field="true" id="209" symbol="L"/>
+<entry field="true" id="138" symbol="CTCol"/>
+<entry field="true" id="208" symbol="C"/>
+<entry field="true" id="120" symbol="DICol"/>
+<entry field="true" id="135" symbol="MesTrCol"/>
 </symbolTable>
 <localVars>
-<entry endPc="268436721" name="iniParams" stackId="2" startPc="268436549"/>
-<entry endPc="268436722" name="params" stackId="1" startPc="268436545"/>
-<entry endPc="268437208" name="color" stackId="7" startPc="268436961"/>
-<entry endPc="268437208" name="backgroundColor" stackId="5" startPc="268436961"/>
-<entry endPc="268437208" name="targetDc" stackId="6" startPc="268436961"/>
-<entry endPc="268437221" name="value" stackId="3" startPc="268436726"/>
-<entry endPc="268437221" name="id" stackId="4" startPc="268436726"/>
-<entry endPc="268437222" name="sunEventCalculator" stackId="2" startPc="268436722"/>
-<entry endPc="268437222" name="settingsChanged" stackId="1" startPc="268436722"/>
-<entry endPc="268437430" name="iniParams" stackId="2" startPc="268437226"/>
-<entry endPc="268437431" name="params" stackId="1" startPc="268437222"/>
-<entry endPc="268437648" name="targetDc" stackId="3" startPc="268437591"/>
-<entry endPc="268437866" name="sample" stackId="6" startPc="268437808"/>
-<entry endPc="268437869" name="iter" stackId="5" startPc="268437738"/>
-<entry endPc="268438137" name="sample" stackId="8" startPc="268438052"/>
-<entry endPc="268438140" name="iter" stackId="7" startPc="268437982"/>
-<entry endPc="268438299" name="sample" stackId="10" startPc="268438233"/>
-<entry endPc="268438302" name="iter" stackId="9" startPc="268438163"/>
-<entry endPc="268438616" name="sample" stackId="12" startPc="268438550"/>
-<entry endPc="268438687" name="iter" stackId="11" startPc="268438480"/>
-<entry endPc="268438765" name="moment" stackId="13" startPc="268438710"/>
-<entry endPc="268438843" name="moment" stackId="14" startPc="268438788"/>
-<entry endPc="268438997" name="momentSunset" stackId="15" startPc="268438866"/>
-<entry endPc="268439125" name="value" stackId="4" startPc="268437711"/>
-<entry endPc="268439126" name="sunEventCalculator" stackId="2" startPc="268437431"/>
-<entry endPc="268439126" name="settingsChanged" stackId="1" startPc="268437431"/>
-<entry endPc="268439213" name="info" stackId="2" startPc="268439130"/>
-<entry endPc="268439214" name="moment" stackId="1" startPc="268439126"/>
-<entry endPc="268439503" name="geoLatLong" stackId="3" startPc="268439218"/>
-<entry endPc="268439503" name="myLocation" stackId="4" startPc="268439218"/>
-<entry endPc="268439504" name="event" stackId="2" startPc="268439214"/>
-<entry endPc="268439504" name="sunEventCalculator" stackId="1" startPc="268439214"/>
-<entry endPc="268439972" name="counterColor" stackId="8" startPc="268439794"/>
-<entry endPc="268440267" name="innerH" stackId="14" startPc="268440064"/>
-<entry endPc="268440267" name="color" stackId="12" startPc="268440064"/>
-<entry endPc="268440267" name="innerY" stackId="16" startPc="268440064"/>
-<entry endPc="268440267" name="innerX" stackId="15" startPc="268440064"/>
-<entry endPc="268440267" name="innerW" stackId="13" startPc="268440064"/>
-<entry endPc="268440270" name="newBW" stackId="11" startPc="268439568"/>
-<entry endPc="268440270" name="bW100" stackId="9" startPc="268439568"/>
-<entry endPc="268440270" name="bH" stackId="7" startPc="268439568"/>
-<entry endPc="268440270" name="targetDc" stackId="4" startPc="268439568"/>
-<entry endPc="268440270" name="bY" stackId="5" startPc="268439568"/>
-<entry endPc="268440270" name="value" stackId="3" startPc="268439568"/>
-<entry endPc="268440270" name="oldBW" stackId="10" startPc="268439568"/>
-<entry endPc="268440270" name="bW" stackId="6" startPc="268439568"/>
-<entry endPc="268440283" name="absoluteValue" stackId="2" startPc="268439508"/>
-<entry endPc="268440284" name="settingsChanged" stackId="1" startPc="268439504"/>
-<entry endPc="268440441" name="drawOptions" stackId="1" startPc="268440284"/>
-<entry endPc="268440610" name="targetDc" stackId="3" startPc="268440445"/>
-<entry endPc="268440611" name="imageText" stackId="1" startPc="268440441"/>
-<entry endPc="268440611" name="color" stackId="2" startPc="268440441"/>
-<entry endPc="268440745" name="targetDc" stackId="4" startPc="268440637"/>
-<entry endPc="268440749" name="color" stackId="2" startPc="268440611"/>
-<entry endPc="268440749" name="settingsChanged" stackId="3" startPc="268440611"/>
-<entry endPc="268440749" name="newValue" stackId="1" startPc="268440611"/>
-<entry endPc="268440830" name="color" stackId="2" startPc="268440749"/>
-<entry endPc="268440830" name="targetDc" stackId="1" startPc="268440749"/>
-<entry endPc="268440899" name="color" stackId="2" startPc="268440830"/>
-<entry endPc="268440899" name="targetDc" stackId="1" startPc="268440830"/>
+<entry endPc="268436805" name="iniParams" stackId="2" startPc="268436633"/>
+<entry endPc="268436806" name="params" stackId="1" startPc="268436629"/>
+<entry endPc="268437292" name="color" stackId="7" startPc="268437045"/>
+<entry endPc="268437292" name="backgroundColor" stackId="5" startPc="268437045"/>
+<entry endPc="268437292" name="targetDc" stackId="6" startPc="268437045"/>
+<entry endPc="268437305" name="value" stackId="3" startPc="268436810"/>
+<entry endPc="268437305" name="id" stackId="4" startPc="268436810"/>
+<entry endPc="268437306" name="sunEventCalculator" stackId="2" startPc="268436806"/>
+<entry endPc="268437306" name="settingsChanged" stackId="1" startPc="268436806"/>
+<entry endPc="268437514" name="iniParams" stackId="2" startPc="268437310"/>
+<entry endPc="268437515" name="params" stackId="1" startPc="268437306"/>
+<entry endPc="268437732" name="targetDc" stackId="3" startPc="268437675"/>
+<entry endPc="268437929" name="value" stackId="6" startPc="268437815"/>
+<entry endPc="268437929" name="moment" stackId="5" startPc="268437815"/>
+<entry endPc="268437929" name="duration" stackId="4" startPc="268437815"/>
+<entry endPc="268438087" name="sample" stackId="9" startPc="268438029"/>
+<entry endPc="268438090" name="iter" stackId="8" startPc="268437959"/>
+<entry endPc="268438358" name="sample" stackId="11" startPc="268438273"/>
+<entry endPc="268438361" name="iter" stackId="10" startPc="268438203"/>
+<entry endPc="268438520" name="sample" stackId="13" startPc="268438454"/>
+<entry endPc="268438523" name="iter" stackId="12" startPc="268438384"/>
+<entry endPc="268438837" name="sample" stackId="15" startPc="268438771"/>
+<entry endPc="268438908" name="iter" stackId="14" startPc="268438701"/>
+<entry endPc="268438986" name="moment" stackId="16" startPc="268438931"/>
+<entry endPc="268439064" name="moment" stackId="17" startPc="268439009"/>
+<entry endPc="268439218" name="momentSunset" stackId="18" startPc="268439087"/>
+<entry endPc="268439346" name="value" stackId="7" startPc="268437932"/>
+<entry endPc="268439347" name="sunEventCalculator" stackId="2" startPc="268437515"/>
+<entry endPc="268439347" name="settingsChanged" stackId="1" startPc="268437515"/>
+<entry endPc="268439434" name="info" stackId="2" startPc="268439351"/>
+<entry endPc="268439435" name="moment" stackId="1" startPc="268439347"/>
+<entry endPc="268439724" name="geoLatLong" stackId="3" startPc="268439439"/>
+<entry endPc="268439724" name="myLocation" stackId="4" startPc="268439439"/>
+<entry endPc="268439725" name="event" stackId="2" startPc="268439435"/>
+<entry endPc="268439725" name="sunEventCalculator" stackId="1" startPc="268439435"/>
+<entry endPc="268440193" name="counterColor" stackId="8" startPc="268440015"/>
+<entry endPc="268440488" name="innerH" stackId="14" startPc="268440285"/>
+<entry endPc="268440488" name="color" stackId="12" startPc="268440285"/>
+<entry endPc="268440488" name="innerY" stackId="16" startPc="268440285"/>
+<entry endPc="268440488" name="innerX" stackId="15" startPc="268440285"/>
+<entry endPc="268440488" name="innerW" stackId="13" startPc="268440285"/>
+<entry endPc="268440491" name="newBW" stackId="11" startPc="268439789"/>
+<entry endPc="268440491" name="bW100" stackId="9" startPc="268439789"/>
+<entry endPc="268440491" name="bH" stackId="7" startPc="268439789"/>
+<entry endPc="268440491" name="targetDc" stackId="4" startPc="268439789"/>
+<entry endPc="268440491" name="bY" stackId="5" startPc="268439789"/>
+<entry endPc="268440491" name="value" stackId="3" startPc="268439789"/>
+<entry endPc="268440491" name="oldBW" stackId="10" startPc="268439789"/>
+<entry endPc="268440491" name="bW" stackId="6" startPc="268439789"/>
+<entry endPc="268440504" name="absoluteValue" stackId="2" startPc="268439729"/>
+<entry endPc="268440505" name="settingsChanged" stackId="1" startPc="268439725"/>
+<entry endPc="268440662" name="drawOptions" stackId="1" startPc="268440505"/>
+<entry endPc="268440831" name="targetDc" stackId="3" startPc="268440666"/>
+<entry endPc="268440832" name="imageText" stackId="1" startPc="268440662"/>
+<entry endPc="268440832" name="color" stackId="2" startPc="268440662"/>
+<entry endPc="268440966" name="targetDc" stackId="4" startPc="268440858"/>
+<entry endPc="268440970" name="color" stackId="2" startPc="268440832"/>
+<entry endPc="268440970" name="settingsChanged" stackId="3" startPc="268440832"/>
+<entry endPc="268440970" name="newValue" stackId="1" startPc="268440832"/>
+<entry endPc="268441051" name="color" stackId="2" startPc="268440970"/>
+<entry endPc="268441051" name="targetDc" stackId="1" startPc="268440970"/>
+<entry endPc="268441120" name="color" stackId="2" startPc="268441051"/>
+<entry endPc="268441120" name="targetDc" stackId="1" startPc="268441051"/>
 <entry endPc="268435484" name="state" stackId="1" startPc="268435479"/>
 <entry endPc="268435489" name="state" stackId="1" startPc="268435484"/>
-<entry endPc="268435722" name="data" stackId="1" startPc="268435602"/>
-<entry endPc="268435944" name="nextTime" stackId="4" startPc="268435911"/>
-<entry endPc="268435944" name="now" stackId="3" startPc="268435768"/>
-<entry endPc="268435944" name="duration" stackId="2" startPc="268435768"/>
-<entry endPc="268435944" name="lastTime" stackId="1" startPc="268435768"/>
-<entry endPc="268441219" name="unit" stackId="3" startPc="268440911"/>
-<entry endPc="268441219" name="value" stackId="2" startPc="268440911"/>
-<entry endPc="268441220" name="rawData" stackId="1" startPc="268440899"/>
-<entry endPc="268441356" name="unit" stackId="3" startPc="268441232"/>
-<entry endPc="268441356" name="value" stackId="2" startPc="268441232"/>
-<entry endPc="268441357" name="rawData" stackId="1" startPc="268441220"/>
-<entry endPc="268441466" name="unit" stackId="3" startPc="268441369"/>
-<entry endPc="268441466" name="value" stackId="2" startPc="268441369"/>
-<entry endPc="268441467" name="rawData" stackId="1" startPc="268441357"/>
-<entry endPc="268441538" name="unit" stackId="3" startPc="268441479"/>
-<entry endPc="268441538" name="value" stackId="2" startPc="268441479"/>
-<entry endPc="268441539" name="rawData" stackId="1" startPc="268441467"/>
-<entry endPc="268441658" name="unit" stackId="3" startPc="268441551"/>
-<entry endPc="268441658" name="value" stackId="2" startPc="268441551"/>
-<entry endPc="268441659" name="rawData" stackId="1" startPc="268441539"/>
-<entry endPc="268441892" name="unit" stackId="2" startPc="268441671"/>
-<entry endPc="268441892" name="value" stackId="1" startPc="268441671"/>
-<entry endPc="268442883" name="x" stackId="4" startPc="268441897"/>
-<entry endPc="268442883" name="w" stackId="5" startPc="268441897"/>
-<entry endPc="268442883" name="iniParams" stackId="2" startPc="268441897"/>
-<entry endPc="268442883" name="targetDc" stackId="3" startPc="268441897"/>
-<entry endPc="268442883" name="halfH" stackId="6" startPc="268441897"/>
-<entry endPc="268442884" name="params" stackId="1" startPc="268441893"/>
-<entry endPc="268445056" name="x" stackId="11" startPc="268444494"/>
-<entry endPc="268445056" name="windDirection" stackId="9" startPc="268444494"/>
-<entry endPc="268445056" name="str" stackId="10" startPc="268444494"/>
-<entry endPc="268445056" name="y" stackId="12" startPc="268444494"/>
-<entry endPc="268445091" name="color" stackId="7" startPc="268442888"/>
-<entry endPc="268445091" name="key" stackId="8" startPc="268442888"/>
-<entry endPc="268445091" name="targetDc" stackId="5" startPc="268442888"/>
-<entry endPc="268445091" name="data" stackId="4" startPc="268442888"/>
-<entry endPc="268445091" name="oldData" stackId="6" startPc="268442888"/>
-<entry endPc="268445091" name="app" stackId="3" startPc="268442888"/>
-<entry endPc="268445092" name="sunEventCalculator" stackId="2" startPc="268442884"/>
-<entry endPc="268445092" name="settingsChanged" stackId="1" startPc="268442884"/>
-<entry endPc="268445655" name="x" stackId="12" startPc="268445442"/>
-<entry endPc="268445655" name="y" stackId="13" startPc="268445442"/>
-<entry endPc="268445668" name="i" stackId="11" startPc="268445442"/>
-<entry endPc="268445819" name="i" stackId="15" startPc="268445744"/>
-<entry endPc="268445822" name="result" stackId="7" startPc="268445096"/>
-<entry endPc="268445822" name="sin" stackId="9" startPc="268445096"/>
-<entry endPc="268445822" name="min" stackId="10" startPc="268445096"/>
-<entry endPc="268445822" name="cos" stackId="8" startPc="268445096"/>
-<entry endPc="268445822" name="coords" stackId="6" startPc="268445096"/>
-<entry endPc="268445822" name="angleRad" stackId="4" startPc="268445096"/>
-<entry endPc="268445822" name="offset" stackId="14" startPc="268445096"/>
-<entry endPc="268445822" name="centerPoint" stackId="5" startPc="268445096"/>
-<entry endPc="268445823" name="leftTop" stackId="3" startPc="268445092"/>
-<entry endPc="268445823" name="size" stackId="1" startPc="268445092"/>
-<entry endPc="268445823" name="angle" stackId="2" startPc="268445092"/>
-<entry endPc="268446045" name="param" stackId="1" startPc="268445823"/>
-<entry endPc="268446156" name="targetDc" stackId="2" startPc="268446049"/>
-<entry endPc="268446157" name="coord" stackId="1" startPc="268446045"/>
-<entry endPc="268446232" name="bckgrndColor" stackId="2" startPc="268446157"/>
-<entry endPc="268446232" name="targetDc" stackId="1" startPc="268446157"/>
-<entry endPc="268446232" name="coord" stackId="3" startPc="268446157"/>
-<entry endPc="268446342" name="result" stackId="3" startPc="268446236"/>
-<entry endPc="268446343" name="data" stackId="1" startPc="268446232"/>
-<entry endPc="268446343" name="app" stackId="2" startPc="268446232"/>
-<entry endPc="268446389" name="result" stackId="4" startPc="268446347"/>
-<entry endPc="268446390" name="fieldKey" stackId="3" startPc="268446343"/>
-<entry endPc="268446390" name="data" stackId="1" startPc="268446343"/>
-<entry endPc="268446390" name="oldData" stackId="2" startPc="268446343"/>
-<entry endPc="268446622" name="result" stackId="4" startPc="268446394"/>
-<entry endPc="268446623" name="data" stackId="1" startPc="268446390"/>
-<entry endPc="268446623" name="app" stackId="3" startPc="268446390"/>
-<entry endPc="268446623" name="oldData" stackId="2" startPc="268446390"/>
-<entry endPc="268446775" name="iniParams" stackId="2" startPc="268446627"/>
-<entry endPc="268446776" name="params" stackId="1" startPc="268446623"/>
-<entry endPc="268447144" name="backgroundColor" stackId="4" startPc="268446907"/>
-<entry endPc="268447144" name="targetDc" stackId="5" startPc="268446907"/>
-<entry endPc="268447157" name="value" stackId="3" startPc="268446780"/>
-<entry endPc="268447158" name="sunEventCalculator" stackId="2" startPc="268446776"/>
-<entry endPc="268447158" name="settingsChanged" stackId="1" startPc="268446776"/>
-<entry endPc="268447993" name="i" stackId="11" startPc="268447961"/>
-<entry endPc="268450133" name="i" stackId="19" startPc="268450091"/>
-<entry endPc="268450133" name="fieldHight" stackId="6" startPc="268447162"/>
-<entry endPc="268450133" name="r" stackId="8" startPc="268447162"/>
-<entry endPc="268450133" name="weatherH" stackId="16" startPc="268447162"/>
-<entry endPc="268450133" name="App" stackId="14" startPc="268447162"/>
-<entry endPc="268450133" name="dateTop" stackId="5" startPc="268447162"/>
-<entry endPc="268450133" name="weatherY" stackId="15" startPc="268447162"/>
-<entry endPc="268450133" name="weatherX" stackId="17" startPc="268447162"/>
-<entry endPc="268450133" name="amW" stackId="13" startPc="268447162"/>
-<entry endPc="268450133" name="fieldXCoord" stackId="10" startPc="268447162"/>
-<entry endPc="268450133" name="weatherW" stackId="18" startPc="268447162"/>
-<entry endPc="268450133" name="fieldWidth" stackId="7" startPc="268447162"/>
-<entry endPc="268450133" name="screenCoord" stackId="3" startPc="268447162"/>
-<entry endPc="268450133" name="fieldYCoord" stackId="12" startPc="268447162"/>
-<entry endPc="268450133" name="useFonts" stackId="2" startPc="268447162"/>
-<entry endPc="268450133" name="timeCoord" stackId="4" startPc="268447162"/>
-<entry endPc="268450133" name="verticalOffset" stackId="9" startPc="268447162"/>
-<entry endPc="268450134" name="dc" stackId="1" startPc="268447158"/>
-<entry endPc="268450529" name="hours" stackId="4" startPc="268450230"/>
-<entry endPc="268450529" name="timeString" stackId="5" startPc="268450230"/>
-<entry endPc="268450529" name="timeFormat" stackId="3" startPc="268450230"/>
-<entry endPc="268450542" name="newOldTime" stackId="2" startPc="268450138"/>
-<entry endPc="268450542" name="clockTime" stackId="1" startPc="268450138"/>
-<entry endPc="268450793" name="dateString" stackId="2" startPc="268450625"/>
-<entry endPc="268450812" name="today" stackId="1" startPc="268450547"/>
-<entry endPc="268450917" name="dc" stackId="1" startPc="268450836"/>
-<entry endPc="268451021" name="i" stackId="2" startPc="268450971"/>
-<entry endPc="268451052" name="dc" stackId="1" startPc="268450922"/>
-<entry endPc="268451112" name="dictionary" stackId="1" startPc="268451071"/>
-<entry endPc="268451183" name="dc" stackId="1" startPc="268451113"/>
-<entry endPc="268451264" name="j" stackId="1" startPc="268451206"/>
-<entry endPc="268451337" name="a" stackId="1" startPc="268451264"/>
-<entry endPc="268452225" name="x" stackId="6" startPc="268451341"/>
-<entry endPc="268452225" name="ds" stackId="7" startPc="268451341"/>
-<entry endPc="268452225" name="Jrise" stackId="9" startPc="268451341"/>
-<entry endPc="268452225" name="Jset" stackId="8" startPc="268451341"/>
-<entry endPc="268452225" name="d" stackId="5" startPc="268451341"/>
-<entry endPc="268452226" name="lng" stackId="3" startPc="268451337"/>
-<entry endPc="268452226" name="what" stackId="4" startPc="268451337"/>
-<entry endPc="268452226" name="lat" stackId="2" startPc="268451337"/>
-<entry endPc="268452226" name="moment" stackId="1" startPc="268451337"/>
-<entry endPc="268436158" name="url" stackId="1" startPc="268435972"/>
-<entry endPc="268436158" name="appid" stackId="4" startPc="268435972"/>
-<entry endPc="268436158" name="lat" stackId="2" startPc="268435972"/>
-<entry endPc="268436158" name="lon" stackId="3" startPc="268435972"/>
-<entry endPc="268436505" name="backgroundData" stackId="3" startPc="268436163"/>
-<entry endPc="268436505" name="app" stackId="4" startPc="268436163"/>
-<entry endPc="268436506" name="responseCode" stackId="1" startPc="268436159"/>
-<entry endPc="268436506" name="data" stackId="2" startPc="268436159"/>
-<entry endPc="268452555" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268452238"/>
-<entry endPc="268452555" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268452238"/>
-<entry endPc="268452555" name="rez_cmp_local_custom_drawable_83442465718463725272" stackId="2" startPc="268452238"/>
-<entry endPc="268452556" name="dc" stackId="1" startPc="268452226"/>
+<entry endPc="268435683" name="data" stackId="1" startPc="268435602"/>
+<entry endPc="268436028" name="nextTime" stackId="5" startPc="268435995"/>
+<entry endPc="268436028" name="kewOw" stackId="1" startPc="268435729"/>
+<entry endPc="268436028" name="now" stackId="4" startPc="268435729"/>
+<entry endPc="268436028" name="duration" stackId="3" startPc="268435729"/>
+<entry endPc="268436028" name="lastTime" stackId="2" startPc="268435729"/>
+<entry endPc="268441440" name="unit" stackId="3" startPc="268441132"/>
+<entry endPc="268441440" name="value" stackId="2" startPc="268441132"/>
+<entry endPc="268441441" name="rawData" stackId="1" startPc="268441120"/>
+<entry endPc="268441577" name="unit" stackId="3" startPc="268441453"/>
+<entry endPc="268441577" name="value" stackId="2" startPc="268441453"/>
+<entry endPc="268441578" name="rawData" stackId="1" startPc="268441441"/>
+<entry endPc="268441687" name="unit" stackId="3" startPc="268441590"/>
+<entry endPc="268441687" name="value" stackId="2" startPc="268441590"/>
+<entry endPc="268441688" name="rawData" stackId="1" startPc="268441578"/>
+<entry endPc="268441759" name="unit" stackId="3" startPc="268441700"/>
+<entry endPc="268441759" name="value" stackId="2" startPc="268441700"/>
+<entry endPc="268441760" name="rawData" stackId="1" startPc="268441688"/>
+<entry endPc="268441879" name="unit" stackId="3" startPc="268441772"/>
+<entry endPc="268441879" name="value" stackId="2" startPc="268441772"/>
+<entry endPc="268441880" name="rawData" stackId="1" startPc="268441760"/>
+<entry endPc="268442113" name="unit" stackId="2" startPc="268441892"/>
+<entry endPc="268442113" name="value" stackId="1" startPc="268441892"/>
+<entry endPc="268442487" name="M1" stackId="7" startPc="268442126"/>
+<entry endPc="268442487" name="K11" stackId="11" startPc="268442126"/>
+<entry endPc="268442487" name="D1" stackId="8" startPc="268442126"/>
+<entry endPc="268442487" name="date" stackId="2" startPc="268442126"/>
+<entry endPc="268442487" name="YY1" stackId="9" startPc="268442126"/>
+<entry endPc="268442487" name="AG1" stackId="17" startPc="268442126"/>
+<entry endPc="268442487" name="JD1" stackId="14" startPc="268442126"/>
+<entry endPc="268442487" name="AG" stackId="5" startPc="268442126"/>
+<entry endPc="268442487" name="K31" stackId="13" startPc="268442126"/>
+<entry endPc="268442487" name="f0" stackId="4" startPc="268442126"/>
+<entry endPc="268442487" name="n0" stackId="3" startPc="268442126"/>
+<entry endPc="268442487" name="K21" stackId="12" startPc="268442126"/>
+<entry endPc="268442487" name="DP1" stackId="16" startPc="268442126"/>
+<entry endPc="268442487" name="MM1" stackId="10" startPc="268442126"/>
+<entry endPc="268442487" name="IP1" stackId="15" startPc="268442126"/>
+<entry endPc="268442487" name="Y1" stackId="6" startPc="268442126"/>
+<entry endPc="268442488" name="now" stackId="1" startPc="268442114"/>
+<entry endPc="268442544" name="v" stackId="1" startPc="268442488"/>
+<entry endPc="268443543" name="x" stackId="4" startPc="268442548"/>
+<entry endPc="268443543" name="w" stackId="5" startPc="268442548"/>
+<entry endPc="268443543" name="iniParams" stackId="2" startPc="268442548"/>
+<entry endPc="268443543" name="targetDc" stackId="3" startPc="268442548"/>
+<entry endPc="268443543" name="halfH" stackId="6" startPc="268442548"/>
+<entry endPc="268443544" name="params" stackId="1" startPc="268442544"/>
+<entry endPc="268445605" name="x" stackId="11" startPc="268445043"/>
+<entry endPc="268445605" name="windDirection" stackId="9" startPc="268445043"/>
+<entry endPc="268445605" name="str" stackId="10" startPc="268445043"/>
+<entry endPc="268445605" name="y" stackId="12" startPc="268445043"/>
+<entry endPc="268445640" name="color" stackId="7" startPc="268443548"/>
+<entry endPc="268445640" name="key" stackId="8" startPc="268443548"/>
+<entry endPc="268445640" name="targetDc" stackId="5" startPc="268443548"/>
+<entry endPc="268445640" name="data" stackId="4" startPc="268443548"/>
+<entry endPc="268445640" name="oldData" stackId="6" startPc="268443548"/>
+<entry endPc="268445640" name="app" stackId="3" startPc="268443548"/>
+<entry endPc="268445641" name="sunEventCalculator" stackId="2" startPc="268443544"/>
+<entry endPc="268445641" name="settingsChanged" stackId="1" startPc="268443544"/>
+<entry endPc="268446204" name="x" stackId="12" startPc="268445991"/>
+<entry endPc="268446204" name="y" stackId="13" startPc="268445991"/>
+<entry endPc="268446217" name="i" stackId="11" startPc="268445991"/>
+<entry endPc="268446368" name="i" stackId="15" startPc="268446293"/>
+<entry endPc="268446371" name="result" stackId="7" startPc="268445645"/>
+<entry endPc="268446371" name="sin" stackId="9" startPc="268445645"/>
+<entry endPc="268446371" name="min" stackId="10" startPc="268445645"/>
+<entry endPc="268446371" name="cos" stackId="8" startPc="268445645"/>
+<entry endPc="268446371" name="coords" stackId="6" startPc="268445645"/>
+<entry endPc="268446371" name="angleRad" stackId="4" startPc="268445645"/>
+<entry endPc="268446371" name="offset" stackId="14" startPc="268445645"/>
+<entry endPc="268446371" name="centerPoint" stackId="5" startPc="268445645"/>
+<entry endPc="268446372" name="leftTop" stackId="3" startPc="268445641"/>
+<entry endPc="268446372" name="size" stackId="1" startPc="268445641"/>
+<entry endPc="268446372" name="angle" stackId="2" startPc="268445641"/>
+<entry endPc="268446594" name="param" stackId="1" startPc="268446372"/>
+<entry endPc="268446705" name="targetDc" stackId="2" startPc="268446598"/>
+<entry endPc="268446706" name="coord" stackId="1" startPc="268446594"/>
+<entry endPc="268446781" name="bckgrndColor" stackId="2" startPc="268446706"/>
+<entry endPc="268446781" name="targetDc" stackId="1" startPc="268446706"/>
+<entry endPc="268446781" name="coord" stackId="3" startPc="268446706"/>
+<entry endPc="268446891" name="result" stackId="3" startPc="268446785"/>
+<entry endPc="268446892" name="data" stackId="1" startPc="268446781"/>
+<entry endPc="268446892" name="app" stackId="2" startPc="268446781"/>
+<entry endPc="268446938" name="result" stackId="4" startPc="268446896"/>
+<entry endPc="268446939" name="fieldKey" stackId="3" startPc="268446892"/>
+<entry endPc="268446939" name="data" stackId="1" startPc="268446892"/>
+<entry endPc="268446939" name="oldData" stackId="2" startPc="268446892"/>
+<entry endPc="268447163" name="result" stackId="4" startPc="268446943"/>
+<entry endPc="268447164" name="data" stackId="1" startPc="268446939"/>
+<entry endPc="268447164" name="app" stackId="3" startPc="268446939"/>
+<entry endPc="268447164" name="oldData" stackId="2" startPc="268446939"/>
+<entry endPc="268447316" name="iniParams" stackId="2" startPc="268447168"/>
+<entry endPc="268447317" name="params" stackId="1" startPc="268447164"/>
+<entry endPc="268447685" name="backgroundColor" stackId="4" startPc="268447448"/>
+<entry endPc="268447685" name="targetDc" stackId="5" startPc="268447448"/>
+<entry endPc="268447698" name="value" stackId="3" startPc="268447321"/>
+<entry endPc="268447699" name="sunEventCalculator" stackId="2" startPc="268447317"/>
+<entry endPc="268447699" name="settingsChanged" stackId="1" startPc="268447317"/>
+<entry endPc="268448534" name="i" stackId="11" startPc="268448502"/>
+<entry endPc="268450674" name="i" stackId="19" startPc="268450632"/>
+<entry endPc="268450674" name="fieldHight" stackId="6" startPc="268447703"/>
+<entry endPc="268450674" name="r" stackId="8" startPc="268447703"/>
+<entry endPc="268450674" name="weatherH" stackId="16" startPc="268447703"/>
+<entry endPc="268450674" name="App" stackId="14" startPc="268447703"/>
+<entry endPc="268450674" name="dateTop" stackId="5" startPc="268447703"/>
+<entry endPc="268450674" name="weatherY" stackId="15" startPc="268447703"/>
+<entry endPc="268450674" name="weatherX" stackId="17" startPc="268447703"/>
+<entry endPc="268450674" name="amW" stackId="13" startPc="268447703"/>
+<entry endPc="268450674" name="fieldXCoord" stackId="10" startPc="268447703"/>
+<entry endPc="268450674" name="weatherW" stackId="18" startPc="268447703"/>
+<entry endPc="268450674" name="fieldWidth" stackId="7" startPc="268447703"/>
+<entry endPc="268450674" name="screenCoord" stackId="3" startPc="268447703"/>
+<entry endPc="268450674" name="fieldYCoord" stackId="12" startPc="268447703"/>
+<entry endPc="268450674" name="useFonts" stackId="2" startPc="268447703"/>
+<entry endPc="268450674" name="timeCoord" stackId="4" startPc="268447703"/>
+<entry endPc="268450674" name="verticalOffset" stackId="9" startPc="268447703"/>
+<entry endPc="268450675" name="dc" stackId="1" startPc="268447699"/>
+<entry endPc="268451070" name="hours" stackId="4" startPc="268450771"/>
+<entry endPc="268451070" name="timeString" stackId="5" startPc="268450771"/>
+<entry endPc="268451070" name="timeFormat" stackId="3" startPc="268450771"/>
+<entry endPc="268451083" name="newOldTime" stackId="2" startPc="268450679"/>
+<entry endPc="268451083" name="clockTime" stackId="1" startPc="268450679"/>
+<entry endPc="268451334" name="dateString" stackId="2" startPc="268451166"/>
+<entry endPc="268451353" name="today" stackId="1" startPc="268451088"/>
+<entry endPc="268451458" name="dc" stackId="1" startPc="268451377"/>
+<entry endPc="268451562" name="i" stackId="2" startPc="268451512"/>
+<entry endPc="268451593" name="dc" stackId="1" startPc="268451463"/>
+<entry endPc="268451733" name="needStartServise" stackId="3" startPc="268451602"/>
+<entry endPc="268451733" name="data" stackId="2" startPc="268451602"/>
+<entry endPc="268451733" name="app" stackId="1" startPc="268451602"/>
+<entry endPc="268451784" name="dictionary" stackId="1" startPc="268451743"/>
+<entry endPc="268451855" name="dc" stackId="1" startPc="268451785"/>
+<entry endPc="268451936" name="j" stackId="1" startPc="268451878"/>
+<entry endPc="268452009" name="a" stackId="1" startPc="268451936"/>
+<entry endPc="268452897" name="x" stackId="6" startPc="268452013"/>
+<entry endPc="268452897" name="ds" stackId="7" startPc="268452013"/>
+<entry endPc="268452897" name="Jrise" stackId="9" startPc="268452013"/>
+<entry endPc="268452897" name="Jset" stackId="8" startPc="268452013"/>
+<entry endPc="268452897" name="d" stackId="5" startPc="268452013"/>
+<entry endPc="268452898" name="lng" stackId="3" startPc="268452009"/>
+<entry endPc="268452898" name="what" stackId="4" startPc="268452009"/>
+<entry endPc="268452898" name="lat" stackId="2" startPc="268452009"/>
+<entry endPc="268452898" name="moment" stackId="1" startPc="268452009"/>
+<entry endPc="268436242" name="url" stackId="1" startPc="268436056"/>
+<entry endPc="268436242" name="appid" stackId="4" startPc="268436056"/>
+<entry endPc="268436242" name="lat" stackId="2" startPc="268436056"/>
+<entry endPc="268436242" name="lon" stackId="3" startPc="268436056"/>
+<entry endPc="268436589" name="backgroundData" stackId="3" startPc="268436247"/>
+<entry endPc="268436589" name="app" stackId="4" startPc="268436247"/>
+<entry endPc="268436590" name="responseCode" stackId="1" startPc="268436243"/>
+<entry endPc="268436590" name="data" stackId="2" startPc="268436243"/>
+<entry endPc="268453227" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268452910"/>
+<entry endPc="268453227" name="rez_cmp_local_text_DateLabel" stackId="4" startPc="268452910"/>
+<entry endPc="268453227" name="rez_cmp_local_custom_drawable_16000625571810554249" stackId="2" startPc="268452910"/>
+<entry endPc="268453228" name="dc" stackId="1" startPc="268452898"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="95" parentId="" symbolId="globals" type="module"/>
 <dataEntry offset="430" parentId="globals" symbolId="BackgroundService" type="class"/>
 <dataEntry offset="493" parentId="globals" symbolId="LowEnergyFaceApp" type="class"/>
-<dataEntry offset="1285" parentId="globals" symbolId="DataField" type="class"/>
-<dataEntry offset="1580" parentId="globals" symbolId="WeatherField" type="class"/>
-<dataEntry offset="1731" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="1810" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="1849" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="1880" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="1927" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="1966" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="1997" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="2844" parentId="globals" symbolId="StatusField" type="class"/>
-<dataEntry offset="2939" parentId="globals" symbolId="Converter" type="module"/>
-<dataEntry offset="3018" parentId="globals" symbolId="LowEnergyFaceView" type="class"/>
-<dataEntry offset="3209" parentId="globals" symbolId="Background" type="class"/>
-<dataEntry offset="3264" parentId="globals" symbolId="SunCalc" type="class"/>
-<dataEntry offset="3487" parentId="globals" symbolId="AmPmField" type="class"/>
+<dataEntry offset="1273" parentId="globals" symbolId="DataField" type="class"/>
+<dataEntry offset="1576" parentId="globals" symbolId="WeatherField" type="class"/>
+<dataEntry offset="1727" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="1806" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="1845" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="1876" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="1931" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="1970" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="2001" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="2856" parentId="globals" symbolId="StatusField" type="class"/>
+<dataEntry offset="2951" parentId="globals" symbolId="Converter" type="module"/>
+<dataEntry offset="3046" parentId="globals" symbolId="LowEnergyFaceView" type="class"/>
+<dataEntry offset="3237" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry offset="3292" parentId="globals" symbolId="SunCalc" type="class"/>
+<dataEntry offset="3515" parentId="globals" symbolId="AmPmField" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="StatusField">
@@ -1057,6 +1128,14 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="speedUnitName" parent="Converter">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="moonPhase" parent="Converter">
+<param id="now"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="normalize" parent="Converter">
+<param id="v"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="initialize" parent="WeatherField">

@@ -203,8 +203,23 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-    	//System.println("onExitSleep");
-    	//Application.getApp().registerTimeEvent();
+
+ 		//emergency start service
+	   	var app = Application.getApp();
+    	var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
+    	var needStartServise = data == null;
+
+    	///////////////////////////////////////////////////////////////////////
+    	//DEBUG
+//		var now = Time.now().value();
+//		var load = data[app.STORAGE_KEY_RECIEVE].toNumber();
+//		var dur = now - load;
+//    	System.println("now: "+now+" load: "+load+" dur: "+dur);
+    	///////////////////////////////////////////////////////////////////////
+
+    	if (needStartServise || Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 1000){
+    		app.registerTimeEvent();
+    	}
     }
 
     // Terminate any active timers and prepare for slow updates.

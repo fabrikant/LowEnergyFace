@@ -10,7 +10,7 @@
 	<property id="DateCol" type="number">0xFFFFFF</property>
 
 	<!--WEATHER -->
-	<property id="OpenweathermapKey" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
+	<property id="keyOW" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
 	<property id="Lat" type="float">54.989342</property>
 	<property id="Lon" type="float">73.3682123</property>
 	<property id="WeathCol" type="number">0xFFFFFF</property>
@@ -80,18 +80,22 @@
 	<property id="SETCol" type="number">0xFFFFFF</property>
 	<property id="SEICol" type="number">0xFFFFFF</property>
 	
+	<!--MOON PHASE -->
+	<property id="MPhTCol" type="number">0xFFFFFF</property>
+	<property id="MPhICol" type="number">0xFFFFFF</property>
+	
 	<!--WIND -->
 	<property id="WU" type="number">0</property>
 
 	<!--FIELSDS TYPES -->
 	<property id="F1" type="number">1</property>
 	<property id="F2" type="number">11</property>
-	<property id="F3" type="number">2</property>
+	<property id="F3" type="number">0</property>
 	<property id="F4" type="number">12</property>
 	<property id="F5" type="number">6</property>
 	<property id="F6" type="number">7</property>
 	<property id="F7" type="number">3</property>
-	<property id="F8" type="number">0</property>
+	<property id="F8" type="number">2</property>
 
 
 

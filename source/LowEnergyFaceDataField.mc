@@ -25,7 +25,8 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_ELEVATION,
 		FIELD_TYPE_SUN_EVENT,
 		FIELD_TYPE_SUNRISE,
-		FIELD_TYPE_SUNSET
+		FIELD_TYPE_SUNSET,
+		FIELD_TYPE_MOON_PHASE,
 	}
 
 	const imageText = {
@@ -96,8 +97,15 @@ class DataField extends WatchUi.Layer {
 		}else if (type == FIELD_TYPE_EMPTY){
 			//Do nothing, its required
 		}else if (type == FIELD_TYPE_BAT){
-
 			drawBattery(settingsChanged);
+		}else if (type == FIELD_TYPE_MOON_PHASE){
+
+			var duration = new Time.Duration(86400*(28+31));
+			var moment = Time.now().add(duration);
+
+			var value = Converter.moonPhase(moment).format("%d");
+			System.println(value);
+
 
 		}else {
 			var value = "";
@@ -207,7 +215,6 @@ class DataField extends WatchUi.Layer {
 						value = getMomentView(getSunEvent(sunEventCalculator, SUNRISE));
 					}
 				}
-
 			}
 
 			drawOrdinaryField({
