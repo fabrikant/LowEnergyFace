@@ -81,8 +81,7 @@
 	<property id="SEICol" type="number">0xFFFFFF</property>
 	
 	<!--MOON PHASE -->
-	<property id="MPhTCol" type="number">0xFFFFFF</property>
-	<property id="MPhICol" type="number">0xFFFFFF</property>
+	<property id="MPCol" type="number">0xFFFFFF</property>
 	
 	<!--WIND -->
 	<property id="WU" type="number">0</property>

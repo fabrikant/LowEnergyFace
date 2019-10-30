@@ -131,7 +131,7 @@ class WeatherField extends WatchUi.Layer {
 					:coord => coordinates[:iPres],
 					:text => "b",
 					:font => mImageFont,
-					:color =>  Application.Properties.getValue("PrICol"),
+					:color =>  color,
 					:backgroundColor => mBackgroundColor
 				});
 			drawValue({:targetDc => targetDc,
@@ -184,7 +184,7 @@ class WeatherField extends WatchUi.Layer {
 					:coord => coordinates[:pres],
 					:text => Converter.pressure(data[key].toNumber()*100),
 					:font => Graphics.FONT_SYSTEM_XTINY,
-					:color =>  app.Properties.getValue("PrTCol"),
+					:color =>  color,
 					:backgroundColor => mBackgroundColor
 				});
 		}

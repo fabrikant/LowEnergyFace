@@ -81,6 +81,9 @@
 	
 	<!--WIND -->
 	<string id="WU" scope="foreground">Wind Speed Unit</string>
+	
+	<!--MOON PHASE -->
+	<string id="MPCol" scope="foreground">Moon Color</string>
 
 	<!--COLORS -->
 	<string id="COLOR_WHITE" scope="foreground">White</string>

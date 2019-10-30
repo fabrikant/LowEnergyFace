@@ -99,14 +99,7 @@ class DataField extends WatchUi.Layer {
 		}else if (type == FIELD_TYPE_BAT){
 			drawBattery(settingsChanged);
 		}else if (type == FIELD_TYPE_MOON_PHASE){
-
-			var duration = new Time.Duration(86400*(28+31));
-			var moment = Time.now().add(duration);
-
-			var value = Converter.moonPhase(moment).format("%d");
-			System.println(value);
-
-
+			drawMoonPhase(settingsChanged);
 		}else {
 			var value = "";
 			if (type == FIELD_TYPE_HR){
@@ -259,6 +252,71 @@ class DataField extends WatchUi.Layer {
 
 		return sunEventCalculator.calculate(Time.now(),myLocation[0],myLocation[1],event);
 
+	}
+
+	///////////////////////////////////////////////////////////////////////////
+	// MOON PHASE FIELD
+	private function drawMoonPhase(settingsChanged){
+
+		var moment = Time.now();
+		var day = Time.Gregorian.info(moment, Time.FORMAT_SHORT).day;
+
+		if ((day != oldValue)|| settingsChanged){
+
+			oldValue = day;
+			var moonDay = Converter.moonPhase(Time.now());
+			//var moonDay = 2;
+
+			var targetDc = getDc();
+			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
+        	targetDc.clear();
+
+			targetDc.setColor(Application.Properties.getValue("MPCol"), backgroundColor);
+			var font = Application.loadResource(Rez.Fonts.moon);
+			var daysPict = {
+				0 => "0",
+				3 => "1",
+				6 => "2",
+				9 => "3",
+				12 => "4",
+				15 => "5",
+				18 => "6",
+				21 => "7",
+				24 => "8",
+				27 => "9"
+			};
+
+			var wIcon = targetDc.getTextWidthInPixels("5",font);
+			var width = mWidth - wIcon;
+			var centerToCenter = width/6;
+			var y = mHeight/2;
+
+			var firstVisibleDay = moonDay.toNumber() - 3;
+			if (firstVisibleDay < 0){
+				firstVisibleDay += 29;
+			}
+
+			for (var i = 0; i < 7; i += 1){
+
+				var nextDay = firstVisibleDay + i;
+				if(nextDay>29){
+					nextDay -= 30;
+				}
+				if (daysPict[nextDay] != null){
+					var x = wIcon/2+centerToCenter*i;
+					targetDc.drawText(x, y, font, daysPict[nextDay], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+				}
+			}
+
+			var t = 1;
+			var v = 5;
+//			targetDc.drawLine(0, 0, mWidth, 0);
+//			targetDc.fillPolygon([[mWidth/2-t,0],[mWidth/2,v],[mWidth/2+t,0]]);
+
+			targetDc.drawLine(0, mHeight-1, mWidth, mHeight-1);
+			targetDc.fillPolygon([[mWidth/2-t,mHeight],[mWidth/2,mHeight-v],[mWidth/2+t,mHeight]]);
+
+		}
 	}
 
 	///////////////////////////////////////////////////////////////////////////
