@@ -2,82 +2,85 @@
 
 	<string id="AppName" scope="foreground">LowEnergyFace</string>
 
-	<string id="BgndColTitle" scope="foreground">Background Color</string>
-	<string id="TimeColor" scope="foreground">Time Color</string>
-	<string id="DateColor" scope="foreground">Date Color</string>
+	<string id="BkGdColTitle" scope="foreground">Background Color</string>
+	<string id="TimeCol" scope="foreground">Time Color</string>
+	<string id="DateCol" scope="foreground">Date Color</string>
 	<string id="MilitaryFormatTitle" scope="foreground">Military Format for 24 Hour
 		Time</string>
-	<string id="UseHoursFormat01" scope="foreground">Use hours format 01, 02...</string>
-	<string id="ShowAmPm" scope="foreground">Show am-pm for 12 Hour Time</string>
+	<string id="HFt01" scope="foreground">Use hours format 01, 02...</string>
+	<string id="AmPm" scope="foreground">Show am-pm for 12 Hour Time</string>
+	<string id="Am" scope="foreground">am</string>
+	<string id="Pm" scope="foreground">pm</string>
+
 
 	<!--Status -->
-	<string id="ConnectTrueColor" scope="foreground">Connect image color if active</string>
-	<string id="ConnectFalseColor" scope="foreground">Connect image color if not active</string>
-	<string id="MessageTrueColor" scope="foreground">Message image color if have messages</string>
-	<string id="MessageFalseColor" scope="foreground">Message image color if no messages</string>
-	<string id="AlarmTrueColor" scope="foreground">Alarm image color if set</string>
-	<string id="AlarmFalseColor" scope="foreground">Alarm image color if set</string>
-	<string id="DNDTrueColor" scope="foreground">DND image color if active</string>
-	<string id="DNDFalseColor" scope="foreground">DND image color if not active</string>
-	<string id="SetBgndCol" scope="foreground">Set backgrond color for hide</string>
+	<string id="ConTrCol" scope="foreground">Connect image color if active</string>
+	<string id="ConFCol" scope="foreground">Connect image color if not active</string>
+	<string id="MesTrCol" scope="foreground">Message image color if have messages</string>
+	<string id="MesFCol" scope="foreground">Message image color if no messages</string>
+	<string id="AlTrCol" scope="foreground">Alarm image color if set</string>
+	<string id="AlFCol" scope="foreground">Alarm image color if set</string>
+	<string id="DNDTrCol" scope="foreground">DND image color if active</string>
+	<string id="DNDFCol" scope="foreground">DND image color if not active</string>
+	<string id="SetBkGdCol" scope="foreground">Set backgrond color for hide</string>
 
 	<!--Battery -->
-	<string id="BatteryTextColor" scope="foreground">Battery Value Color</string>
-	<string id="BatteryImageColor" scope="foreground">Battery Image Color</string>
-	<string id="BatteryHighPowerColor" scope="foreground">Battery High Power Color</string>
-	<string id="BatteryLowPowerColor" scope="foreground">Battery Low Power Color</string>
-	<string id="BatteryLowPowerValue" scope="foreground">Low Battery Value</string>
+	<string id="BatTCol" scope="foreground">Battery Value Color</string>
+	<string id="BatICol" scope="foreground">Battery Image Color</string>
+	<string id="BatHPCol" scope="foreground">Battery High Power Color</string>
+	<string id="BatLPCol" scope="foreground">Battery Low Power Color</string>
+	<string id="BatLPVal" scope="foreground">Low Battery Value</string>
 
 	<!--Heart Rate -->
-	<string id="HeartRateTextColor" scope="foreground">Heart Rate Value Color</string>
-	<string id="HeartRateImageColor" scope="foreground">Heart Rate Image Color</string>
+	<string id="HrTCol" scope="foreground">Heart Rate Value Color</string>
+	<string id="HrICol" scope="foreground">Heart Rate Image Color</string>
 
 	<!--Steps -->
-	<string id="StepsTextColor" scope="foreground">Steps Value Color</string>
-	<string id="StepsImageColor" scope="foreground">Steps Image Color</string>
+	<string id="StTCol" scope="foreground">Steps Value Color</string>
+	<string id="StICol" scope="foreground">Steps Image Color</string>
 
 	<!--Pressure -->
-	<string id="PressureTextColor" scope="foreground">Pressure Value Color</string>
-	<string id="PressureImageColor" scope="foreground">Pressure Image Color</string>
-	<string id="PressureUnit" scope="foreground">Pressure Unit</string>
+	<string id="PrTCol" scope="foreground">Pressure Value Color</string>
+	<string id="PrICol" scope="foreground">Pressure Image Color</string>
+	<string id="PrU" scope="foreground">Pressure Unit</string>
 
 	<!--TEMPERATURE -->
-	<string id="TemperatureTextColor" scope="foreground">Temperature Value Color</string>
-	<string id="TemperatureImageColor" scope="foreground">Temperature Image Color</string>
-	<string id="TemperatureUnit" scope="foreground">Temperature Unit</string>
+	<string id="TTCol" scope="foreground">Temperature Value Color</string>
+	<string id="TICol" scope="foreground">Temperature Image Color</string>
+	<string id="TU" scope="foreground">Temperature Unit</string>
 
 	<!--CALORIES -->
-	<string id="CaloriesTextColor" scope="foreground">Calories Value Color</string>
-	<string id="CaloriesImageColor" scope="foreground">Calories Image Color</string>
+	<string id="CTCol" scope="foreground">Calories Value Color</string>
+	<string id="CICol" scope="foreground">Calories Image Color</string>
 
 	<!--DISTANCE -->
-	<string id="DistanceTextColor" scope="foreground">Distance Value Color</string>
-	<string id="DistanceImageColor" scope="foreground">Distance Image Color</string>
-	<string id="DistanceUnit" scope="foreground">Distance Unit</string>
+	<string id="DTCol" scope="foreground">Distance Value Color</string>
+	<string id="DICol" scope="foreground">Distance Image Color</string>
+	<string id="DU" scope="foreground">Distance Unit</string>
 
 	<!--FLOORS -->
-	<string id="FloorsTextColor" scope="foreground">Floors Value Color</string>
-	<string id="FloorsImageColor" scope="foreground">Floors Image Color</string>
+	<string id="FTCol" scope="foreground">Floors Value Color</string>
+	<string id="FICol" scope="foreground">Floors Image Color</string>
 
 	<!--ELEVATION -->
-	<string id="ElevationTextColor" scope="foreground">Elevation Value Color</string>
-	<string id="ElevationImageColor" scope="foreground">Elevation Image Color</string>
-	<string id="ElevationUnit" scope="foreground">Elevation Unit</string>
+	<string id="ETColor" scope="foreground">Elevation Value Color</string>
+	<string id="EIColor" scope="foreground">Elevation Image Color</string>
+	<string id="EU" scope="foreground">Elevation Unit</string>
 
 	<!--SUNRISE -->
-	<string id="SunriseTextColor" scope="foreground">Sunrise Value Color</string>
-	<string id="SunriseImageColor" scope="foreground">Sunrise Image Color</string>
+	<string id="SRTCol" scope="foreground">Sunrise Value Color</string>
+	<string id="SRICol" scope="foreground">Sunrise Image Color</string>
 
 	<!--SUNSET -->
-	<string id="SunsetTextColor" scope="foreground">Sunset Value Color</string>
-	<string id="SunsetImageColor" scope="foreground">Sunset Image Color</string>
+	<string id="SSTCol" scope="foreground">Sunset Value Color</string>
+	<string id="SSICol" scope="foreground">Sunset Image Color</string>
 
 	<!--SUNEVENT -->
-	<string id="SunEventTextColor" scope="foreground">Sun Event Value Color</string>
-	<string id="SunEventImageColor" scope="foreground">Sun Event Image Color</string>
+	<string id="SETCol" scope="foreground">Sun Event Value Color</string>
+	<string id="SEICol" scope="foreground">Sun Event Image Color</string>
 	
 	<!--WIND -->
-	<string id="WindUnit" scope="foreground">Wind Speed Unit</string>
+	<string id="WU" scope="foreground">Wind Speed Unit</string>
 
 	<!--COLORS -->
 	<string id="COLOR_WHITE" scope="foreground">White</string>
@@ -121,25 +124,25 @@
 	<string id="F8" scope="foreground">Field 8</string>
 
 	<!--PRESSURE UNITS -->
-	<string id="PressureUnitMmHg" scope="foreground">mmHg</string>
-	<string id="PressureUnitPsi" scope="foreground">Psi</string>
-	<string id="PressureUnitInchHg" scope="foreground">inchHg</string>
-	<string id="PressureUnitBar" scope="foreground">Bar</string>
-	<string id="PressureUnitKPa" scope="foreground">kPa</string>
-	<string id="PressureUnithPa" scope="foreground">hPa</string>
+	<string id="PrUMmHg" scope="foreground">mmHg</string>
+	<string id="PrUPsi" scope="foreground">Psi</string>
+	<string id="PrUInchHg" scope="foreground">inchHg</string>
+	<string id="PrUBar" scope="foreground">Bar</string>
+	<string id="PrUKPa" scope="foreground">kPa</string>
+	<string id="PrUhPa" scope="foreground">hPa</string>
 
 	<!--TEMPERATURE UNITS -->
-	<string id="TemperatureUnitCelsius" scope="foreground">Celsius</string>
-	<string id="TemperatureUnitFahrenheit" scope="foreground">Fahrenheit</string>
-	<string id="TemperatureUnitKelvin" scope="foreground">Kelvin</string>
+	<string id="TUCelsius" scope="foreground">Celsius</string>
+	<string id="TUFahrenheit" scope="foreground">Fahrenheit</string>
+	<string id="TUKelvin" scope="foreground">Kelvin</string>
 
 	<!--DISTANCE UNITS -->
-	<string id="DistanceUnitKilometer" scope="foreground">Kilometer</string>
-	<string id="DistanceUnitMile" scope="foreground">Mile</string>
+	<string id="DUKilometer" scope="foreground">Kilometer</string>
+	<string id="DUMile" scope="foreground">Mile</string>
 
 	<!--ELEVATION UNITS -->
-	<string id="ElevationUnitMeter" scope="foreground">meter</string>
-	<string id="ElevationUnitFoot" scope="foreground">foot</string>
+	<string id="EUMeter" scope="foreground">meter</string>
+	<string id="EUFoot" scope="foreground">foot</string>
 
 	<!--WIND UNITS -->
 	<!--USE VERY!!!! SHOT STRING. its displayed on screen-->

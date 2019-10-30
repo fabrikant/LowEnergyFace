@@ -16,9 +16,9 @@ class StatusField extends WatchUi.Layer {
 	};
 
 	const fieldSignatures = {
-		App.STATUS_TYPE_CONNECT => "Connect",
-		App.STATUS_TYPE_ALARM   => "Alarm",
-		App.STATUS_TYPE_MESSAGE => "Message",
+		App.STATUS_TYPE_CONNECT => "Con",
+		App.STATUS_TYPE_ALARM   => "Al",
+		App.STATUS_TYPE_MESSAGE => "Mes",
 		App.STATUS_TYPE_DND => "DND"
 	};
 
@@ -60,11 +60,11 @@ class StatusField extends WatchUi.Layer {
 		}
 
 		if (settingsChanged || value != oldValue){
-			var backgroundColor = Application.Properties.getValue("BgndCol");
+			var backgroundColor = Application.Properties.getValue("BkGdCol");
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
-			var color = Application.Properties.getValue(fieldSignatures[id]+(value ? "True" : "False")+"Color");
+			var color = Application.Properties.getValue(fieldSignatures[id]+(value ? "Tr" : "F")+"Col");
 
 			if (color != backgroundColor && imageText[id] != null) {
 				targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);

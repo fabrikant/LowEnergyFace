@@ -43,17 +43,17 @@ class DataField extends WatchUi.Layer {
 	};
 
 	const fieldSignatures = {
-		FIELD_TYPE_HR          => "HeartRate",
-		FIELD_TYPE_STEPS       => "Steps",
-		FIELD_TYPE_PRESSURE    => "Pressure",
-		FIELD_TYPE_TEMPERATURE => "Temperature",
-		FIELD_TYPE_CALORIES    => "Calories",
-		FIELD_TYPE_DISTANCE    => "Distance",
-		FIELD_TYPE_FLOOR       => "Floors",
-		FIELD_TYPE_ELEVATION   => "Elevation",
-		FIELD_TYPE_SUN_EVENT   => "SunEvent",
-		FIELD_TYPE_SUNRISE     => "Sunrise",
-		FIELD_TYPE_SUNSET      => "Sunset",
+		FIELD_TYPE_HR          => "Hr",
+		FIELD_TYPE_STEPS       => "St",
+		FIELD_TYPE_PRESSURE    => "Pr",
+		FIELD_TYPE_TEMPERATURE => "T",
+		FIELD_TYPE_CALORIES    => "C",
+		FIELD_TYPE_DISTANCE    => "D",
+		FIELD_TYPE_FLOOR       => "F",
+		FIELD_TYPE_ELEVATION   => "E",
+		FIELD_TYPE_SUN_EVENT   => "SE",
+		FIELD_TYPE_SUNRISE     => "SR",
+		FIELD_TYPE_SUNSET      => "SS",
 	};
 
 	const font = Graphics.FONT_XTINY;
@@ -85,7 +85,7 @@ class DataField extends WatchUi.Layer {
 		}
 
 		if (backgroundColor == null || settingsChanged){
-			backgroundColor = Application.Properties.getValue("BgndCol");
+			backgroundColor = Application.Properties.getValue("BkGdCol");
 		}
 
 		if (type == FIELD_TYPE_EMPTY && settingsChanged){
@@ -170,7 +170,7 @@ class DataField extends WatchUi.Layer {
 				}
 
 				if (value > 9999){
-					ElevationUnitFoot = (value/1000).format("%.1f")+"k";
+					EUFoot = (value/1000).format("%.1f")+"k";
 				}else{
 					value = value.format("%d");
 				}
@@ -212,8 +212,8 @@ class DataField extends WatchUi.Layer {
 
 			drawOrdinaryField({
 					:value => value,
-					:propNameTextColor => fieldSignatures[type]+"TextColor",
-					:propNameImageColor => fieldSignatures[type]+"ImageColor",
+					:propNameTextColor => fieldSignatures[type]+"TCol",
+					:propNameImageColor => fieldSignatures[type]+"ICol",
 					:imageText => imageText[type],
 					:settingsChanged=>settingsChanged});
 
@@ -268,7 +268,7 @@ class DataField extends WatchUi.Layer {
 
 			fillTextPlace(targetDc, backgroundColor);
 
-			targetDc.setColor(Application.Properties.getValue("BatteryTextColor"),Graphics.COLOR_TRANSPARENT);
+			targetDc.setColor(Application.Properties.getValue("BatTCol"),Graphics.COLOR_TRANSPARENT);
 			targetDc.drawText(mHeight, 0, font, value, Graphics.TEXT_JUSTIFY_LEFT);
 
 			//Рисуем батарею
@@ -279,7 +279,7 @@ class DataField extends WatchUi.Layer {
 			//Первая отрисовка. Рисуем контур батареи
 			if(oldValue==null || settingsChanged){
 				fillPicturePlace(targetDc, backgroundColor);
-				var counterColor = Application.Properties.getValue("BatteryImageColor");
+				var counterColor = Application.Properties.getValue("BatICol");
 				targetDc.setColor(counterColor,Graphics.COLOR_TRANSPARENT);
 				targetDc.setPenWidth(2);
 				targetDc.drawRectangle(0, bY, bW, bH);
@@ -294,7 +294,7 @@ class DataField extends WatchUi.Layer {
 			var newBW = Math.round(bW100*absoluteValue/100);
 
 			if (!(newBW==oldBW) || settingsChanged){
-				var color = Application.Properties.getValue((absoluteValue > Application.Properties.getValue("BatteryLowPowerValue")) ? "BatteryHighPowerColor" : "BatteryLowPowerColor");
+				var color = Application.Properties.getValue((absoluteValue > Application.Properties.getValue("BatLPVal")) ? "BatHPCol" : "BatLPCol");
 				var innerW = bW-5;
 				var innerH = bH-5;
 				var innerX = 2;

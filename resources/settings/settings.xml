@@ -1,23 +1,23 @@
 <settings>
 
 	<!--CLOCK SETTING -->
-	<setting propertyKey="@Properties.UseMilitaryFormat"
+	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">
 		<settingConfig type="boolean" />
 	</setting>
 
-	<setting propertyKey="@Properties.UseHoursFormat01"
-		title="@Strings.UseHoursFormat01">
+	<setting propertyKey="@Properties.HFt01"
+		title="@Strings.HFt01">
 		<settingConfig type="boolean" />
 	</setting>
 
-	<setting propertyKey="@Properties.ShowAmPm"
-		title="@Strings.ShowAmPm">
+	<setting propertyKey="@Properties.AmPm"
+		title="@Strings.AmPm">
 		<settingConfig type="boolean" />
 	</setting>
 
-	<setting propertyKey="@Properties.BgndCol"
-		title="@Strings.BgndColTitle">
+	<setting propertyKey="@Properties.BkGdCol"
+		title="@Strings.BkGdColTitle">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -36,8 +36,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.TimeColor"
-		title="@Strings.TimeColor">
+	<setting propertyKey="@Properties.TimeCol"
+		title="@Strings.TimeCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -56,8 +56,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DateColor"
-		title="@Strings.DateColor">
+	<setting propertyKey="@Properties.DateCol"
+		title="@Strings.DateCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -77,8 +77,8 @@
 	</setting>
 
 	<!--BATTERY -->
-	<setting propertyKey="@Properties.BatteryTextColor"
-		title="@Strings.BatteryTextColor">
+	<setting propertyKey="@Properties.BatTCol"
+		title="@Strings.BatTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -97,8 +97,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.BatteryImageColor"
-		title="@Strings.BatteryImageColor">
+	<setting propertyKey="@Properties.BatICol"
+		title="@Strings.BatICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -117,8 +117,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.BatteryHighPowerColor"
-		title="@Strings.BatteryHighPowerColor">
+	<setting propertyKey="@Properties.BatHPCol"
+		title="@Strings.BatHPCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -137,8 +137,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.BatteryLowPowerColor"
-		title="@Strings.BatteryLowPowerColor">
+	<setting propertyKey="@Properties.BatLPCol"
+		title="@Strings.BatLPCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -157,14 +157,14 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.BatteryLowPowerValue"
-		title="@Strings.BatteryLowPowerValue">
+	<setting propertyKey="@Properties.BatLPVal"
+		title="@Strings.BatLPVal">
 		<settingConfig type="numeric" min="0" max="100" />
 	</setting>
 
 	<!--STATUS -->
-	<setting propertyKey="@Properties.ConnectTrueColor"
-		title="@Strings.ConnectTrueColor" prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.ConTrCol"
+		title="@Strings.ConTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -183,9 +183,9 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.ConnectFalseColor"
-		title="@Strings.ConnectFalseColor"
-		prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.ConFCol"
+		title="@Strings.ConFCol"
+		prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -204,8 +204,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.MessageTrueColor"
-		title="@Strings.MessageTrueColor" prompt="@Strings.MessageTrueColor">
+	<setting propertyKey="@Properties.MesTrCol"
+		title="@Strings.MesTrCol" prompt="@Strings.MesTrCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -224,9 +224,9 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.MessageFalseColor"
-		title="@Strings.MessageFalseColor"
-		prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.MesFCol"
+		title="@Strings.MesFCol"
+		prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -245,8 +245,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.AlarmTrueColor"
-		title="@Strings.AlarmTrueColor" prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.AlTrCol"
+		title="@Strings.AlTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -265,8 +265,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.AlarmFalseColor"
-		title="@Strings.AlarmFalseColor" prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.AlFCol"
+		title="@Strings.AlFCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -285,8 +285,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DNDTrueColor"
-		title="@Strings.DNDTrueColor" prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.DNDTrCol"
+		title="@Strings.DNDTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -305,8 +305,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DNDFalseColor"
-		title="@Strings.DNDFalseColor" prompt="@Strings.SetBgndCol">
+	<setting propertyKey="@Properties.DNDFCol"
+		title="@Strings.DNDFCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -327,8 +327,8 @@
 
 
 	<!--HEART RATE -->
-	<setting propertyKey="@Properties.HeartRateTextColor"
-		title="@Strings.HeartRateTextColor">
+	<setting propertyKey="@Properties.HrTCol"
+		title="@Strings.HrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -347,8 +347,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.HeartRateImageColor"
-		title="@Strings.HeartRateImageColor">
+	<setting propertyKey="@Properties.HrICol"
+		title="@Strings.HrICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -368,8 +368,8 @@
 	</setting>
 
 	<!--STEPS -->
-	<setting propertyKey="@Properties.StepsTextColor"
-		title="@Strings.StepsTextColor">
+	<setting propertyKey="@Properties.StTCol"
+		title="@Strings.StTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -388,8 +388,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.StepsImageColor"
-		title="@Strings.StepsImageColor">
+	<setting propertyKey="@Properties.StICol"
+		title="@Strings.StICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -409,8 +409,8 @@
 	</setting>
 
 	<!--PRESSURE -->
-	<setting propertyKey="@Properties.PressureTextColor"
-		title="@Strings.PressureTextColor">
+	<setting propertyKey="@Properties.PrTCol"
+		title="@Strings.PrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -429,8 +429,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.PressureImageColor"
-		title="@Strings.PressureImageColor">
+	<setting propertyKey="@Properties.PrICol"
+		title="@Strings.PrICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -449,21 +449,21 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.PressureUnit"
-		title="@Strings.PressureUnit">
+	<setting propertyKey="@Properties.PrU"
+		title="@Strings.PrU">
 		<settingConfig type="list">
-			<listEntry value="0">@Strings.PressureUnitMmHg</listEntry>
-			<listEntry value="1">@Strings.PressureUnitPsi</listEntry>
-			<listEntry value="2">@Strings.PressureUnitInchHg</listEntry>
-			<listEntry value="3">@Strings.PressureUnitBar</listEntry>
-			<listEntry value="4">@Strings.PressureUnitKPa</listEntry>
-			<listEntry value="5">@Strings.PressureUnithPa</listEntry>
+			<listEntry value="0">@Strings.PrUMmHg</listEntry>
+			<listEntry value="1">@Strings.PrUPsi</listEntry>
+			<listEntry value="2">@Strings.PrUInchHg</listEntry>
+			<listEntry value="3">@Strings.PrUBar</listEntry>
+			<listEntry value="4">@Strings.PrUKPa</listEntry>
+			<listEntry value="5">@Strings.PrUhPa</listEntry>
 		</settingConfig>
 	</setting>
 
 	<!--TEMPERATURE -->
-	<setting propertyKey="@Properties.TemperatureTextColor"
-		title="@Strings.TemperatureTextColor">
+	<setting propertyKey="@Properties.TTCol"
+		title="@Strings.TTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -482,8 +482,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.TemperatureImageColor"
-		title="@Strings.TemperatureImageColor">
+	<setting propertyKey="@Properties.TICol"
+		title="@Strings.TICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -502,18 +502,18 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.TemperatureUnit"
-		title="@Strings.TemperatureUnit">
+	<setting propertyKey="@Properties.TU"
+		title="@Strings.TU">
 		<settingConfig type="list">
-			<listEntry value="0">@Strings.TemperatureUnitCelsius</listEntry>
-			<listEntry value="1">@Strings.TemperatureUnitFahrenheit</listEntry>
-			<listEntry value="2">@Strings.TemperatureUnitKelvin</listEntry>
+			<listEntry value="0">@Strings.TUCelsius</listEntry>
+			<listEntry value="1">@Strings.TUFahrenheit</listEntry>
+			<listEntry value="2">@Strings.TUKelvin</listEntry>
 		</settingConfig>
 	</setting>
 
 	<!--CALORIES -->
-	<setting propertyKey="@Properties.CaloriesTextColor"
-		title="@Strings.CaloriesTextColor">
+	<setting propertyKey="@Properties.CTCol"
+		title="@Strings.CTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -532,8 +532,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.CaloriesImageColor"
-		title="@Strings.CaloriesImageColor">
+	<setting propertyKey="@Properties.CICol"
+		title="@Strings.CICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -553,8 +553,8 @@
 	</setting>
 
 	<!--DISTANCE -->
-	<setting propertyKey="@Properties.DistanceTextColor"
-		title="@Strings.DistanceTextColor">
+	<setting propertyKey="@Properties.DTCol"
+		title="@Strings.DTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -573,8 +573,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DistanceImageColor"
-		title="@Strings.DistanceImageColor">
+	<setting propertyKey="@Properties.DICol"
+		title="@Strings.DICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -593,17 +593,17 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DistanceUnit"
-		title="@Strings.DistanceUnit">
+	<setting propertyKey="@Properties.DU"
+		title="@Strings.DU">
 		<settingConfig type="list">
-			<listEntry value="0">@Strings.DistanceUnitKilometer</listEntry>
-			<listEntry value="1">@Strings.DistanceUnitMile</listEntry>
+			<listEntry value="0">@Strings.DUKilometer</listEntry>
+			<listEntry value="1">@Strings.DUMile</listEntry>
 		</settingConfig>
 	</setting>
 
 	<!--FLOORS -->
-	<setting propertyKey="@Properties.FloorsTextColor"
-		title="@Strings.FloorsTextColor">
+	<setting propertyKey="@Properties.FTCol"
+		title="@Strings.FTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -622,8 +622,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.FloorsImageColor"
-		title="@Strings.FloorsImageColor">
+	<setting propertyKey="@Properties.FICol"
+		title="@Strings.FICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -643,8 +643,8 @@
 	</setting>
 
 	<!--ELEVATION -->
-	<setting propertyKey="@Properties.ElevationTextColor"
-		title="@Strings.ElevationTextColor">
+	<setting propertyKey="@Properties.ETColor"
+		title="@Strings.ETColor">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -663,8 +663,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.ElevationImageColor"
-		title="@Strings.ElevationImageColor">
+	<setting propertyKey="@Properties.EIColor"
+		title="@Strings.EIColor">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -683,18 +683,18 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.ElevationUnit"
-		title="@Strings.ElevationUnit">
+	<setting propertyKey="@Properties.EU"
+		title="@Strings.EU">
 		<settingConfig type="list">
-			<listEntry value="0">@Strings.ElevationUnitMeter</listEntry>
-			<listEntry value="1">@Strings.ElevationUnitFoot</listEntry>
+			<listEntry value="0">@Strings.EUMeter</listEntry>
+			<listEntry value="1">@Strings.EUFoot</listEntry>
 		</settingConfig>
 	</setting>
 
 
 	<!--SUNRISE -->
-	<setting propertyKey="@Properties.SunriseTextColor"
-		title="@Strings.SunriseTextColor">
+	<setting propertyKey="@Properties.SRTCol"
+		title="@Strings.SRTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -713,8 +713,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.SunriseImageColor"
-		title="@Strings.SunriseImageColor">
+	<setting propertyKey="@Properties.SRICol"
+		title="@Strings.SRICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -734,8 +734,8 @@
 	</setting>
 
 	<!--SUNSET -->
-	<setting propertyKey="@Properties.SunsetTextColor"
-		title="@Strings.SunsetTextColor">
+	<setting propertyKey="@Properties.SSTCol"
+		title="@Strings.SSTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -754,8 +754,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.SunsetImageColor"
-		title="@Strings.SunsetImageColor">
+	<setting propertyKey="@Properties.SSICol"
+		title="@Strings.SSICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -775,8 +775,8 @@
 	</setting>
 
 	<!--SUNEVENT -->
-	<setting propertyKey="@Properties.SunEventTextColor"
-		title="@Strings.SunEventTextColor">
+	<setting propertyKey="@Properties.SETCol"
+		title="@Strings.SETCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -795,8 +795,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.SunEventImageColor"
-		title="@Strings.SunEventImageColor">
+	<setting propertyKey="@Properties.SEICol"
+		title="@Strings.SEICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
@@ -816,8 +816,8 @@
 	</setting>
 
 	<!--FIELD WIND -->
-	<setting propertyKey="@Properties.WindUnit"
-		title="@Strings.WindUnit">
+	<setting propertyKey="@Properties.WU"
+		title="@Strings.WU">
 		<settingConfig type="list">
 			<listEntry value="0">@Strings.SpeedUnitMSec</listEntry>
 			<listEntry value="1">@Strings.SpeedUnitKmH</listEntry>

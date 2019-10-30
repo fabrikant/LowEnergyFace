@@ -7,7 +7,7 @@ module Converter {
 	function pressure(rawData){
 
 		var value = rawData; /*Pa */
-		var unit  = Application.Properties.getValue("PressureUnit");
+		var unit  = Application.Properties.getValue("PrU");
 
 		if (unit == 0){ /*MmHg*/
 			value = Math.round(rawData/133.322).format("%d");
@@ -29,7 +29,7 @@ module Converter {
 	function temperature(rawData){
 
 		var value = rawData;/*C*/
-		var unit  = Application.Properties.getValue("TemperatureUnit");
+		var unit  = Application.Properties.getValue("TU");
 		if (unit == 1){ /*F*/
 			value = ((rawData*9/5) + 32);
 		}else if (unit == 2){ /*K*/
@@ -40,7 +40,7 @@ module Converter {
 
 	function distance(rawData){
 		var value = rawData;//santimeters
-		var unit =  Application.Properties.getValue("DistanceUnit");
+		var unit =  Application.Properties.getValue("DU");
 		if (unit == 0){ /*km*/
 			value = rawData/100000;
 		}else if (unit == 1){ /*mile*/
@@ -52,7 +52,7 @@ module Converter {
 	function elevation(rawData){
 
 		var value = rawData;//meters
-		var unit =  Application.Properties.getValue("ElevationUnit");
+		var unit =  Application.Properties.getValue("EU");
 
 		if (unit == 1){ /*ft*/
 			value = rawData*3.281;
@@ -64,7 +64,7 @@ module Converter {
 	function speed(rawData){
 
 		var value = rawData;//meters/sec
-		var unit =  Application.Properties.getValue("WindUnit");
+		var unit =  Application.Properties.getValue("WU");
 
 		if (unit == 1){ /*km/h*/
 			value = rawData*3.6;
@@ -79,7 +79,7 @@ module Converter {
 	function speedUnitName(){
 
 		var value = Application.loadResource(Rez.Strings.SpeedUnitMSec);//meters/sec
-		var unit =  Application.Properties.getValue("WindUnit");
+		var unit =  Application.Properties.getValue("WU");
 
 		if (unit == 1){ /*km/h*/
 			value = Application.loadResource(Rez.Strings.SpeedUnitKmH);

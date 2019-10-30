@@ -1,90 +1,87 @@
 <properties>
 
 	<!--COMMON -->
-	<property id="UseMilitaryFormat" type="boolean">false</property>
-	<property id="UseHoursFormat01" type="boolean">true</property>
-	<property id="ShowAmPm" type="boolean">true</property>
-	<property id="AmString" type="string">am</property>
-	<property id="PmString" type="string">pm</property>
+	<property id="MilFt" type="boolean">false</property>
+	<property id="HFt01" type="boolean">true</property>
+	<property id="AmPm" type="boolean">true</property>
 
-
-	<property id="BgndCol" type="number">0x000000</property>
-	<property id="TimeColor" type="number">0xFFFFFF</property>
-	<property id="DateColor" type="number">0xFFFFFF</property>
+	<property id="BkGdCol" type="number">0x000000</property>
+	<property id="TimeCol" type="number">0xFFFFFF</property>
+	<property id="DateCol" type="number">0xFFFFFF</property>
 
 	<!--WEATHER -->
 	<property id="OpenweathermapKey" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
 	<property id="Lat" type="float">54.989342</property>
 	<property id="Lon" type="float">73.3682123</property>
-	<property id="WeatherColor" type="number">0xFFFFFF</property>
+	<property id="WeathCol" type="number">0xFFFFFF</property>
 
 	<!--STATUS -->
-	<property id="ConnectTrueColor" type="number">0xFFFFFF</property>
-	<property id="ConnectFalseColor" type="number">0x000000</property>
-	<property id="MessageTrueColor" type="number">0xFFFFFF</property>
-	<property id="MessageFalseColor" type="number">0x000000</property>
-	<property id="AlarmTrueColor" type="number">0xFFFFFF</property>
-	<property id="AlarmFalseColor" type="number">0x000000</property>
-	<property id="DNDTrueColor" type="number">0xFFFFFF</property>
-	<property id="DNDFalseColor" type="number">0x000000</property>
+	<property id="ConTrCol" type="number">0xFFFFFF</property>
+	<property id="ConFCol" type="number">0x000000</property>
+	<property id="MesTrCol" type="number">0xFFFFFF</property>
+	<property id="MesFCol" type="number">0x000000</property>
+	<property id="AlTrCol" type="number">0xFFFFFF</property>
+	<property id="AlFCol" type="number">0x000000</property>
+	<property id="DNDTrCol" type="number">0xFFFFFF</property>
+	<property id="DNDFCol" type="number">0x000000</property>
 
 	<!--BATTERY -->
-	<property id="BatteryTextColor" type="number">0xFFFFFF</property>
-	<property id="BatteryImageColor" type="number">0xFFFFFF</property>
-	<property id="BatteryHighPowerColor" type="number">0x00FF00</property>
-	<property id="BatteryLowPowerColor" type="number">0xFF0000</property>
-	<property id="BatteryLowPowerValue" type="number">15</property>
+	<property id="BatTCol" type="number">0xFFFFFF</property>
+	<property id="BatICol" type="number">0xFFFFFF</property>
+	<property id="BatHPCol" type="number">0x00FF00</property>
+	<property id="BatLPCol" type="number">0xFF0000</property>
+	<property id="BatLPVal" type="number">15</property>
 
 	<!--HEART RATE -->
-	<property id="HeartRateTextColor" type="number">0xFFFFFF</property>
-	<property id="HeartRateImageColor" type="number">0xFF0000</property>
+	<property id="HrTCol" type="number">0xFFFFFF</property>
+	<property id="HrICol" type="number">0xFF0000</property>
 
 	<!--STEPS -->
-	<property id="StepsTextColor" type="number">0xFFFFFF</property>
-	<property id="StepsImageColor" type="number">0xFFFFFF</property>
+	<property id="StTCol" type="number">0xFFFFFF</property>
+	<property id="StICol" type="number">0xFFFFFF</property>
 
 	<!--PRESSURE -->
-	<property id="PressureTextColor" type="number">0xFFFFFF</property>
-	<property id="PressureImageColor" type="number">0xFFFFFF</property>
-	<property id="PressureUnit" type="number">0</property>
+	<property id="PrTCol" type="number">0xFFFFFF</property>
+	<property id="PrICol" type="number">0xFFFFFF</property>
+	<property id="PrU" type="number">0</property>
 
 	<!--TEMPERATURE -->
-	<property id="TemperatureTextColor" type="number">0xFFFFFF</property>
-	<property id="TemperatureImageColor" type="number">0xFFFFFF</property>
-	<property id="TemperatureUnit" type="number">0</property>
+	<property id="TTCol" type="number">0xFFFFFF</property>
+	<property id="TICol" type="number">0xFFFFFF</property>
+	<property id="TU" type="number">0</property>
 
 	<!--CALORIES -->
-	<property id="CaloriesTextColor" type="number">0xFFFFFF</property>
-	<property id="CaloriesImageColor" type="number">0xFFFFFF</property>
+	<property id="CTCol" type="number">0xFFFFFF</property>
+	<property id="CICol" type="number">0xFFFFFF</property>
 
 	<!--DISTANCE -->
-	<property id="DistanceTextColor" type="number">0xFFFFFF</property>
-	<property id="DistanceImageColor" type="number">0xFFFFFF</property>
-	<property id="DistanceUnit" type="number">0</property>
+	<property id="DTCol" type="number">0xFFFFFF</property>
+	<property id="DICol" type="number">0xFFFFFF</property>
+	<property id="DU" type="number">0</property>
 
 	<!--FLOORS -->
-	<property id="FloorsTextColor" type="number">0xFFFFFF</property>
-	<property id="FloorsImageColor" type="number">0xFFFFFF</property>
+	<property id="FTCol" type="number">0xFFFFFF</property>
+	<property id="FICol" type="number">0xFFFFFF</property>
 
 	<!--ELEVATION -->
-	<property id="ElevationTextColor" type="number">0xFFFFFF</property>
-	<property id="ElevationImageColor" type="number">0xFFFFFF</property>
-	<property id="ElevationUnit" type="number">0</property>
+	<property id="ETColor" type="number">0xFFFFFF</property>
+	<property id="EIColor" type="number">0xFFFFFF</property>
+	<property id="EU" type="number">0</property>
 
 	<!--SUNRISE -->
-	<property id="SunriseTextColor" type="number">0xFFFFFF</property>
-	<property id="SunriseImageColor" type="number">0xFFFFFF</property>
+	<property id="SRTCol" type="number">0xFFFFFF</property>
+	<property id="SRICol" type="number">0xFFFFFF</property>
 
 	<!--SUNSET -->
-	<property id="SunsetTextColor" type="number">0xFFFFFF</property>
-	<property id="SunsetImageColor" type="number">0xFFFFFF</property>
+	<property id="SSTCol" type="number">0xFFFFFF</property>
+	<property id="SSICol" type="number">0xFFFFFF</property>
 
 	<!--SUNEVENT -->
-	<property id="SunEventTextColor" type="number">0xFFFFFF</property>
-	<property id="SunEventImageColor" type="number">0xFFFFFF</property>
+	<property id="SETCol" type="number">0xFFFFFF</property>
+	<property id="SEICol" type="number">0xFFFFFF</property>
 	
 	<!--WIND -->
-	<property id="WindUnit" type="number">0</property>
+	<property id="WU" type="number">0</property>
 
 	<!--FIELSDS TYPES -->
 	<property id="F1" type="number">1</property>

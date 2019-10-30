@@ -84,7 +84,7 @@ class WeatherField extends WatchUi.Layer {
 
 		var targetDc = getDc();
 		if (mBackgroundColor == null || settingsChanged){
-			mBackgroundColor = Application.Properties.getValue("BgndCol");
+			mBackgroundColor = Application.Properties.getValue("BkGdCol");
 		}
 
 		if (dataInvalid(data, app)){
@@ -113,7 +113,7 @@ class WeatherField extends WatchUi.Layer {
 			return;
 		}
 
-		var color = Application.Properties.getValue("WeatherColor");
+		var color = Application.Properties.getValue("WeathCol");
 
 		if (settingsChanged || oldData == null){
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
@@ -122,7 +122,7 @@ class WeatherField extends WatchUi.Layer {
 					:coord => coordinates[:iPres],
 					:text => "b",
 					:font => mImageFont,
-					:color =>  Application.Properties.getValue("PressureImageColor"),
+					:color =>  Application.Properties.getValue("PrICol"),
 					:backgroundColor => mBackgroundColor
 				});
 			drawValue({:targetDc => targetDc,
@@ -175,7 +175,7 @@ class WeatherField extends WatchUi.Layer {
 					:coord => coordinates[:pres],
 					:text => Converter.pressure(data[key].toNumber()*100),
 					:font => Graphics.FONT_SYSTEM_XTINY,
-					:color =>  app.Properties.getValue("PressureTextColor"),
+					:color =>  app.Properties.getValue("PrTCol"),
 					:backgroundColor => mBackgroundColor
 				});
 		}
@@ -196,7 +196,7 @@ class WeatherField extends WatchUi.Layer {
 		}
 
 		///////////////////////////////////////////////////////////////////////
-		//WIND DIRECTION
+		//WIND DIRECTION AND SPEED
 
 		if (settingsChanged || !(fieldEqual(data, oldData, app.STORAGE_KEY_WIND_DEG) && fieldEqual(data, oldData, app.STORAGE_KEY_WIND_SPEED))){
 			clearField(targetDc, mBackgroundColor, coordinates[:wind]);
@@ -284,7 +284,7 @@ class WeatherField extends WatchUi.Layer {
 
 	private function border(coord){
 		var targetDc = getDc();
-	    targetDc.setColor(Application.Properties.getValue("WeatherColor"), Graphics.COLOR_TRANSPARENT);
+	    targetDc.setColor(Application.Properties.getValue("WeathCol"), Graphics.COLOR_TRANSPARENT);
 		targetDc.drawRectangle(coord[:x], coord[:y], coord[:w], coord[:h]);
 
 	}

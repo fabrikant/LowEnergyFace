@@ -82,7 +82,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		///////////////////////////////////////////////////////////////////////
 		// AM PM
-		var amW = dc.getTextWidthInPixels(Application.Properties.getValue("AmString"), useFonts[:fields]);
+		var amW = dc.getTextWidthInPixels(Application.loadResource(Rez.Strings.Am), useFonts[:fields]);
 		fieldLayers[8] = new AmPmField({:x=>timeCoord[1][:x]+5, :y=>timeCoord[0][:y]+fieldHight, :w =>amW, :h=>fieldHight, :id=>"AmPm"});
 
 		///////////////////////////////////////////////////////////////////////
@@ -116,7 +116,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		if (settingsChanged || oldTime != newOldTime){
 
-			cViews[:time].setColor(Application.Properties.getValue("TimeColor"));
+			cViews[:time].setColor(Application.Properties.getValue("TimeCol"));
 
 	        // Get the current time and format it correctly
 	        var timeFormat = "$1$:$2$";
@@ -126,11 +126,11 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	                hours = hours - 12;
 	            }
 	        } else {
-	            if (Application.Properties.getValue("UseMilitaryFormat")) {
+	            if (Application.Properties.getValue("MilFt")) {
 	                timeFormat = "$1$$2$";
 	            }
 	        }
-	        if (Application.Properties.getValue("UseHoursFormat01")){
+	        if (Application.Properties.getValue("HFt01")){
         		hours = hours.format("%02d");
         	}
 
@@ -147,7 +147,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
 
 		if (settingsChanged || oldDate != today.day){
-			cViews[:date].setColor(Application.Properties.getValue("DateColor"));
+			cViews[:date].setColor(Application.Properties.getValue("DateCol"));
 			var dateString = Lang.format(
 			    "$1$ $2$ $3$ $4$",
 			    [
