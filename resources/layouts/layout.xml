@@ -1,0 +1,13 @@
+<layout id="WatchFace" scope="foreground">
+	<drawable class="Background" />
+	<label id="TimeLabel" x="center" y="center"
+		justification="Graphics.TEXT_JUSTIFY_CENTER"
+		font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT">
+	</label>
+	<label id="DateLabel"
+		justification="Graphics.TEXT_JUSTIFY_CENTER"
+		font="Graphics.FONT_XTINY" x="center" y="68">
+	</label>
+
+
+</layout>

@@ -1,0 +1,21 @@
+info face="watch-face-images" size=12 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=0 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=12 base=11 scaleW=256 scaleH=256 pages=1 packed=0 alphaChnl=0 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="watch-face-images-12_0.png"
+chars count=17
+char id=-1   x=205   y=0     width=1     height=1     xoffset=0     yoffset=0     xadvance=12    page=0  chnl=15
+char id=97   x=184   y=0     width=12    height=11    xoffset=0     yoffset=-1    xadvance=12    page=0  chnl=15
+char id=98   x=35    y=0     width=12    height=13    xoffset=0     yoffset=-1    xadvance=12    page=0  chnl=15
+char id=99   x=129   y=0     width=10    height=12    xoffset=0     yoffset=-1    xadvance=11    page=0  chnl=15
+char id=100  x=197   y=0     width=7     height=11    xoffset=0     yoffset=0     xadvance=7     page=0  chnl=15
+char id=101  x=48    y=0     width=12    height=13    xoffset=0     yoffset=-1    xadvance=12    page=0  chnl=15
+char id=102  x=61    y=0     width=11    height=13    xoffset=0     yoffset=-1    xadvance=12    page=0  chnl=15
+char id=103  x=21    y=0     width=13    height=13    xoffset=0     yoffset=-1    xadvance=13    page=0  chnl=15
+char id=104  x=151   y=0     width=8     height=12    xoffset=0     yoffset=0     xadvance=8     page=0  chnl=15
+char id=105  x=105   y=0     width=11    height=12    xoffset=0     yoffset=-1    xadvance=11    page=0  chnl=15
+char id=106  x=0     y=0     width=20    height=13    xoffset=0     yoffset=-1    xadvance=20    page=0  chnl=15
+char id=107  x=117   y=0     width=11    height=12    xoffset=0     yoffset=0     xadvance=11    page=0  chnl=15
+char id=108  x=140   y=0     width=10    height=12    xoffset=0     yoffset=-1    xadvance=11    page=0  chnl=15
+char id=109  x=73    y=0     width=17    height=12    xoffset=0     yoffset=-1    xadvance=17    page=0  chnl=15
+char id=110  x=91    y=0     width=13    height=12    xoffset=1     yoffset=0     xadvance=15    page=0  chnl=15
+char id=111  x=168   y=0     width=15    height=11    xoffset=0     yoffset=0     xadvance=15    page=0  chnl=15
+char id=112  x=160   y=0     width=7     height=12    xoffset=0     yoffset=0     xadvance=8     page=0  chnl=15
