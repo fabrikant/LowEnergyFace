@@ -11,8 +11,14 @@
 	<string id="AmPm" scope="foreground">Show am-pm for 12 Hour Time</string>
 	<string id="Am" scope="foreground">am</string>
 	<string id="Pm" scope="foreground">pm</string>
-
-
+	
+	<!--Weather -->
+	<string id="keyOW" scope="foreground">API key for weather</string>
+	<string id="KeyOWPrompt" scope="foreground">get it for free</string>
+	<string id="Lat" scope="foreground">latitude in degrees</string>
+	<string id="Lon" scope="foreground">longitude in degrees</string>
+	<string id="PositionPrompt" scope="foreground">For quick start weather and sun events</string>
+	
 	<!--Status -->
 	<string id="ConTrCol" scope="foreground">Connect image color if active</string>
 	<string id="ConFCol" scope="foreground">Connect image color if not active</string>
@@ -63,9 +69,9 @@
 	<string id="FICol" scope="foreground">Floors Image Color</string>
 
 	<!--ELEVATION -->
-	<string id="ETColor" scope="foreground">Elevation Value Color</string>
-	<string id="EIColor" scope="foreground">Elevation Image Color</string>
-	<string id="EU" scope="foreground">Elevation Unit</string>
+	<string id="ELTCol" scope="foreground">Elevation Value Color</string>
+	<string id="ELICol" scope="foreground">Elevation Image Color</string>
+	<string id="ELU" scope="foreground">Elevation Unit</string>
 
 	<!--SUNRISE -->
 	<string id="SRTCol" scope="foreground">Sunrise Value Color</string>
@@ -145,8 +151,8 @@
 	<string id="DUMile" scope="foreground">Mile</string>
 
 	<!--ELEVATION UNITS -->
-	<string id="EUMeter" scope="foreground">meter</string>
-	<string id="EUFoot" scope="foreground">foot</string>
+	<string id="ELUMeter" scope="foreground">meter</string>
+	<string id="ELUFoot" scope="foreground">foot</string>
 
 	<!--WIND UNITS -->
 	<!--USE VERY!!!! SHOT STRING. its displayed on screen-->

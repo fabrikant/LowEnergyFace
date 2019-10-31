@@ -11,7 +11,7 @@ using Toybox.Math;
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
 	const countColumns = 3;
-	const countFields =14;//8 data fields + am-pm + 4 ststus icons + wether
+	const countFields =14;//8 data fields + am-pm + 4 ststus icons + weather
 
 	const imageFont = Application.loadResource(Rez.Fonts.images);
 
@@ -99,7 +99,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		var weatherH = dateTop - weatherY;
 		var weatherX = r-Math.round(Math.sqrt(Math.pow(r, 2)-Math.pow(r-weatherY-weatherH/2, 2)));//yes. its off screen. I know.
 		var weatherW = (r-weatherX)*2;
-		//System.println(weatherX+", "+weatherY+", "+weatherW+", "+weatherH);
+
 		fieldLayers[13] = new WeatherField({:x=>weatherX, :y=>weatherY,  :w =>weatherW, :h=>weatherH, :imageFont=>imageFont});
 
 
@@ -172,7 +172,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
         resizeView(dc);
-        Application.getApp().registerTimeEvent();
+        //Application.getApp().registerTimeEvent();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -218,7 +218,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     	///////////////////////////////////////////////////////////////////////
 
     	if (needStartServise || Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 1000){
-    		app.registerTimeEvent();
+    		app.registerEvents();
     	}
     }
 

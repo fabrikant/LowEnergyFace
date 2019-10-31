@@ -53,7 +53,7 @@ module Converter {
 	function elevation(rawData){
 
 		var value = rawData;//meters
-		var unit =  Application.Properties.getValue("EU");
+		var unit =  Application.Properties.getValue("ELU");
 
 		if (unit == 1){ /*ft*/
 			value = rawData*3.281;

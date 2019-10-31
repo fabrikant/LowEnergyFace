@@ -10,9 +10,16 @@
 	<property id="DateCol" type="number">0xFFFFFF</property>
 
 	<!--WEATHER -->
+	
+	<!--
 	<property id="keyOW" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
 	<property id="Lat" type="float">54.989342</property>
 	<property id="Lon" type="float">73.3682123</property>
+	-->
+	<property id="keyOW" type="string"></property>
+	<property id="Lat" type="float">0</property>
+	<property id="Lon" type="float">0</property>
+
 	<property id="WeathCol" type="number">0xFFFFFF</property>
 
 	<!--STATUS -->
@@ -64,9 +71,9 @@
 	<property id="FICol" type="number">0xFFFFFF</property>
 
 	<!--ELEVATION -->
-	<property id="ETColor" type="number">0xFFFFFF</property>
-	<property id="EIColor" type="number">0xFFFFFF</property>
-	<property id="EU" type="number">0</property>
+	<property id="ELTCol" type="number">0xFFFFFF</property>
+	<property id="ELICol" type="number">0xFFFFFF</property>
+	<property id="ELU" type="number">0</property>
 
 	<!--SUNRISE -->
 	<property id="SRTCol" type="number">0xFFFFFF</property>

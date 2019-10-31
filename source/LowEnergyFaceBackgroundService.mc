@@ -1,6 +1,7 @@
 using Toybox.Background;
 using Toybox.Communications;
 using Toybox.System;
+using Toybox.Position;
 
 
 (:background)
@@ -29,7 +30,27 @@ class BackgroundService extends System.ServiceDelegate {
 		);
 	}
 
+	function onActivityCompleted(activity){
+		var backgroundData;
+		var lat = null, lon = null;
+		var location = null;
+		var info = Position.getInfo();
+		if (info != null) {
+			location = info.position;
+		}
+		if (location == null){
+			location = Activity.getActivityInfo().currentLocation;
+		}
+		if (location != null) {
+			location = location.toDegrees();
+			//System.println("capture location: "+location);
+			backgroundData = {"Lat"=>location[0].toFloat(), "Lon" =>location[1].toFloat() };
+		} else {
+			backgroundData = {};
+		}
+		Background.exit(backgroundData);
 
+	}
 
 //{
 //   "coord":{
@@ -61,7 +82,7 @@ class BackgroundService extends System.ServiceDelegate {
 //      "all":75
 //   },
 //   "dt":1572253458,
-//   "sys":{
+//   "sys":{nfv gjkexfnm lfyyst
 //      "type":1,
 //      "id":8960,
 //      "country":"RU",

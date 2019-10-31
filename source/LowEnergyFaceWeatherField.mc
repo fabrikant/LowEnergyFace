@@ -84,6 +84,20 @@ class WeatherField extends WatchUi.Layer {
 			/////////////////////////////////////////////////////////////
 			// DEBUG
 //			System.println("data null");
+//			var appid = Application.Properties.getValue("keyOW");
+//			if (appid.length() > 0){
+//				var lat = Application.Properties.getValue("Lat");
+//				var lon = Application.Properties.getValue("Lon");
+//				if (mBackgroundColor == null || settingsChanged){
+//					mBackgroundColor = Application.Properties.getValue("BkGdCol");
+//				}
+//				var tdc = getDc();
+//				var col = Application.Properties.getValue("WeathCol");
+//				clearField(tdc, mBackgroundColor, coordinates[:owner]);
+//				tdc.setColor(col, Graphics.COLOR_TRANSPARENT);
+//				tdc.drawText(15, 0, Graphics.FONT_SYSTEM_XTINY, "Lat: "+lat, Graphics.TEXT_JUSTIFY_LEFT);
+//				tdc.drawText(15, 16, Graphics.FONT_SYSTEM_XTINY, "Lon: "+lon, Graphics.TEXT_JUSTIFY_LEFT);
+//			}
 			/////////////////////////////////////////////////////////////
 			return;
 		}

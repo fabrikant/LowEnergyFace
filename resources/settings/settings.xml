@@ -1,5 +1,20 @@
 <settings>
 
+	<!--WEATHER -->
+
+	<setting propertyKey="@Properties.keyOW" title="@Strings.keyOW" prompt="@Strings.KeyOWPrompt" helpUrl="https://openweathermap.org/api">
+		<settingConfig type="alphaNumeric" />
+	</setting>
+
+<!--
+	<setting propertyKey="@Properties.Lat" title="@Strings.Lat" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
+		<settingConfig type="numeric" />
+	</setting>
+
+	<setting propertyKey="@Properties.Lon" title="@Strings.Lon" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
+		<settingConfig type="numeric" />
+	</setting>
+-->	
 	<!--CLOCK SETTING -->
 	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">
@@ -643,8 +658,8 @@
 	</setting>
 
 	<!--ELEVATION -->
-	<setting propertyKey="@Properties.ETColor"
-		title="@Strings.ETColor">
+	<setting propertyKey="@Properties.ELTCol"
+		title="@Strings.ELTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -663,8 +678,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.EIColor"
-		title="@Strings.EIColor">
+	<setting propertyKey="@Properties.ELICol"
+		title="@Strings.ELICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -683,11 +698,11 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.EU"
-		title="@Strings.EU">
+	<setting propertyKey="@Properties.ELU"
+		title="@Strings.ELU">
 		<settingConfig type="list">
-			<listEntry value="0">@Strings.EUMeter</listEntry>
-			<listEntry value="1">@Strings.EUFoot</listEntry>
+			<listEntry value="0">@Strings.ELUMeter</listEntry>
+			<listEntry value="1">@Strings.ELUFoot</listEntry>
 		</settingConfig>
 	</setting>
 
