@@ -70,7 +70,6 @@ class WeatherField extends WatchUi.Layer {
 		coordinates[:hum] = {:x => x, :y => 0, :w => w, :h => halfH};
 		coordinates[:pres] = {:x => x, :y => halfH, :w => w, :h => halfH};
 
-
 		Application.Storage.setValue(Application.getApp().STORAGE_KEY_WEATHER_OLD, null);
 
     }
@@ -108,6 +107,9 @@ class WeatherField extends WatchUi.Layer {
 		var oldData = Application.Storage.getValue(app.STORAGE_KEY_WEATHER_OLD);
 		/////////////////////////////////////////////////////////////
 		// DEBUG
+//		data[app.STORAGE_KEY_TEMP] = data[app.STORAGE_KEY_TEMP]+1;
+//		Application.Storage.setValue(app.STORAGE_KEY_WEATHER, data);
+//
 //		System.println("new: "+data);
 //		System.println("old: "+oldData);
 //		System.println("settingsChanged: "+settingsChanged);
@@ -335,20 +337,30 @@ class WeatherField extends WatchUi.Layer {
 	}
 
 	private function dataEqual(data, oldData, app){
-		var result = true;
+
 		if (oldData == null){
-			result = false;
+			return false;
 		} else {
-			if (data[app.STORAGE_KEY_DT]!=data[app.STORAGE_KEY_DT]){
-				result = (data[app.STORAGE_KEY_TEMP]==oldData[app.STORAGE_KEY_TEMP])
-						&& (data[app.STORAGE_KEY_PRESSURE]==oldData[app.STORAGE_KEY_PRESSURE])
-						&& (data[app.STORAGE_KEY_HUMIDITY]==oldData[app.STORAGE_KEY_HUMIDITY])
-						&& (data[app.STORAGE_KEY_ICON]==oldData[app.STORAGE_KEY_ICON])
-						&& (data[app.STORAGE_KEY_WIND_SPEED]==oldData[app.STORAGE_KEY_WIND_SPEED])
-						&& (data[app.STORAGE_KEY_WIND_DEG]==oldData[app.STORAGE_KEY_WIND_DEG]);
+
+			if(data[app.STORAGE_KEY_DT]==oldData[app.STORAGE_KEY_DT]){
+				return true;
+			}
+			///////////////////////////////////////////////////////////////////
+			//DEBUG
+//			var key = app.STORAGE_KEY_TEMP;
+//			System.println("key "+key+" equal: "+(data[key] == oldData[key]));
+			///////////////////////////////////////////////////////////////////
+
+			if (( !(data[app.STORAGE_KEY_ICON].equals(oldData[app.STORAGE_KEY_ICON]))
+				|| data[app.STORAGE_KEY_TEMP] != oldData[app.STORAGE_KEY_TEMP])
+				|| (data[app.STORAGE_KEY_PRESSURE] != oldData[app.STORAGE_KEY_PRESSURE])
+				|| (data[app.STORAGE_KEY_HUMIDITY] != oldData[app.STORAGE_KEY_HUMIDITY])
+				|| (data[app.STORAGE_KEY_WIND_SPEED] != oldData[app.STORAGE_KEY_WIND_SPEED])
+				|| (data[app.STORAGE_KEY_WIND_DEG] != oldData[app.STORAGE_KEY_WIND_DEG])) {
+				return false;
 			}
 		}
-		return result;
+		return true;
 	}
 
 }

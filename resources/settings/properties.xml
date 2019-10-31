@@ -34,7 +34,7 @@
 
 	<!--HEART RATE -->
 	<property id="HrTCol" type="number">0xFFFFFF</property>
-	<property id="HrICol" type="number">0xFF0000</property>
+	<property id="HrICol" type="number">0xFFFFFF</property>
 
 	<!--STEPS -->
 	<property id="StTCol" type="number">0xFFFFFF</property>
@@ -87,14 +87,14 @@
 	<property id="WU" type="number">0</property>
 
 	<!--FIELSDS TYPES -->
-	<property id="F1" type="number">1</property>
+	<property id="F1" type="number">13</property>
 	<property id="F2" type="number">11</property>
-	<property id="F3" type="number">0</property>
+	<property id="F3" type="number">2</property>
 	<property id="F4" type="number">12</property>
 	<property id="F5" type="number">6</property>
 	<property id="F6" type="number">7</property>
 	<property id="F7" type="number">3</property>
-	<property id="F8" type="number">2</property>
+	<property id="F8" type="number">1</property>
 
 
 

@@ -61,8 +61,7 @@ class LowEnergyFaceApp extends Application.AppBase {
 	function onBackgroundData(data) {
      	///////////////////////////////////////////////////////////////////////
     	//DEBUG
-//        System.println("onBackgroundData");
-//        System.println(data);
+        //System.println("onBackgroundData: "+data);
      	///////////////////////////////////////////////////////////////////////
         if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
         	Application.Storage.setValue(STORAGE_KEY_WEATHER, data);

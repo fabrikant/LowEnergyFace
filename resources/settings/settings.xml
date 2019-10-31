@@ -20,9 +20,9 @@
 		title="@Strings.BkGdColTitle">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -40,9 +40,9 @@
 		title="@Strings.TimeCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -60,9 +60,9 @@
 		title="@Strings.DateCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -81,9 +81,9 @@
 		title="@Strings.BatTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -101,9 +101,9 @@
 		title="@Strings.BatICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -121,9 +121,9 @@
 		title="@Strings.BatHPCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -141,9 +141,9 @@
 		title="@Strings.BatLPCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -167,9 +167,9 @@
 		title="@Strings.ConTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -188,9 +188,9 @@
 		prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -208,9 +208,9 @@
 		title="@Strings.MesTrCol" prompt="@Strings.MesTrCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -229,9 +229,9 @@
 		prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -249,9 +249,9 @@
 		title="@Strings.AlTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -269,9 +269,9 @@
 		title="@Strings.AlFCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -289,9 +289,9 @@
 		title="@Strings.DNDTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -309,9 +309,9 @@
 		title="@Strings.DNDFCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -331,9 +331,9 @@
 		title="@Strings.HrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -351,9 +351,9 @@
 		title="@Strings.HrICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -372,9 +372,9 @@
 		title="@Strings.StTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -392,9 +392,9 @@
 		title="@Strings.StICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -413,9 +413,9 @@
 		title="@Strings.PrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -433,9 +433,9 @@
 		title="@Strings.PrICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -466,9 +466,9 @@
 		title="@Strings.TTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -486,9 +486,9 @@
 		title="@Strings.TICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -516,9 +516,9 @@
 		title="@Strings.CTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -536,9 +536,9 @@
 		title="@Strings.CICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -557,9 +557,9 @@
 		title="@Strings.DTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -577,9 +577,9 @@
 		title="@Strings.DICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -606,9 +606,9 @@
 		title="@Strings.FTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -626,9 +626,9 @@
 		title="@Strings.FICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -647,9 +647,9 @@
 		title="@Strings.ETColor">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -667,9 +667,9 @@
 		title="@Strings.EIColor">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -697,9 +697,9 @@
 		title="@Strings.SRTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -717,9 +717,9 @@
 		title="@Strings.SRICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -738,9 +738,9 @@
 		title="@Strings.SSTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -758,9 +758,9 @@
 		title="@Strings.SSICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -779,9 +779,9 @@
 		title="@Strings.SETCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -799,9 +799,9 @@
 		title="@Strings.SEICol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -820,9 +820,9 @@
 		title="@Strings.MPCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
 			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
 			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
 			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
 			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
@@ -856,15 +856,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -876,15 +876,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -896,15 +896,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -916,15 +916,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -936,15 +936,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -956,15 +956,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -976,15 +976,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
@@ -996,15 +996,15 @@
 			<listEntry value="1">@Strings.FIELD_TYPE_BAT</listEntry>
 			<listEntry value="2">@Strings.FIELD_TYPE_HR</listEntry>
 			<listEntry value="3">@Strings.FIELD_TYPE_STEPS</listEntry>
-			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
-			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="6">@Strings.FIELD_TYPE_CALORIES</listEntry>
 			<listEntry value="7">@Strings.FIELD_TYPE_DISTANCE</listEntry>
 			<listEntry value="8">@Strings.FIELD_TYPE_FLOOR</listEntry>
+			<listEntry value="4">@Strings.FIELD_TYPE_PRESSURE</listEntry>
+			<listEntry value="5">@Strings.FIELD_TYPE_TEMPERATURE</listEntry>
 			<listEntry value="9">@Strings.FIELD_TYPE_ELEVATION</listEntry>
-			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="11">@Strings.FIELD_TYPE_SUNRISE</listEntry>
 			<listEntry value="12">@Strings.FIELD_TYPE_SUNSET</listEntry>
+			<listEntry value="10">@Strings.FIELD_TYPE_SUN_EVENT</listEntry>
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
