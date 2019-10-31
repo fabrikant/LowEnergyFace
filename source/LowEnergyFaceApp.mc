@@ -43,7 +43,6 @@ class LowEnergyFaceApp extends Application.AppBase {
     // onStop() is called when your application is exiting
     function onStop(state) {
     	Background.deleteTemporalEvent();
-    	Background.deleteActivityCompletedEvent();
     }
 
     // Return the initial view of your application here
@@ -72,26 +71,44 @@ class LowEnergyFaceApp extends Application.AppBase {
 	        if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
 	        	Application.Storage.setValue(STORAGE_KEY_WEATHER, data);
 	        }
-        }else if (data["Lat"] != null){
-        	System.println("capture location: "+data["Lat"]+" "+ data["Lon"]);
-        	Application.Properties.setValue("Lat", data["Lat"]);
-			Application.Properties.setValue("Lon", data["Lon"]);
-        }
-
-        var geoLatLong = [Application.Properties.getValue("Lat"),
-						  Application.Properties.getValue("Lon")];
-
-		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
-
-			var location = Activity.getActivityInfo().currentLocation;
-			if (location) {
-				location = location.toDegrees();
-				System.println("AFTER location: "+location);
-
-				Application.Properties.setValue("Lat", location[0].toFloat());
-				Application.Properties.setValue("Lon", location[1].toFloat());
-			}
+//        }else if (data["Lat"] != null){
+//        	System.println("capture location: "+data["Lat"]+" "+ data["Lon"]);
+//        	Application.Properties.setValue("Lat", data["Lat"]);
+//			Application.Properties.setValue("Lon", data["Lon"]);
+//        }
+//
+//        var geoLatLong = [Application.Properties.getValue("Lat"),
+//						  Application.Properties.getValue("Lon")];
+//
+//		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
+//
+//			var location = Activity.getActivityInfo().currentLocation;
+//			if (location) {
+//				location = location.toDegrees();
+//				System.println("AFTER location: "+location);
+//
+//				Application.Properties.setValue("Lat", location[0].toFloat());
+//				Application.Properties.setValue("Lon", location[1].toFloat());
+//			}
+//		}
+//
+//
+//         geoLatLong = [Application.Properties.getValue("Lat"),
+//						  Application.Properties.getValue("Lon")];
+//
+//		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
+//
+//			var info = Position.getInfo();
+//			if (info != null) {
+//				var location = info.position;
+//				location = location.toDegrees();
+//				Application.Properties.setValue("Lat", location[0].toFloat());
+//				Application.Properties.setValue("Lon", location[1].toFloat());
+//
+//			}
 		}
+
+
         registerEvents();
     }
 
@@ -100,9 +117,6 @@ class LowEnergyFaceApp extends Application.AppBase {
         return [new BackgroundService()];
     }
 
-//	function saveCurrentLocation(){
-//		//System.println("Start capture location");
-
 	function registerEvents(){
 
 		var kewOw = Application.Properties.getValue("keyOW");
@@ -110,18 +124,11 @@ class LowEnergyFaceApp extends Application.AppBase {
 			return;
 		}
 
-//		saveCurrentLocation();
-		Background.registerForActivityCompletedEvent();
+//		Background.registerForActivityCompletedEvent();
+//
+//		System.println("Lat: "+Application.Properties.getValue("Lat"));
+//		System.println("Lon: "+Application.Properties.getValue("Lon"));
 
-		System.println("Lat: "+Application.Properties.getValue("Lat"));
-		System.println("Lon: "+Application.Properties.getValue("Lon"));
-
-//		if (Application.Properties.getValue("Lat") == null || Application.Properties.getValue("Lon") == null){
-//			return;
-//		}
-//		if (Application.Properties.getValue("Lat")==0 && Application.Properties.getValue("Lon")){
-//			return;
-//		}
 
 		var geoLatLong = [Application.Properties.getValue("Lat"),
 						  Application.Properties.getValue("Lon")];
@@ -130,7 +137,7 @@ class LowEnergyFaceApp extends Application.AppBase {
 			return;
 		}
 
-		System.println("Start temporal event");
+//		System.println("Start temporal event");
 		var lastTime = Background.getLastTemporalEventTime();
 		var duration = new Time.Duration(600);
 		var now = Time.now();

@@ -5,8 +5,7 @@
 	<setting propertyKey="@Properties.keyOW" title="@Strings.keyOW" prompt="@Strings.KeyOWPrompt" helpUrl="https://openweathermap.org/api">
 		<settingConfig type="alphaNumeric" />
 	</setting>
-
-<!--
+<!-- 
 	<setting propertyKey="@Properties.Lat" title="@Strings.Lat" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
 		<settingConfig type="numeric" />
 	</setting>
@@ -14,7 +13,7 @@
 	<setting propertyKey="@Properties.Lon" title="@Strings.Lon" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
 		<settingConfig type="numeric" />
 	</setting>
--->	
+ -->	
 	<!--CLOCK SETTING -->
 	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">

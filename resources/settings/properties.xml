@@ -11,15 +11,15 @@
 
 	<!--WEATHER -->
 	
-	<!--
+
 	<property id="keyOW" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
 	<property id="Lat" type="float">54.989342</property>
 	<property id="Lon" type="float">73.3682123</property>
-	-->
+<!--
 	<property id="keyOW" type="string"></property>
 	<property id="Lat" type="float">0</property>
 	<property id="Lon" type="float">0</property>
-
+-->
 	<property id="WeathCol" type="number">0xFFFFFF</property>
 
 	<!--STATUS -->
@@ -27,7 +27,7 @@
 	<property id="ConFCol" type="number">0x000000</property>
 	<property id="MesTrCol" type="number">0xFFFFFF</property>
 	<property id="MesFCol" type="number">0x000000</property>
-	<property id="AlTrCol" type="number">0xFFFFFF</property>
+	<property id="AlTrCol" type="number">0x000000</property>
 	<property id="AlFCol" type="number">0x000000</property>
 	<property id="DNDTrCol" type="number">0xFFFFFF</property>
 	<property id="DNDFCol" type="number">0x000000</property>

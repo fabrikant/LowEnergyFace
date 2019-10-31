@@ -30,27 +30,27 @@ class BackgroundService extends System.ServiceDelegate {
 		);
 	}
 
-	function onActivityCompleted(activity){
-		var backgroundData;
-		var lat = null, lon = null;
-		var location = null;
-		var info = Position.getInfo();
-		if (info != null) {
-			location = info.position;
-		}
-		if (location == null){
-			location = Activity.getActivityInfo().currentLocation;
-		}
-		if (location != null) {
-			location = location.toDegrees();
-			//System.println("capture location: "+location);
-			backgroundData = {"Lat"=>location[0].toFloat(), "Lon" =>location[1].toFloat() };
-		} else {
-			backgroundData = {};
-		}
-		Background.exit(backgroundData);
-
-	}
+//	function onActivityCompleted(activity){
+//		var backgroundData;
+//		var lat = null, lon = null;
+//		var location = null;
+//		var info = Position.getInfo();
+//		if (info != null) {
+//			location = info.position;
+//		}
+//		if (location == null){
+//			location = Activity.getActivityInfo().currentLocation;
+//		}
+//		if (location != null) {
+//			location = location.toDegrees();
+//			//System.println("capture location: "+location);
+//			backgroundData = {"Lat"=>location[0].toFloat(), "Lon" =>location[1].toFloat() };
+//		} else {
+//			backgroundData = {};
+//		}
+//		Background.exit(backgroundData);
+//
+//	}
 
 //{
 //   "coord":{
