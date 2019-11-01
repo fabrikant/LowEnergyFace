@@ -10,8 +10,8 @@
 	<property id="DateCol" type="number">0xFFFFFF</property>
 
 	<!--WEATHER AND LOCATION -->
-	<property id="keyOW" type="string">1</property>
-	<property id="Lat" type="float">1</property>
+	<property id="keyOW" type="string">0</property>
+	<property id="Lat" type="float">0</property>
 	<property id="Lon" type="float">0</property>
 	<property id="WeathCol" type="number">0xFFFFFF</property>
 
