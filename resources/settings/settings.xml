@@ -5,15 +5,7 @@
 	<setting propertyKey="@Properties.keyOW" title="@Strings.keyOW" prompt="@Strings.KeyOWPrompt" helpUrl="https://openweathermap.org/api">
 		<settingConfig type="alphaNumeric" />
 	</setting>
-<!-- 
-	<setting propertyKey="@Properties.Lat" title="@Strings.Lat" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
-		<settingConfig type="numeric" />
-	</setting>
 
-	<setting propertyKey="@Properties.Lon" title="@Strings.Lon" prompt="@Strings.PositionPrompt" helpUrl="https://www.mapcoordinates.net/en">
-		<settingConfig type="numeric" />
-	</setting>
- -->	
 	<!--CLOCK SETTING -->
 	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">
@@ -30,6 +22,59 @@
 		<settingConfig type="boolean" />
 	</setting>
 
+	<!--UNIT TEMPERATURE -->
+	<setting propertyKey="@Properties.TU"
+		title="@Strings.TU">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.TUCelsius</listEntry>
+			<listEntry value="1">@Strings.TUFahrenheit</listEntry>
+			<listEntry value="2">@Strings.TUKelvin</listEntry>
+		</settingConfig>
+	</setting>
+
+	<!--UNIT PRESSURE -->
+	<setting propertyKey="@Properties.PrU"
+		title="@Strings.PrU">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.PrUMmHg</listEntry>
+			<listEntry value="1">@Strings.PrUPsi</listEntry>
+			<listEntry value="2">@Strings.PrUInchHg</listEntry>
+			<listEntry value="3">@Strings.PrUBar</listEntry>
+			<listEntry value="4">@Strings.PrUKPa</listEntry>
+			<listEntry value="5">@Strings.PrUhPa</listEntry>
+		</settingConfig>
+	</setting>
+
+	<!--UNIT DISTANCE -->
+	<setting propertyKey="@Properties.DU"
+		title="@Strings.DU">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.DUKilometer</listEntry>
+			<listEntry value="1">@Strings.DUMile</listEntry>
+		</settingConfig>
+	</setting>
+
+	<!--UNIT ELEVATION -->
+	<setting propertyKey="@Properties.ELU"
+		title="@Strings.ELU">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.ELUMeter</listEntry>
+			<listEntry value="1">@Strings.ELUFoot</listEntry>
+		</settingConfig>
+	</setting>
+	
+	<!--UNIT WIND SPEED -->
+	<setting propertyKey="@Properties.WU"
+		title="@Strings.WU">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.SpeedUnitMSec</listEntry>
+			<listEntry value="1">@Strings.SpeedUnitKmH</listEntry>
+			<listEntry value="2">@Strings.SpeedUnitMileH</listEntry>
+			<listEntry value="3">@Strings.SpeedUnitFtSec</listEntry>
+		</settingConfig>
+	</setting>
+
+	<!--BACKGROND COLOR -->	
 	<setting propertyKey="@Properties.BkGdCol"
 		title="@Strings.BkGdColTitle">
 		<settingConfig type="list">
@@ -50,8 +95,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.TimeCol"
-		title="@Strings.TimeCol">
+	<setting propertyKey="@Properties.DateCol"
+		title="@Strings.DateCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -70,8 +115,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DateCol"
-		title="@Strings.DateCol">
+	<setting propertyKey="@Properties.TimeCol"
+		title="@Strings.TimeCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -341,26 +386,6 @@
 
 
 	<!--HEART RATE -->
-	<setting propertyKey="@Properties.HrTCol"
-		title="@Strings.HrTCol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
 	<setting propertyKey="@Properties.HrICol"
 		title="@Strings.HrICol">
 		<settingConfig type="list">
@@ -380,10 +405,9 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-
-	<!--STEPS -->
-	<setting propertyKey="@Properties.StTCol"
-		title="@Strings.StTCol">
+	
+	<setting propertyKey="@Properties.HrTCol"
+		title="@Strings.HrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -401,7 +425,8 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-
+ 
+	<!--STEPS -->
 	<setting propertyKey="@Properties.StICol"
 		title="@Strings.StICol">
 		<settingConfig type="list">
@@ -422,9 +447,8 @@
 		</settingConfig>
 	</setting>
 
-	<!--PRESSURE -->
-	<setting propertyKey="@Properties.PrTCol"
-		title="@Strings.PrTCol">
+	<setting propertyKey="@Properties.StTCol"
+		title="@Strings.StTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -443,6 +467,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--PRESSURE -->
 	<setting propertyKey="@Properties.PrICol"
 		title="@Strings.PrICol">
 		<settingConfig type="list">
@@ -463,21 +488,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.PrU"
-		title="@Strings.PrU">
-		<settingConfig type="list">
-			<listEntry value="0">@Strings.PrUMmHg</listEntry>
-			<listEntry value="1">@Strings.PrUPsi</listEntry>
-			<listEntry value="2">@Strings.PrUInchHg</listEntry>
-			<listEntry value="3">@Strings.PrUBar</listEntry>
-			<listEntry value="4">@Strings.PrUKPa</listEntry>
-			<listEntry value="5">@Strings.PrUhPa</listEntry>
-		</settingConfig>
-	</setting>
-
-	<!--TEMPERATURE -->
-	<setting propertyKey="@Properties.TTCol"
-		title="@Strings.TTCol">
+	<setting propertyKey="@Properties.PrTCol"
+		title="@Strings.PrTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -496,6 +508,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--TEMPERATURE -->
 	<setting propertyKey="@Properties.TICol"
 		title="@Strings.TICol">
 		<settingConfig type="list">
@@ -516,18 +529,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.TU"
-		title="@Strings.TU">
-		<settingConfig type="list">
-			<listEntry value="0">@Strings.TUCelsius</listEntry>
-			<listEntry value="1">@Strings.TUFahrenheit</listEntry>
-			<listEntry value="2">@Strings.TUKelvin</listEntry>
-		</settingConfig>
-	</setting>
-
-	<!--CALORIES -->
-	<setting propertyKey="@Properties.CTCol"
-		title="@Strings.CTCol">
+	<setting propertyKey="@Properties.TTCol"
+		title="@Strings.TTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -546,6 +549,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--CALORIES -->
 	<setting propertyKey="@Properties.CICol"
 		title="@Strings.CICol">
 		<settingConfig type="list">
@@ -566,9 +570,8 @@
 		</settingConfig>
 	</setting>
 
-	<!--DISTANCE -->
-	<setting propertyKey="@Properties.DTCol"
-		title="@Strings.DTCol">
+	<setting propertyKey="@Properties.CTCol"
+		title="@Strings.CTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -587,6 +590,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--DISTANCE -->
 	<setting propertyKey="@Properties.DICol"
 		title="@Strings.DICol">
 		<settingConfig type="list">
@@ -607,17 +611,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.DU"
-		title="@Strings.DU">
-		<settingConfig type="list">
-			<listEntry value="0">@Strings.DUKilometer</listEntry>
-			<listEntry value="1">@Strings.DUMile</listEntry>
-		</settingConfig>
-	</setting>
-
-	<!--FLOORS -->
-	<setting propertyKey="@Properties.FTCol"
-		title="@Strings.FTCol">
+	<setting propertyKey="@Properties.DTCol"
+		title="@Strings.DTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -636,6 +631,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--FLOORS -->
 	<setting propertyKey="@Properties.FICol"
 		title="@Strings.FICol">
 		<settingConfig type="list">
@@ -656,9 +652,8 @@
 		</settingConfig>
 	</setting>
 
-	<!--ELEVATION -->
-	<setting propertyKey="@Properties.ELTCol"
-		title="@Strings.ELTCol">
+	<setting propertyKey="@Properties.FTCol"
+		title="@Strings.FTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -677,6 +672,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--ELEVATION -->
 	<setting propertyKey="@Properties.ELICol"
 		title="@Strings.ELICol">
 		<settingConfig type="list">
@@ -697,18 +693,8 @@
 		</settingConfig>
 	</setting>
 
-	<setting propertyKey="@Properties.ELU"
-		title="@Strings.ELU">
-		<settingConfig type="list">
-			<listEntry value="0">@Strings.ELUMeter</listEntry>
-			<listEntry value="1">@Strings.ELUFoot</listEntry>
-		</settingConfig>
-	</setting>
-
-
-	<!--SUNRISE -->
-	<setting propertyKey="@Properties.SRTCol"
-		title="@Strings.SRTCol">
+	<setting propertyKey="@Properties.ELTCol"
+		title="@Strings.ELTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -727,6 +713,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--SUNRISE -->
 	<setting propertyKey="@Properties.SRICol"
 		title="@Strings.SRICol">
 		<settingConfig type="list">
@@ -747,9 +734,8 @@
 		</settingConfig>
 	</setting>
 
-	<!--SUNSET -->
-	<setting propertyKey="@Properties.SSTCol"
-		title="@Strings.SSTCol">
+	<setting propertyKey="@Properties.SRTCol"
+		title="@Strings.SRTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -768,6 +754,7 @@
 		</settingConfig>
 	</setting>
 
+	<!--SUNSET -->
 	<setting propertyKey="@Properties.SSICol"
 		title="@Strings.SSICol">
 		<settingConfig type="list">
@@ -788,9 +775,8 @@
 		</settingConfig>
 	</setting>
 
-	<!--SUNEVENT -->
-	<setting propertyKey="@Properties.SETCol"
-		title="@Strings.SETCol">
+	<setting propertyKey="@Properties.SSTCol"
+		title="@Strings.SSTCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -809,8 +795,29 @@
 		</settingConfig>
 	</setting>
 
+	<!--SUNEVENT -->
 	<setting propertyKey="@Properties.SEICol"
 		title="@Strings.SEICol">
+		<settingConfig type="list">
+			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
+			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
+			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
+			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
+			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
+			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
+			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
+			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
+			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
+			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
+			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
+			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.SETCol"
+		title="@Strings.SETCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -849,18 +856,6 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-	
-	
-	<!--FIELD WIND -->
-	<setting propertyKey="@Properties.WU"
-		title="@Strings.WU">
-		<settingConfig type="list">
-			<listEntry value="0">@Strings.SpeedUnitMSec</listEntry>
-			<listEntry value="1">@Strings.SpeedUnitKmH</listEntry>
-			<listEntry value="2">@Strings.SpeedUnitMileH</listEntry>
-			<listEntry value="3">@Strings.SpeedUnitFtSec</listEntry>
-		</settingConfig>
-	</setting>
 
 	<!--FIELD TYPES -->
 	<setting propertyKey="@Properties.F1"
@@ -882,7 +877,7 @@
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
-
+	
 	<setting propertyKey="@Properties.F2"
 		title="@Strings.F2">
 		<settingConfig type="list">
@@ -1022,5 +1017,4 @@
 			<listEntry value="13">@Strings.FIELD_TYPE_MOON_PHASE</listEntry>
 		</settingConfig>
 	</setting>
-
 </settings>

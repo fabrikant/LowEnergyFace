@@ -10,7 +10,6 @@ using Toybox.Time.Gregorian;
 using Toybox.Position;
 using Toybox.Activity;
 
-
 class DataField extends WatchUi.Layer {
 
 	enum{
@@ -29,7 +28,6 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUNSET,
 		FIELD_TYPE_MOON_PHASE,
 	}
-
 	const imageText = {
 		FIELD_TYPE_HR          => "g",
 		FIELD_TYPE_STEPS       => "l",
@@ -43,7 +41,6 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUNRISE     => "n",
 		FIELD_TYPE_SUNSET      => "o",
 	};
-
 	const fieldSignatures = {
 		FIELD_TYPE_HR          => "Hr",
 		FIELD_TYPE_STEPS       => "St",
@@ -57,19 +54,15 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUNRISE     => "SR",
 		FIELD_TYPE_SUNSET      => "SS",
 	};
-
 	const font = Graphics.FONT_XTINY;
 	private var mImageFont;
 	private var mWidth, mHeight, oldValue = null, backgroundColor = null, type = null;
 
 
     function initialize(params) {
-
     	mWidth = params.get(:w);
     	mHeight = params.get(:h);
 		mImageFont = params.get(:imageFont);
-
-		//System.println("ini: "+id);
         var iniParams = {
         	:locX => params.get(:x),
         	:locY => params.get(:y),
@@ -81,17 +74,13 @@ class DataField extends WatchUi.Layer {
     }
 
 	function draw(settingsChanged, sunEventCalculator){
-
 		if (type == null || settingsChanged) {
 			type = Application.Properties.getValue("F"+getId());
 		}
-
 		if (backgroundColor == null || settingsChanged){
 			backgroundColor = Application.Properties.getValue("BkGdCol");
 		}
-
 		if (type == FIELD_TYPE_EMPTY && settingsChanged){
-
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
@@ -105,7 +94,6 @@ class DataField extends WatchUi.Layer {
 		//MOON PHASE
 		}else if (type == FIELD_TYPE_MOON_PHASE){
 			drawMoonPhase(settingsChanged);
-
 		///////////////////////////////////////////////////////////////////
 		//ALL SIMPLE FIELDS
 		}else {
@@ -132,22 +120,17 @@ class DataField extends WatchUi.Layer {
 				if (value == null) {
 					value = "";
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//STEPS
 			}else if (type == FIELD_TYPE_STEPS){
-
 				value = ActivityMonitor.getInfo().steps;
 				if (value > 9999){
 					value = (value/1000).format("%.1f")+"k";
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//PRESSURE
 			}else if (type == FIELD_TYPE_PRESSURE){
-
 				value = null;
-
 				var info = Activity.getActivityInfo();
 				if (info != null){
 					if (info.ambientPressure != null){
@@ -168,11 +151,9 @@ class DataField extends WatchUi.Layer {
 				if (value == null) {
 					value = "";
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//TEMPERATURE
 			}else if (type == FIELD_TYPE_TEMPERATURE){
-
 				value = "";
 				var iter = SensorHistory.getTemperatureHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
 				if (iter != null){
@@ -183,7 +164,6 @@ class DataField extends WatchUi.Layer {
 						}
 					}
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//CALORIES
 			}else if (type == FIELD_TYPE_CALORIES){
@@ -196,13 +176,11 @@ class DataField extends WatchUi.Layer {
 			}else if (type == FIELD_TYPE_DISTANCE){
 
 				value = Converter.distance(ActivityMonitor.getInfo().distance);
-
 			///////////////////////////////////////////////////////////////////
 			//FLOOR
 			}else if (type == FIELD_TYPE_FLOOR){
 
 				value = ActivityMonitor.getInfo().floorsClimbed;
-
 			///////////////////////////////////////////////////////////////////
 			//ELEVATION
 			}else if (type == FIELD_TYPE_ELEVATION){
@@ -233,39 +211,37 @@ class DataField extends WatchUi.Layer {
 				}else{
 					value = value.format("%d");
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//SUNRISE
 			}else if (type == FIELD_TYPE_SUNRISE){
 
 				var moment = getSunEvent(sunEventCalculator, SUNRISE);
 				if (moment == null) {
-					value = "gps?";
+					value = Application.loadResource(Rez.Strings.gps) +
+						Application.loadResource(Rez.Strings.notset);
 				} else {
 					value = getMomentView(moment);
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//SUNSET
 			}else if (type == FIELD_TYPE_SUNSET){
 
 				var moment = getSunEvent(sunEventCalculator, SUNSET);
 				if (moment == null) {
-					value = "gps?";
+					value = Application.loadResource(Rez.Strings.gps) +
+						Application.loadResource(Rez.Strings.notset);
 				} else {
 					value = getMomentView(moment);
 				}
-
 			///////////////////////////////////////////////////////////////////
 			//SUN EVENT
 			}else if (type == FIELD_TYPE_SUN_EVENT){
 
 				var momentSunset = getSunEvent(sunEventCalculator, SUNSET);
 				if(momentSunset == null){
-					value = "geo?";
+					value = Application.loadResource(Rez.Strings.gps) +
+						Application.loadResource(Rez.Strings.notset);
 				}else{
-					//System.println("Time.now().value() = "+Time.now().value());
-					//System.println("momentSunset.value() = "+momentSunset.value());
 					if (Time.now().value() < momentSunset.value()){
 						value = getMomentView(momentSunset);
 					}else{
@@ -273,68 +249,53 @@ class DataField extends WatchUi.Layer {
 					}
 				}
 			}
-
 			drawOrdinaryField({
 					:value => value,
 					:propNameTextColor => fieldSignatures[type]+"TCol",
 					:propNameImageColor => fieldSignatures[type]+"ICol",
 					:imageText => imageText[type],
 					:settingsChanged=>settingsChanged});
-
 		}
 	}
 
 	///////////////////////////////////////////////////////////////////////////
 	// SUN EVENTS
 	private function getMomentView(moment){
-
 		var info = Gregorian.info(moment,Time.FORMAT_SHORT);
 		//System.println(info.day.format("%02d")+"."+info.month.format("%02d")+"."+info.year.format("%d")+" "+info.hour.format("%02d")+":"+info.min.format("%02d"));
 		return info.hour.format("%02d")+":"+info.min.format("%02d");
-
 	}
 
 	private function getSunEvent(sunEventCalculator, event){
-
 		if (sunEventCalculator == null){
 			sunEventCalculator = new SunCalc();
 		}
-
 		var geoLatLong = [Application.Properties.getValue("Lat"),
 						  Application.Properties.getValue("Lon")];
-
 		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
 			return null;
 		}
-
 		var myLocation = new Position.Location(
 		    {
 		        :latitude => geoLatLong[0],
 		        :longitude => geoLatLong[1],
 		        :format => :degrees
-		    }).toRadians();
-
+		    }
+		).toRadians();
 		return sunEventCalculator.calculate(Time.now(),myLocation[0],myLocation[1],event);
-
 	}
 
 	///////////////////////////////////////////////////////////////////////////
 	// MOON PHASE FIELD
 	private function drawMoonPhase(settingsChanged){
-
 		var moment = Time.now();
 		var day = Time.Gregorian.info(moment, Time.FORMAT_SHORT).day;
-
 		if ((day != oldValue)|| settingsChanged){
-
 			oldValue = day;
 			var moonDay = Converter.moonPhase(Time.now());
-			//var moonDay = 2;
-
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
-
 			targetDc.setColor(Application.Properties.getValue("MPCol"), backgroundColor);
 			var font = Application.loadResource(Rez.Fonts.moon);
 			var daysPict = {
@@ -349,19 +310,15 @@ class DataField extends WatchUi.Layer {
 				24 => "8",
 				27 => "9"
 			};
-
 			var wIcon = targetDc.getTextWidthInPixels("5",font);
 			var width = mWidth - wIcon;
 			var centerToCenter = width/6;
 			var y = mHeight/2;
-
 			var firstVisibleDay = moonDay.toNumber() - 3;
 			if (firstVisibleDay < 0){
 				firstVisibleDay += 29;
 			}
-
 			for (var i = 0; i < 7; i += 1){
-
 				var nextDay = firstVisibleDay + i;
 				if(nextDay>29){
 					nextDay -= 30;
@@ -371,15 +328,10 @@ class DataField extends WatchUi.Layer {
 					targetDc.drawText(x, y, font, daysPict[nextDay], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 				}
 			}
-
 			var t = 1;
 			var v = 5;
-//			targetDc.drawLine(0, 0, mWidth, 0);
-//			targetDc.fillPolygon([[mWidth/2-t,0],[mWidth/2,v],[mWidth/2+t,0]]);
-
 			targetDc.drawLine(0, mHeight-1, mWidth, mHeight-1);
 			targetDc.fillPolygon([[mWidth/2-t,mHeight],[mWidth/2,mHeight-v],[mWidth/2+t,mHeight]]);
-
 		}
 	}
 
@@ -387,24 +339,17 @@ class DataField extends WatchUi.Layer {
 	// BATTERY FIELD
 
 	private function drawBattery(settingsChanged){
-
 		var absoluteValue = Math.round(System.getSystemStats().battery);
-
 		if (absoluteValue != oldValue || settingsChanged) {
-
 			var value = absoluteValue.format("%d")+((absoluteValue<100)?"%":"");
 			var targetDc = getDc();
-
 			fillTextPlace(targetDc, backgroundColor);
-
 			targetDc.setColor(Application.Properties.getValue("BatTCol"),Graphics.COLOR_TRANSPARENT);
 			targetDc.drawText(mHeight, 0, font, value, Graphics.TEXT_JUSTIFY_LEFT);
-
 			//Рисуем батарею
 			var bY = 8;
 			var bW = mHeight-3;
 			var bH = 10;
-
 			//Первая отрисовка. Рисуем контур батареи
 			if(oldValue==null || settingsChanged){
 				fillPicturePlace(targetDc, backgroundColor);
@@ -417,7 +362,6 @@ class DataField extends WatchUi.Layer {
 				oldValue = 0;
 			}
 			//Перерисовывать будем только если заливка должна поменяться.
-
 			var bW100 = bW-5;
 			var oldBW = Math.round(bW100*oldValue/100);
 			var newBW = Math.round(bW100*absoluteValue/100);
@@ -441,13 +385,19 @@ class DataField extends WatchUi.Layer {
 	// COMMON FUNCTIONS
 
 	private function drawOrdinaryField(drawOptions){
-
 		drawSimpleTextValue(drawOptions[:value],
 		                    Application.Properties.getValue(drawOptions[:propNameTextColor]),
 		                    drawOptions[:settingsChanged]);
 		if (drawOptions[:settingsChanged] || oldValue == null) {
-			drawSimpleImage(drawOptions[:imageText],
-			                Application.Properties.getValue(drawOptions[:propNameImageColor]));
+			var iColor = null;
+			try {
+				iColor = Application.Properties.getValue(drawOptions[:propNameImageColor]);
+			}
+			catch( ex ) {
+			    iColor = Application.Properties.getValue(drawOptions[:propNameTextColor]);
+			}
+
+			drawSimpleImage(drawOptions[:imageText], iColor);
 		}
 		oldValue = drawOptions[:value];
 	}
@@ -473,15 +423,10 @@ class DataField extends WatchUi.Layer {
 	private function fillTextPlace(targetDc, color){
 		targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
 		targetDc.fillRectangle(mHeight, 0, mWidth-mHeight, mHeight);
-//		targetDc.setColor(Graphics.COLOR_GREEN,Graphics.COLOR_TRANSPARENT);
-//		targetDc.drawRectangle(mHeight, 0, mWidth-mHeight, mHeight);
 	}
 
 	private function fillPicturePlace(targetDc, color){
 		targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
 		targetDc.fillRectangle(0, 0, mHeight, mHeight);
-//		targetDc.setColor(Graphics.COLOR_GREEN,Graphics.COLOR_TRANSPARENT);
-//		targetDc.drawRectangle(0, 0, mHeight, mHeight);
 	}
-
 }

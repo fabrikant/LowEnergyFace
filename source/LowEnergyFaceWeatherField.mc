@@ -3,13 +3,12 @@ using Toybox.Application;
 using Toybox.Graphics;
 using Toybox.System;
 using Toybox.Math;
-
+using Toybox.Time;
+using Toybox.Background;
 
 class WeatherField extends WatchUi.Layer {
 
 	private var mImageFont, mBackgroundColor = null;
-
-
 	const weatherFont = Application.loadResource(Rez.Fonts.weather);
 	const weatherText ={
 		"01" => "1",
@@ -22,7 +21,6 @@ class WeatherField extends WatchUi.Layer {
 		"13" => "8",
 		"50" => "9"
 	};
-
 	var coordinates = {};
 
     function initialize(params) {
@@ -34,7 +32,6 @@ class WeatherField extends WatchUi.Layer {
         };
 
         Layer.initialize(iniParams);
-
 		mImageFont = params.get(:imageFont);
 		coordinates[:owner] = {:x => 0, :y => 0,:w => params.get(:w), :h => params.get(:h)};
 		var targetDc = getDc();
@@ -43,103 +40,54 @@ class WeatherField extends WatchUi.Layer {
 		var x = 0;
 		var w = targetDc.getTextWidthInPixels("1", weatherFont);
 		coordinates[:iCloud] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]}; //iCloud -lol. icon cloud
-
 		///////////////////////////////////////////////////////////////////////
 		//TEMPERATURE
 		x += w;
 		w = targetDc.getTextWidthInPixels("-40°", Graphics.FONT_SYSTEM_LARGE);
 		coordinates[:temp] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
-
 		///////////////////////////////////////////////////////////////////////
 		//WIND
 		x += w;
 		w = targetDc.getTextWidthInPixels("999", Graphics.FONT_NUMBER_MEDIUM)-7;
 		var halfH = coordinates[:owner][:h]/2;
 		coordinates[:wind] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
-
 		///////////////////////////////////////////////////////////////////////
 		//ICONS HIMIDITY AND PRESSURE
 		x += w + 0.3*halfH;
 		coordinates[:iHum] = {:x => x, :y => 0, :w => halfH, :h => halfH};
 		coordinates[:iPres]  = {:x => x, :y => halfH, :w => halfH, :h => halfH};
-
 		///////////////////////////////////////////////////////////////////////
 		//TEXT FIELDS HIMIDITY AND PRESSURE
 		x += coordinates[:iPres][:w];
 		w = coordinates[:owner][:w] - x;
 		coordinates[:hum] = {:x => x, :y => 0, :w => w, :h => halfH};
 		coordinates[:pres] = {:x => x, :y => halfH, :w => w, :h => halfH};
-
 		Application.Storage.setValue(Application.getApp().STORAGE_KEY_WEATHER_OLD, null);
-
     }
 
 
 	function draw(settingsChanged, sunEventCalculator){
-
 		var app = Application.getApp();
-
 		var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
 		if (data == null){
-			/////////////////////////////////////////////////////////////
-			// DEBUG
-//			System.println("data null");
-//			var appid = Application.Properties.getValue("keyOW");
-//			if (appid.length() > 0){
-//				var lat = Application.Properties.getValue("Lat");
-//				var lon = Application.Properties.getValue("Lon");
-//				if (mBackgroundColor == null || settingsChanged){
-//					mBackgroundColor = Application.Properties.getValue("BkGdCol");
-//				}
-//				var tdc = getDc();
-//				var col = Application.Properties.getValue("WeathCol");
-//				clearField(tdc, mBackgroundColor, coordinates[:owner]);
-//				tdc.setColor(col, Graphics.COLOR_TRANSPARENT);
-//				tdc.drawText(15, 0, Graphics.FONT_SYSTEM_XTINY, "Lat: "+lat, Graphics.TEXT_JUSTIFY_LEFT);
-//				tdc.drawText(15, 16, Graphics.FONT_SYSTEM_XTINY, "Lon: "+lon, Graphics.TEXT_JUSTIFY_LEFT);
-//			}
-			/////////////////////////////////////////////////////////////
+			drawDataNullBaner();
 			return;
 		}
-
 		var targetDc = getDc();
 		if (mBackgroundColor == null || settingsChanged){
 			mBackgroundColor = Application.Properties.getValue("BkGdCol");
 		}
-
 		if (dataInvalid(data, app)){
-			/////////////////////////////////////////////////////////////
-			// DEBUG
-//			System.println("data invalid");
-			/////////////////////////////////////////////////////////////
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
 			Application.Storage.setValue(app.STORAGE_KEY_WEATHER, null);
 			Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, null);
 			return;
 		}
-
 		var oldData = Application.Storage.getValue(app.STORAGE_KEY_WEATHER_OLD);
-		/////////////////////////////////////////////////////////////
-		// DEBUG
-//		data[app.STORAGE_KEY_TEMP] = data[app.STORAGE_KEY_TEMP]+1;
-//		Application.Storage.setValue(app.STORAGE_KEY_WEATHER, data);
-//
-//		System.println("new: "+data);
-//		System.println("old: "+oldData);
-//		System.println("settingsChanged: "+settingsChanged);
-//		System.println("dataEqual(data, oldData, app): "+dataEqual(data, oldData, app));
-		/////////////////////////////////////////////////////////////
-
 		if (!settingsChanged && dataEqual(data, oldData, app)){
-			/////////////////////////////////////////////////////////////
-			// DEBUG
-//			System.println("data Equal");
-			/////////////////////////////////////////////////////////////
 			return;
 		}
-
 		var color = Application.Properties.getValue("WeathCol");
-
 		if (settingsChanged || oldData == null){
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
 			drawValue({:targetDc => targetDc,
@@ -174,7 +122,6 @@ class WeatherField extends WatchUi.Layer {
 					:backgroundColor => mBackgroundColor
 				});
 		}
-
 		///////////////////////////////////////////////////////////////////////
 		//TEMPERATURE
 		key = app.STORAGE_KEY_TEMP;
@@ -189,7 +136,6 @@ class WeatherField extends WatchUi.Layer {
 					:backgroundColor => mBackgroundColor
 				});
 		}
-
 		///////////////////////////////////////////////////////////////////////
 		//PRESSURE
 		key = app.STORAGE_KEY_PRESSURE;
@@ -204,7 +150,6 @@ class WeatherField extends WatchUi.Layer {
 					:backgroundColor => mBackgroundColor
 				});
 		}
-
 		///////////////////////////////////////////////////////////////////////
 		//HUMIDITY
 		key = app.STORAGE_KEY_HUMIDITY;
@@ -219,10 +164,8 @@ class WeatherField extends WatchUi.Layer {
 					:backgroundColor => mBackgroundColor
 				});
 		}
-
 		///////////////////////////////////////////////////////////////////////
 		//WIND DIRECTION AND SPEED
-
 		if (settingsChanged || !(fieldEqual(data, oldData, app.STORAGE_KEY_WIND_DEG) && fieldEqual(data, oldData, app.STORAGE_KEY_WIND_SPEED))){
 			clearField(targetDc, mBackgroundColor, coordinates[:wind]);
 			targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
@@ -243,7 +186,6 @@ class WeatherField extends WatchUi.Layer {
 
 		/////////////////////////////////////////////////////////////
 		// DEBUG
-
 //		border(coordinates[:owner]);
 //		border(coordinates[:iCloud]);
 //		border(coordinates[:temp]);
@@ -253,29 +195,22 @@ class WeatherField extends WatchUi.Layer {
 //		border(coordinates[:iHum]);
 //		border(coordinates[:hum]);
 		/////////////////////////////////////////////////////////////
-
-
 	}
 
 
 	private function windDirection(size, angle, leftTop){
-
 		var angleRad = Math.toRadians(angle);
 		var centerPoint = [size/2,size/2];
 		var coords = [[0+size/8,0],[size/2,size],[size-size/8,0],[size/2, size/4]];
-
 	    var result = new [4];
         var cos = Math.cos(angleRad);
         var sin = Math.sin(angleRad);
-
-		var min = [9999, 9999];
+		var min = [99999, 99999];
         // Transform the coordinates
         for (var i = 0; i < 4; i += 1) {
             var x = (coords[i][0] * cos) - (coords[i][1] * sin) + 0.5;
             var y = (coords[i][0] * sin) + (coords[i][1] * cos) + 0.5;
-
             result[i] = [centerPoint[0] + x, centerPoint[1] + y];
-
             if (min[0]>result[i][0]){
             	min[0]=result[i][0];
             }
@@ -283,14 +218,12 @@ class WeatherField extends WatchUi.Layer {
             	min[1]=result[i][1];
             }
         }
-
 		var offset = [leftTop[0]-min[0],leftTop[1]-min[1]];
         for (var i = 0; i < 4; i += 1) {
         	result[i][0] = result[i][0] + offset[0];
         	result[i][1] = result[i][1] + offset[1];
 		}
         return result;
-
 	}
 
 
@@ -306,16 +239,75 @@ class WeatherField extends WatchUi.Layer {
 			param[:text],
 			Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
 		);
-
 	}
 
+	private function drawDataNullBaner(){
+		var targetDc = getDc();
+		var color = Application.Properties.getValue("WeathCol");
+		mBackgroundColor = Application.Properties.getValue("BkGdCol");
+		targetDc.setColor(mBackgroundColor, Graphics.COLOR_TRANSPARENT);
+		targetDc.fillRectangle(0, 0, coordinates[:owner][:w], coordinates[:owner][:h]);
+		targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
+		var x = 10;
+		var y = 0;
+		if (Application.Properties.getValue("keyOW").length() > 0){
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Application.loadResource(Rez.Strings.key)+
+				Application.loadResource(Rez.Strings.delimiter)+
+				Application.loadResource(Rez.Strings.ok),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
+		}else{
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Application.loadResource(Rez.Strings.key)+
+				Application.loadResource(Rez.Strings.delimiter)+
+				Application.loadResource(Rez.Strings.notset),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
+		}
+		y = coordinates[:owner][:h]/2-4;
+		if (Application.Properties.getValue("Lat") > 0){
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Application.loadResource(Rez.Strings.gps)+
+				Application.loadResource(Rez.Strings.delimiter)+
+				Application.loadResource(Rez.Strings.ok),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
+		}else{
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Application.loadResource(Rez.Strings.gps)+
+				Application.loadResource(Rez.Strings.delimiter)+
+				Application.loadResource(Rez.Strings.notset),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
+		}
+		x = coordinates[:owner][:w]/2;
+		var val = Background.getTemporalEventRegisteredTime();
+		if (val != null){
+			var today = Time.Gregorian.info(val, Time.FORMAT_SHORT);
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Lang.format("$1$:$2$:$3$",
+					[
+						today.hour.format("%02d"),
+						today.min.format("%02d"),
+						today.sec.format("%02d")
+					]
+				),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
+			y = 0;
+			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
+				Application.loadResource(Rez.Strings.update),
+				Graphics.TEXT_JUSTIFY_LEFT
+			);
 
+		}
+	}
 
 	private function border(coord){
 		var targetDc = getDc();
 	    targetDc.setColor(Application.Properties.getValue("WeathCol"), Graphics.COLOR_TRANSPARENT);
 		targetDc.drawRectangle(coord[:x], coord[:y], coord[:w], coord[:h]);
-
 	}
 
 	private function clearField(targetDc, bckgrndColor, coord){
@@ -327,9 +319,8 @@ class WeatherField extends WatchUi.Layer {
 		var result = false;
 		if (data[app.STORAGE_KEY_RESPONCE_CODE].toNumber() != 200){
 			result = true;
-
 		}else{
-			if (Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 10800){
+			if (Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 7200){
 				//Old data
 				result = true;
 			}
@@ -338,7 +329,6 @@ class WeatherField extends WatchUi.Layer {
 	}
 
 	private function fieldEqual(data, oldData, fieldKey){
-
 		var result = true;
 		if (oldData == null){
 			result = false;
@@ -351,20 +341,12 @@ class WeatherField extends WatchUi.Layer {
 	}
 
 	private function dataEqual(data, oldData, app){
-
 		if (oldData == null){
 			return false;
 		} else {
-
 			if(data[app.STORAGE_KEY_DT]==oldData[app.STORAGE_KEY_DT]){
 				return true;
 			}
-			///////////////////////////////////////////////////////////////////
-			//DEBUG
-//			var key = app.STORAGE_KEY_TEMP;
-//			System.println("key "+key+" equal: "+(data[key] == oldData[key]));
-			///////////////////////////////////////////////////////////////////
-
 			if (( !(data[app.STORAGE_KEY_ICON].equals(oldData[app.STORAGE_KEY_ICON]))
 				|| data[app.STORAGE_KEY_TEMP] != oldData[app.STORAGE_KEY_TEMP])
 				|| (data[app.STORAGE_KEY_PRESSURE] != oldData[app.STORAGE_KEY_PRESSURE])

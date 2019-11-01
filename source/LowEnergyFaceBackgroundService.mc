@@ -1,57 +1,3 @@
-using Toybox.Background;
-using Toybox.Communications;
-using Toybox.System;
-using Toybox.Position;
-
-
-(:background)
-class BackgroundService extends System.ServiceDelegate {
-
-	function initialize() {
-        ServiceDelegate.initialize();
-    }
-
-	function onTemporalEvent() {
-
-		var url = "https://api.openweathermap.org/data/2.5/weather";
-		var lat = Application.Properties.getValue("Lat");
-		var lon = Application.Properties.getValue("Lon");
-		var appid = Application.Properties.getValue("keyOW");
-		Communications.makeWebRequest(
-			url,
-			{
-				"lat" => lat,
-				"lon" => lon,
-				"appid" => appid,
-				"units" => "metric"
-			},
-			{},
-			method(:responseCallback)
-		);
-	}
-
-//	function onActivityCompleted(activity){
-//		var backgroundData;
-//		var lat = null, lon = null;
-//		var location = null;
-//		var info = Position.getInfo();
-//		if (info != null) {
-//			location = info.position;
-//		}
-//		if (location == null){
-//			location = Activity.getActivityInfo().currentLocation;
-//		}
-//		if (location != null) {
-//			location = location.toDegrees();
-//			//System.println("capture location: "+location);
-//			backgroundData = {"Lat"=>location[0].toFloat(), "Lon" =>location[1].toFloat() };
-//		} else {
-//			backgroundData = {};
-//		}
-//		Background.exit(backgroundData);
-//
-//	}
-
 //{
 //   "coord":{
 //      "lon":73.37,
@@ -95,11 +41,42 @@ class BackgroundService extends System.ServiceDelegate {
 //   "cod":200
 //}
 
-	function responseCallback(responseCode, data) {
 
+
+using Toybox.Background;
+using Toybox.Communications;
+using Toybox.System;
+using Toybox.Position;
+
+
+(:background)
+class BackgroundService extends System.ServiceDelegate {
+
+	function initialize() {
+        ServiceDelegate.initialize();
+    }
+
+	function onTemporalEvent() {
+		var url = "https://api.openweathermap.org/data/2.5/weather";
+		var lat = Application.Properties.getValue("Lat");
+		var lon = Application.Properties.getValue("Lon");
+		var appid = Application.Properties.getValue("keyOW");
+		Communications.makeWebRequest(
+			url,
+			{
+				"lat" => lat,
+				"lon" => lon,
+				"appid" => appid,
+				"units" => "metric"
+			},
+			{},
+			method(:responseCallback)
+		);
+	}
+
+	function responseCallback(responseCode, data) {
 		var backgroundData;
 		var app = Application.getApp();
-
 		if (responseCode == 200) {
 			backgroundData = {
 				app.STORAGE_KEY_RESPONCE_CODE => responseCode,

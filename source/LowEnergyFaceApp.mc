@@ -25,14 +25,11 @@ class LowEnergyFaceApp extends Application.AppBase {
 		STORAGE_KEY_WIND_DEG,
 		STORAGE_KEY_DT,
 		STORAGE_KEY_WEATHER_OLD,
-
 	}
-
 	var gView;
 
     function initialize() {
         AppBase.initialize();
-
     }
 
     // onStart() is called on application start up
@@ -42,12 +39,10 @@ class LowEnergyFaceApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state) {
-    	Background.deleteTemporalEvent();
     }
 
     // Return the initial view of your application here
     function getInitialView() {
-
     	gView = new LowEnergyFaceView();
         return [ gView ];
     }
@@ -63,52 +58,11 @@ class LowEnergyFaceApp extends Application.AppBase {
 	///////////////////////////////////////////////////////////////////////////
 	// Background
 	function onBackgroundData(data) {
-     	///////////////////////////////////////////////////////////////////////
-    	//DEBUG
-        //System.println("onBackgroundData: "+data);
-     	///////////////////////////////////////////////////////////////////////
      	if (data[STORAGE_KEY_RESPONCE_CODE] != null){
 	        if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
 	        	Application.Storage.setValue(STORAGE_KEY_WEATHER, data);
 	        }
-//        }else if (data["Lat"] != null){
-//        	System.println("capture location: "+data["Lat"]+" "+ data["Lon"]);
-//        	Application.Properties.setValue("Lat", data["Lat"]);
-//			Application.Properties.setValue("Lon", data["Lon"]);
-//        }
-//
-//        var geoLatLong = [Application.Properties.getValue("Lat"),
-//						  Application.Properties.getValue("Lon")];
-//
-//		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
-//
-//			var location = Activity.getActivityInfo().currentLocation;
-//			if (location) {
-//				location = location.toDegrees();
-//				System.println("AFTER location: "+location);
-//
-//				Application.Properties.setValue("Lat", location[0].toFloat());
-//				Application.Properties.setValue("Lon", location[1].toFloat());
-//			}
-//		}
-//
-//
-//         geoLatLong = [Application.Properties.getValue("Lat"),
-//						  Application.Properties.getValue("Lon")];
-//
-//		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
-//
-//			var info = Position.getInfo();
-//			if (info != null) {
-//				var location = info.position;
-//				location = location.toDegrees();
-//				Application.Properties.setValue("Lat", location[0].toFloat());
-//				Application.Properties.setValue("Lon", location[1].toFloat());
-//
-//			}
-		}
-
-
+ 		}
         registerEvents();
     }
 
@@ -119,29 +73,33 @@ class LowEnergyFaceApp extends Application.AppBase {
 
 	function registerEvents(){
 
+		var nextTime = Background.getTemporalEventRegisteredTime();
+		if (nextTime != null){
+			return;
+		}
+    	var location = Activity.getActivityInfo().currentLocation;
+		if (location != null) {
+			location = location.toDegrees();
+			Application.Properties.setValue("Lat", location[0].toFloat());
+			Application.Properties.setValue("Lon", location[1].toFloat());
+		} else {
+			var geoLatLong = [Application.Properties.getValue("Lat"),
+							  Application.Properties.getValue("Lon")];
+			if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
+				return;
+			}
+		}
 		var kewOw = Application.Properties.getValue("keyOW");
 		if (kewOw.length() == 0){
 			return;
 		}
-
-//		Background.registerForActivityCompletedEvent();
-//
-//		System.println("Lat: "+Application.Properties.getValue("Lat"));
-//		System.println("Lon: "+Application.Properties.getValue("Lon"));
-
-
-		var geoLatLong = [Application.Properties.getValue("Lat"),
-						  Application.Properties.getValue("Lon")];
-
-		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
-			return;
-		}
-
-//		System.println("Start temporal event");
 		var lastTime = Background.getLastTemporalEventTime();
 		var duration = new Time.Duration(600);
+		var data = Application.Storage.getValue(STORAGE_KEY_WEATHER);
+		if (data == null){
+			duration = new Time.Duration(300);
+		}
 		var now = Time.now();
-
 		if (lastTime == null){
 			Background.registerForTemporalEvent(now);
 		}else{

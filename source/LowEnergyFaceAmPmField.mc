@@ -6,13 +6,9 @@ using Toybox.System;
 
 class AmPmField extends WatchUi.Layer {
 
-	const amString = "A", pmString = "P";
-
 	private var oldValue = null;
 
-
     function initialize(params) {
-
          var iniParams = {
         	:locX => params.get(:x),
         	:locY => params.get(:y),
@@ -39,5 +35,4 @@ class AmPmField extends WatchUi.Layer {
 		}
 		oldValue = value;
 	}
-
 }

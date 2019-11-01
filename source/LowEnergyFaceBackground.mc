@@ -8,7 +8,6 @@ class Background extends WatchUi.Drawable {
         var dictionary = {
             :identifier => "Background"
         };
-
         Drawable.initialize(dictionary);
     }
 
@@ -17,5 +16,4 @@ class Background extends WatchUi.Drawable {
         dc.setColor(Graphics.COLOR_TRANSPARENT, Application.getApp().getProperty("BkGdCol"));
         dc.clear();
     }
-
 }

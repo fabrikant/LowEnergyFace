@@ -9,17 +9,10 @@
 	<property id="TimeCol" type="number">0xFFFFFF</property>
 	<property id="DateCol" type="number">0xFFFFFF</property>
 
-	<!--WEATHER -->
-	
-
-	<property id="keyOW" type="string">f4faa0b19b479a5fbd67dd91cf216183</property>
-	<property id="Lat" type="float">54.989342</property>
-	<property id="Lon" type="float">73.3682123</property>
-<!--
-	<property id="keyOW" type="string"></property>
-	<property id="Lat" type="float">0</property>
+	<!--WEATHER AND LOCATION -->
+	<property id="keyOW" type="string">1</property>
+	<property id="Lat" type="float">1</property>
 	<property id="Lon" type="float">0</property>
--->
 	<property id="WeathCol" type="number">0xFFFFFF</property>
 
 	<!--STATUS -->
@@ -102,7 +95,5 @@
 	<property id="F6" type="number">7</property>
 	<property id="F7" type="number">3</property>
 	<property id="F8" type="number">1</property>
-
-
 
 </properties>

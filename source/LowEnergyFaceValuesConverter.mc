@@ -6,10 +6,8 @@ using Toybox.Time;
 module Converter {
 
 	function pressure(rawData){
-
 		var value = rawData; /*Pa */
 		var unit  = Application.Properties.getValue("PrU");
-
 		if (unit == 0){ /*MmHg*/
 			value = Math.round(rawData/133.322).format("%d");
 		}else if (unit == 1){ /*Psi*/
@@ -23,12 +21,10 @@ module Converter {
 		}else if (unit == 5){ /*hPa*/
 			value = (rawData/100).format("%d");
 		}
-
 		return value;
 	}
 
 	function temperature(rawData){
-
 		var value = rawData;/*C*/
 		var unit  = Application.Properties.getValue("TU");
 		if (unit == 1){ /*F*/
@@ -51,22 +47,17 @@ module Converter {
 	}
 
 	function elevation(rawData){
-
 		var value = rawData;//meters
 		var unit =  Application.Properties.getValue("ELU");
-
-		if (unit == 1){ /*ft*/
+		if (unit == 1){ /*foot*/
 			value = rawData*3.281;
 		}
-
 		return value;
 	}
 
 	function speed(rawData){
-
 		var value = rawData;//meters/sec
 		var unit =  Application.Properties.getValue("WU");
-
 		if (unit == 1){ /*km/h*/
 			value = rawData*3.6;
 		}else if (unit == 2){ /*mile/h*/
@@ -78,10 +69,8 @@ module Converter {
 	}
 
 	function speedUnitName(){
-
 		var value = Application.loadResource(Rez.Strings.SpeedUnitMSec);//meters/sec
 		var unit =  Application.Properties.getValue("WU");
-
 		if (unit == 1){ /*km/h*/
 			value = Application.loadResource(Rez.Strings.SpeedUnitKmH);
 		}else if (unit == 2){ /*mile/h*/
@@ -147,5 +136,4 @@ module Converter {
 		}
 	    return v;
 	}
-
 }

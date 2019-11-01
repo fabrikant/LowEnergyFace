@@ -7,7 +7,7 @@
 	<string id="DateCol" scope="foreground">Date Color</string>
 	<string id="MilitaryFormatTitle" scope="foreground">Military Format for 24 Hour
 		Time</string>
-	<string id="HFt01" scope="foreground">Use hours format 01, 02...</string>
+	<string id="HFt01" scope="foreground">Use format 01 for horse .</string>
 	<string id="AmPm" scope="foreground">Show am-pm for 12 Hour Time</string>
 	<string id="Am" scope="foreground">am</string>
 	<string id="Pm" scope="foreground">pm</string>
@@ -20,15 +20,15 @@
 	<string id="PositionPrompt" scope="foreground">For quick start weather and sun events</string>
 	
 	<!--Status -->
-	<string id="ConTrCol" scope="foreground">Connect image color if active</string>
-	<string id="ConFCol" scope="foreground">Connect image color if not active</string>
-	<string id="MesTrCol" scope="foreground">Message image color if have messages</string>
-	<string id="MesFCol" scope="foreground">Message image color if no messages</string>
-	<string id="AlTrCol" scope="foreground">Alarm image color if set</string>
-	<string id="AlFCol" scope="foreground">Alarm image color if set</string>
-	<string id="DNDTrCol" scope="foreground">DND image color if active</string>
-	<string id="DNDFCol" scope="foreground">DND image color if not active</string>
-	<string id="SetBkGdCol" scope="foreground">Set backgrond color for hide</string>
+	<string id="ConTrCol" scope="foreground">Connected</string>
+	<string id="ConFCol" scope="foreground">Diskonnected</string>
+	<string id="MesTrCol" scope="foreground">New notifications</string>
+	<string id="MesFCol" scope="foreground">No notifications</string>
+	<string id="AlTrCol" scope="foreground">Аlarm set</string>
+	<string id="AlFCol" scope="foreground">Alarm not set</string>
+	<string id="DNDTrCol" scope="foreground">DND set</string>
+	<string id="DNDFCol" scope="foreground">DND not set</string>
+	<string id="SetBkGdCol" scope="foreground">Set background color for hide</string>
 
 	<!--Battery -->
 	<string id="BatTCol" scope="foreground">Battery Value Color</string>
@@ -160,5 +160,13 @@
 	<string id="SpeedUnitKmH" scope="foreground">k/h</string>
 	<string id="SpeedUnitMileH" scope="foreground">m/h</string>
 	<string id="SpeedUnitFtSec" scope="foreground">f/s</string>
+	
+	<!--WEATHER NULL BANNER -->
+	<string id="gps" scope="foreground">gps</string>
+	<string id="key" scope="foreground">key</string>
+	<string id="ok" scope="foreground">ok</string>
+	<string id="notset" scope="foreground">?</string>
+	<string id="update" scope="foreground">next upd</string>
+	<string id="delimiter" scope="foreground"> :</string>
 	
 </strings>

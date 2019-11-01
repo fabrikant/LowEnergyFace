@@ -7,18 +7,14 @@ using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.Math;
 
-
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
 	const countColumns = 3;
 	const countFields =14;//8 data fields + am-pm + 4 ststus icons + weather
-
 	const imageFont = Application.loadResource(Rez.Fonts.images);
-
 	var cViews = {};
 	var fieldLayers = new [countFields];
 	var settingsChanged = false;
-
 	var sunEventCalculator = null; //will be initialize if need
 	var oldTime = null, oldDate = null;
 
@@ -26,7 +22,6 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		cViews[:time] = View.findDrawableById("TimeLabel");
 		cViews[:date] = View.findDrawableById("DateLabel");
-
 		var useFonts = {:time => Graphics.FONT_NUMBER_THAI_HOT,
 						:date => Graphics.FONT_XTINY,
 						:fields => Graphics.FONT_XTINY
@@ -52,10 +47,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		var fieldHight = Graphics.getFontHeight(useFonts[:fields]);
 		//Ширина поля = отрезок равный высоте, чтобы получился квадрат под иконку + место под 4 символа
 		var fieldWidth = fieldHight+dc.getTextWidthInPixels("00001", useFonts[:fields]);
-
 		var r = screenCoord[1][:x]/2;
 		var verticalOffset = Math.round((r - Math.sqrt(Math.pow(r, 2)-Math.pow(fieldWidth, 2)))/2);
-
 		var fieldXCoord = new [countColumns];
 		fieldXCoord[0] = Math.round((screenCoord[1][:x]-fieldWidth*countColumns)/2);
 		for (var i=1 ; i < countColumns; i+=1){
@@ -64,9 +57,6 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		var fieldYCoord = new [4];
 		fieldYCoord[0] = verticalOffset;
-//		fieldYCoord[3] = screenCoord[1][:y]-verticalOffset-fieldHight;
-//		fieldYCoord[2] = fieldYCoord[3] - fieldHight;
-//		fieldYCoord[1] = fieldYCoord[2] - fieldHight;
 		fieldYCoord[1] = timeCoord[1][:y]-10;
 		fieldYCoord[2] = fieldYCoord[1] + fieldHight;
 		fieldYCoord[3] = fieldYCoord[2] + fieldHight;
@@ -106,18 +96,13 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		for (var i=0 ; i < countFields; i+=1){
 			View.addLayer(fieldLayers[i]);
 		}
-
 	}
 
 	function drawTime(){
-
 		var clockTime  = System.getClockTime();
 		var newOldTime = clockTime.hour.format("%d")+clockTime.min.format("%d");
-
 		if (settingsChanged || oldTime != newOldTime){
-
 			cViews[:time].setColor(Application.Properties.getValue("TimeCol"));
-
 	        // Get the current time and format it correctly
 	        var timeFormat = "$1$:$2$";
 	        var hours = clockTime.hour;
@@ -133,9 +118,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	        if (Application.Properties.getValue("HFt01")){
         		hours = hours.format("%02d");
         	}
-
 	        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
-
 	        // Update the view
 	        cViews[:time].setText(timeString);
         }
@@ -143,9 +126,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	}
 
 	function drawDate(){
-
 		var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-
 		if (settingsChanged || oldDate != today.day){
 			cViews[:date].setColor(Application.Properties.getValue("DateCol"));
 			var dateString = Lang.format(
@@ -163,16 +144,13 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	}
 
     function initialize() {
-
         WatchFace.initialize();
-
     }
 
     // Load your resources here
     function onLayout(dc) {
         setLayout(Rez.Layouts.WatchFace(dc));
         resizeView(dc);
-        //Application.getApp().registerTimeEvent();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -183,11 +161,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
-
 		drawTime();
 		drawDate();
-
-        // Call the parent onUpdate function to redraw the layout
         for (var i=0 ; i < countFields; i+=1){
 			fieldLayers[i].draw(settingsChanged, sunEventCalculator);
 		}
@@ -203,27 +178,10 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-
- 		//emergency start service
-	   	var app = Application.getApp();
-    	var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
-    	var needStartServise = data == null;
-
-    	///////////////////////////////////////////////////////////////////////
-    	//DEBUG
-//		var now = Time.now().value();
-//		var load = data[app.STORAGE_KEY_RECIEVE].toNumber();
-//		var dur = now - load;
-//    	System.println("now: "+now+" load: "+load+" dur: "+dur);
-    	///////////////////////////////////////////////////////////////////////
-
-    	if (needStartServise || Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 1000){
-    		app.registerEvents();
-    	}
+    	Application.getApp().registerEvents();
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
     }
-
 }
