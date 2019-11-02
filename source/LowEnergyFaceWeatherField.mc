@@ -66,7 +66,7 @@ class WeatherField extends WatchUi.Layer {
     }
 
 
-	function draw(settingsChanged, sunEventCalculator){
+	function draw(settingsChanged){
 		var app = Application.getApp();
 		var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
 		if (data == null){

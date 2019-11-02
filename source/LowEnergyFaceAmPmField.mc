@@ -19,7 +19,7 @@ class AmPmField extends WatchUi.Layer {
         Layer.initialize(iniParams);
     }
 
-	function draw(settingsChanged, sunEventCalculator){
+	function draw(settingsChanged){
 		var value = System.getClockTime().hour >= 12 ? Application.loadResource(Rez.Strings.Pm) : Application.loadResource(Rez.Strings.Am);
 		if (settingsChanged || value != oldValue){
 

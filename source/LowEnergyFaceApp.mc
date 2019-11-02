@@ -43,7 +43,7 @@ class LowEnergyFaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-    	gView = new LowEnergyFaceView();
+     	gView = new LowEnergyFaceView();
         return [ gView ];
     }
 

@@ -73,7 +73,7 @@ class DataField extends WatchUi.Layer {
         Layer.initialize(iniParams);
     }
 
-	function draw(settingsChanged, sunEventCalculator){
+	function draw(settingsChanged){
 		if (type == null || settingsChanged) {
 			type = Application.Properties.getValue("F"+getId());
 		}
@@ -220,7 +220,7 @@ class DataField extends WatchUi.Layer {
 			//SUNRISE
 			}else if (type == FIELD_TYPE_SUNRISE){
 
-				var moment = getSunEvent(sunEventCalculator, SUNRISE);
+				var moment = getSunEvent(SUNRISE, true);
 				if (moment == null) {
 					value = Application.loadResource(Rez.Strings.gps) +
 						Application.loadResource(Rez.Strings.notset);
@@ -231,7 +231,7 @@ class DataField extends WatchUi.Layer {
 			//SUNSET
 			}else if (type == FIELD_TYPE_SUNSET){
 
-				var moment = getSunEvent(sunEventCalculator, SUNSET);
+				var moment = getSunEvent(SUNSET, true);
 				if (moment == null) {
 					value = Application.loadResource(Rez.Strings.gps) +
 						Application.loadResource(Rez.Strings.notset);
@@ -242,15 +242,21 @@ class DataField extends WatchUi.Layer {
 			//SUN EVENT
 			}else if (type == FIELD_TYPE_SUN_EVENT){
 
-				var momentSunset = getSunEvent(sunEventCalculator, SUNSET);
-				if(momentSunset == null){
+				var sunset =  getSunEvent(SUNSET, false);
+				var now = Time.now().value();
+				if(sunset == null){
 					value = Application.loadResource(Rez.Strings.gps) +
 						Application.loadResource(Rez.Strings.notset);
 				}else{
-					if (Time.now().value() < momentSunset.value()){
-						value = getMomentView(momentSunset);
-					}else{
-						value = getMomentView(getSunEvent(sunEventCalculator, SUNRISE));
+					if (sunset.value() < now){
+						value = getMomentView(getSunEvent(SUNRISE, true));
+					} else {
+						var sunrise = getSunEvent(SUNRISE, false);
+						if (now < sunrise.value()){
+							value = getMomentView(sunrise);
+						}else{
+							value = getMomentView(sunset);
+						}
 					}
 				}
 			}
@@ -269,10 +275,7 @@ class DataField extends WatchUi.Layer {
 		return info.hour.format("%02d")+":"+info.min.format("%02d");
 	}
 
-	private function getSunEvent(sunEventCalculator, event){
-		if (sunEventCalculator == null){
-			sunEventCalculator = new SunCalc();
-		}
+	private function getSunEvent(event, allowTomorrow){
 		var geoLatLong = [Application.Properties.getValue("Lat"),
 						  Application.Properties.getValue("Lon")];
 		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
@@ -285,7 +288,23 @@ class DataField extends WatchUi.Layer {
 		        :format => :degrees
 		    }
 		).toRadians();
-		return sunEventCalculator.calculate(Time.now(),myLocation[0],myLocation[1],event);
+
+		var now = Time.now();
+		var d = now.value().toDouble() / Time.Gregorian.SECONDS_PER_DAY - 0.5 + 2440588 - 2451545;
+		var cache = Application.getApp().gView.sunEventsCache;
+		if (cache[:day] == null){
+			var sunEventCalculator = new SunCalc();
+			sunEventCalculator.fillCache(cache, now, myLocation[0],myLocation[1]);
+		}else if ( !(Math.round(cache[:day]).equals(Math.round(d)) && cache[:lat].equals(myLocation[0]) && cache[:lon].equals(myLocation[1]) )){
+			var sunEventCalculator = new SunCalc();
+			sunEventCalculator.fillCache(cache, now, myLocation[0],myLocation[1]);
+		}
+		var eventMoment = cache[event][0];
+		if (eventMoment.value() < now.value() && allowTomorrow){
+			eventMoment = cache[event][1];
+		}
+
+		return eventMoment;
 	}
 
 	///////////////////////////////////////////////////////////////////////////

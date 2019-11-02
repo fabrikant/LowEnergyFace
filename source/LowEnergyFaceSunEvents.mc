@@ -98,7 +98,7 @@ class SunCalc {
 
     // lat and lng in radians
     function calculate(moment, lat, lng, what) {
-        var d = moment.value().toDouble() / DAYS - 0.5 + J1970 - J2000;
+        var d = getDay(moment);
         if (lastD != d || lastLng != lng) {
             n = round(d - J0 + lng / PI2);
 //          ds = J0 - lng / PI2 + n;
@@ -135,4 +135,24 @@ class SunCalc {
 
         return fromJulian(Jrise);
     }
+
+    private function getDay(moment){
+    	return moment.value().toDouble() / DAYS - 0.5 + J1970 - J2000;
+    }
+
+    function fillCache(cache, moment, lat, lon){
+		var d = getDay(moment);
+		cache[:day] = d;
+		cache[:lat] = lat;
+		cache[:lon] = lon;
+		cache[SUNRISE] = new [2];
+		cache[SUNSET] = new [2];
+		cache[SUNRISE][0] = calculate(moment, lat, lon, SUNRISE);
+		cache[SUNSET][0] = calculate(moment, lat, lon, SUNSET);
+
+		d = moment.add(new Time.Duration(DAYS));
+		cache[SUNRISE][1] = calculate(moment, lat, lon, SUNRISE);
+		cache[SUNSET][1] = calculate(moment, lat, lon, SUNSET);
+    }
+
 }

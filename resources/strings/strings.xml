@@ -150,7 +150,7 @@
 	<!--WIND UNITS -->
 	<!--USE VERY!!!! SHOT STRING. its displayed on screen-->
 	<string id="SpeedUnitMSec" scope="foreground">m/s</string>
-	<string id="SpeedUnitKmH" scope="foreground">k/h</string>
+	<string id="SpeedUnitKmH" scope="foreground">km/h</string>
 	<string id="SpeedUnitMileH" scope="foreground">m/h</string>
 	<string id="SpeedUnitFtSec" scope="foreground">f/s</string>
 	

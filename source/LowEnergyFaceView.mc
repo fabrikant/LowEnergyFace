@@ -9,14 +9,16 @@ using Toybox.Math;
 
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
+
+
 	const countColumns = 3;
 	const countFields =14;//8 data fields + am-pm + 4 ststus icons + weather
 	const imageFont = Application.loadResource(Rez.Fonts.images);
 	var cViews = {};
 	var fieldLayers = new [countFields];
 	var settingsChanged = false;
-	var sunEventCalculator = null; //will be initialize if need
 	var oldTime = null, oldDate = null;
+	var sunEventsCache = {};
 
 	function resizeView(dc){
 
@@ -171,7 +173,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		drawTime();
 		drawDate();
         for (var i=0 ; i < countFields; i+=1){
-			fieldLayers[i].draw(settingsChanged, sunEventCalculator);
+			fieldLayers[i].draw(settingsChanged);
 		}
 		View.onUpdate(dc);
 		settingsChanged = false;

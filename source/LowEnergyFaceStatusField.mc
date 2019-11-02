@@ -38,7 +38,7 @@ class StatusField extends WatchUi.Layer {
         center = params.get(:w)/2;
     }
 
-	function draw(settingsChanged, sunEventCalculator){
+	function draw(settingsChanged){
 		var value = false;
 		var id = getId();
 
