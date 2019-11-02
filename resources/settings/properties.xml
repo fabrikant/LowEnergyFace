@@ -5,7 +5,11 @@
 	<property id="HFt01" type="boolean">true</property>
 	<property id="AmPm" type="boolean">true</property>
 
-	<property id="BkGdCol" type="number">0x000000</property>
+	<property id="BkGdCol1" type="number">0x000000</property>
+	<property id="BkGdCol2" type="number">0x000000</property>
+	<property id="BkGdCol3" type="number">0x000000</property>
+
+
 	<property id="TimeCol" type="number">0xFFFFFF</property>
 	<property id="DateCol" type="number">0xFFFFFF</property>
 
@@ -33,52 +37,41 @@
 	<property id="BatLPVal" type="number">15</property>
 
 	<!--HEART RATE -->
-	<property id="HrTCol" type="number">0xFFFFFF</property>
-	<property id="HrICol" type="number">0xFFFFFF</property>
+	<property id="HrCol" type="number">0xFFFFFF</property>
 
 	<!--STEPS -->
-	<property id="StTCol" type="number">0xFFFFFF</property>
-	<property id="StICol" type="number">0xFFFFFF</property>
+	<property id="StCol" type="number">0xFFFFFF</property>
 
 	<!--PRESSURE -->
-	<property id="PrTCol" type="number">0xFFFFFF</property>
-	<property id="PrICol" type="number">0xFFFFFF</property>
+	<property id="PrCol" type="number">0xFFFFFF</property>
 	<property id="PrU" type="number">0</property>
 
 	<!--TEMPERATURE -->
-	<property id="TTCol" type="number">0xFFFFFF</property>
-	<property id="TICol" type="number">0xFFFFFF</property>
+	<property id="TCol" type="number">0xFFFFFF</property>
 	<property id="TU" type="number">0</property>
 
 	<!--CALORIES -->
-	<property id="CTCol" type="number">0xFFFFFF</property>
-	<property id="CICol" type="number">0xFFFFFF</property>
+	<property id="CCol" type="number">0xFFFFFF</property>
 
 	<!--DISTANCE -->
-	<property id="DTCol" type="number">0xFFFFFF</property>
-	<property id="DICol" type="number">0xFFFFFF</property>
+	<property id="DCol" type="number">0xFFFFFF</property>
 	<property id="DU" type="number">0</property>
 
 	<!--FLOORS -->
-	<property id="FTCol" type="number">0xFFFFFF</property>
-	<property id="FICol" type="number">0xFFFFFF</property>
+	<property id="FCol" type="number">0xFFFFFF</property>
 
 	<!--ELEVATION -->
-	<property id="ELTCol" type="number">0xFFFFFF</property>
-	<property id="ELICol" type="number">0xFFFFFF</property>
+	<property id="ELCol" type="number">0xFFFFFF</property>
 	<property id="ELU" type="number">0</property>
 
 	<!--SUNRISE -->
-	<property id="SRTCol" type="number">0xFFFFFF</property>
-	<property id="SRICol" type="number">0xFFFFFF</property>
+	<property id="SRCol" type="number">0xFFFFFF</property>
 
 	<!--SUNSET -->
-	<property id="SSTCol" type="number">0xFFFFFF</property>
-	<property id="SSICol" type="number">0xFFFFFF</property>
+	<property id="SSCol" type="number">0xFFFFFF</property>
 
 	<!--SUNEVENT -->
-	<property id="SETCol" type="number">0xFFFFFF</property>
-	<property id="SEICol" type="number">0xFFFFFF</property>
+	<property id="SECol" type="number">0xFFFFFF</property>
 	
 	<!--MOON PHASE -->
 	<property id="MPCol" type="number">0xFFFFFF</property>

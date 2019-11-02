@@ -22,6 +22,8 @@ class StatusField extends WatchUi.Layer {
 	private var oldValue = null;
 	private var mImageFont;
 
+	private var center;
+
     function initialize(params) {
 
 		mImageFont = params.get(:imageFont);
@@ -33,6 +35,7 @@ class StatusField extends WatchUi.Layer {
         	:identifier => params.get(:id)
         };
         Layer.initialize(iniParams);
+        center = params.get(:w)/2;
     }
 
 	function draw(settingsChanged, sunEventCalculator){
@@ -49,7 +52,7 @@ class StatusField extends WatchUi.Layer {
 			value = System.getDeviceSettings().doNotDisturb;
 		}
 		if (settingsChanged || value != oldValue){
-			var backgroundColor = Application.Properties.getValue("BkGdCol");
+			var backgroundColor = Application.Properties.getValue("BkGdCol2");
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
@@ -57,7 +60,7 @@ class StatusField extends WatchUi.Layer {
 
 			if (color != backgroundColor && imageText[id] != null) {
 				targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
-				targetDc.drawText(0, 0, mImageFont, imageText[id], Graphics.TEXT_JUSTIFY_LEFT);
+				targetDc.drawText(center, center, mImageFont, imageText[id], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 			}
 		}
 		oldValue = value;

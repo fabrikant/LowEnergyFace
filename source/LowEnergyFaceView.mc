@@ -22,6 +22,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		cViews[:time] = View.findDrawableById("TimeLabel");
 		cViews[:date] = View.findDrawableById("DateLabel");
+		cViews[:background] = View.findDrawableById("Background");
+
 		var useFonts = {:time => Graphics.FONT_NUMBER_THAI_HOT,
 						:date => Graphics.FONT_XTINY,
 						:fields => Graphics.FONT_XTINY
@@ -38,7 +40,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		///////////////////////////////////////////////////////////////////////
 		//Дата
-		var dateTop = timeCoord[0][:y]-Graphics.getFontDescent(useFonts[:date]);
+		var dateTop = timeCoord[0][:y]-Graphics.getFontDescent(useFonts[:date])+4;
 		cViews[:date].setLocation(screenCoord[1][:x]/2, dateTop);
 
 		///////////////////////////////////////////////////////////////////////
@@ -78,10 +80,11 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		///////////////////////////////////////////////////////////////////////
 		// Status fields
 		var App = Application.getApp();
-		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-fieldHight, :y=>timeCoord[0][:y], 				:w =>fieldHight, :h=>fieldHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_CONNECT});
-		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-fieldHight, :y=>timeCoord[0][:y]+fieldHight, 	:w =>fieldHight, :h=>fieldHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_MESSAGE});
-		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-fieldHight, :y=>timeCoord[0][:y]+2*fieldHight,  :w =>fieldHight, :h=>fieldHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_DND});
-		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-fieldHight, :y=>timeCoord[0][:y]+3*fieldHight,  :w =>fieldHight, :h=>fieldHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_ALARM});
+		var statusHight = fieldHight - 2;
+		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y], 				:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_CONNECT});
+		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+statusHight, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_MESSAGE});
+		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_DND});
+		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_ALARM});
 
 		///////////////////////////////////////////////////////////////////////
 		// Weather field
@@ -96,6 +99,9 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		for (var i=0 ; i < countFields; i+=1){
 			View.addLayer(fieldLayers[i]);
 		}
+
+		cViews[:background][:delimiters][0] = weatherY + weatherH;
+		cViews[:background][:delimiters][1] = fieldYCoord[1];
 	}
 
 	function drawTime(){
@@ -161,6 +167,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc) {
+    	//cViews[:background].drawIfNeed(dc, settingsChanged);
 		drawTime();
 		drawDate();
         for (var i=0 ; i < countFields; i+=1){

@@ -78,7 +78,12 @@ class DataField extends WatchUi.Layer {
 			type = Application.Properties.getValue("F"+getId());
 		}
 		if (backgroundColor == null || settingsChanged){
-			backgroundColor = Application.Properties.getValue("BkGdCol");
+			var bkGndColorId = "BkGdCol";
+			if (getId() == 1){
+				backgroundColor = Application.Properties.getValue(bkGndColorId+"1");
+			} else {
+				backgroundColor = Application.Properties.getValue(bkGndColorId+"3");
+			}
 		}
 		if (type == FIELD_TYPE_EMPTY && settingsChanged){
 			var targetDc = getDc();
@@ -251,8 +256,7 @@ class DataField extends WatchUi.Layer {
 			}
 			drawOrdinaryField({
 					:value => value,
-					:propNameTextColor => fieldSignatures[type]+"TCol",
-					:propNameImageColor => fieldSignatures[type]+"ICol",
+					:propNameColor => fieldSignatures[type]+"Col",
 					:imageText => imageText[type],
 					:settingsChanged=>settingsChanged});
 		}
@@ -384,19 +388,14 @@ class DataField extends WatchUi.Layer {
 	// COMMON FUNCTIONS
 
 	private function drawOrdinaryField(drawOptions){
-		drawSimpleTextValue(drawOptions[:value],
-		                    Application.Properties.getValue(drawOptions[:propNameTextColor]),
-		                    drawOptions[:settingsChanged]);
+		var color = Application.Properties.getValue(drawOptions[:propNameColor]);
+		drawSimpleTextValue(
+			drawOptions[:value],
+		    color,
+		    drawOptions[:settingsChanged]
+		);
 		if (drawOptions[:settingsChanged] || oldValue == null) {
-			var iColor = null;
-			try {
-				iColor = Application.Properties.getValue(drawOptions[:propNameImageColor]);
-			}
-			catch( ex ) {
-			    iColor = Application.Properties.getValue(drawOptions[:propNameTextColor]);
-			}
-
-			drawSimpleImage(drawOptions[:imageText], iColor);
+			drawSimpleImage(drawOptions[:imageText], color);
 		}
 		oldValue = drawOptions[:value];
 	}

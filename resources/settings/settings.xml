@@ -6,19 +6,6 @@
 		<settingConfig type="alphaNumeric" />
 	</setting>
 
-
-<!--
-	<setting propertyKey="@Properties.Lat"
-		title="@Strings.Lat">
-		<settingConfig type="numeric" readonly="true"/>
-	</setting>
-	<setting propertyKey="@Properties.Lon"
-		title="@Strings.Lon">
-		<settingConfig type="numeric" readonly="true"/>
-	</setting>
- -->
- 
- 
 	<!--CLOCK SETTING -->
 	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">
@@ -88,8 +75,8 @@
 	</setting>
 
 	<!--BACKGROND COLOR -->	
-	<setting propertyKey="@Properties.BkGdCol"
-		title="@Strings.BkGdColTitle">
+	<setting propertyKey="@Properties.BkGdCol1"
+		title="@Strings.BkGdCol1">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -107,7 +94,48 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-
+	
+	<setting propertyKey="@Properties.BkGdCol2"
+		title="@Strings.BkGdCol2">
+		<settingConfig type="list">
+			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
+			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
+			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
+			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
+			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
+			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
+			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
+			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
+			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
+			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
+			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
+			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
+		</settingConfig>
+	</setting>
+	
+	<setting propertyKey="@Properties.BkGdCol3"
+		title="@Strings.BkGdCol3">
+		<settingConfig type="list">
+			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
+			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
+			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
+			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
+			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
+			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
+			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
+			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
+			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
+			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
+			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
+			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
+			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
+		</settingConfig>
+	</setting>
+	
+	<!--WEATHER -->
 	<setting propertyKey="@Properties.WeathCol"
 		title="@Strings.WeathCol">
 		<settingConfig type="list">
@@ -127,7 +155,8 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-
+	
+	<!--DATE -->
 	<setting propertyKey="@Properties.DateCol"
 		title="@Strings.DateCol">
 		<settingConfig type="list">
@@ -147,29 +176,10 @@
 			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
 		</settingConfig>
 	</setting>
-
+	
+	<!--TIME -->
 	<setting propertyKey="@Properties.TimeCol"
 		title="@Strings.TimeCol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.WeathCol"
-		title="@Strings.WeathCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -439,28 +449,8 @@
 
 
 	<!--HEART RATE -->
-	<setting propertyKey="@Properties.HrICol"
-		title="@Strings.HrICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-	
-	<setting propertyKey="@Properties.HrTCol"
-		title="@Strings.HrTCol">
+	<setting propertyKey="@Properties.HrCol"
+		title="@Strings.HrCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -480,28 +470,8 @@
 	</setting>
  
 	<!--STEPS -->
-	<setting propertyKey="@Properties.StICol"
-		title="@Strings.StICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.StTCol"
-		title="@Strings.StTCol">
+	<setting propertyKey="@Properties.StCol"
+		title="@Strings.StCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -521,28 +491,8 @@
 	</setting>
 
 	<!--PRESSURE -->
-	<setting propertyKey="@Properties.PrICol"
-		title="@Strings.PrICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.PrTCol"
-		title="@Strings.PrTCol">
+	<setting propertyKey="@Properties.PrCol"
+		title="@Strings.PrCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -562,28 +512,8 @@
 	</setting>
 
 	<!--TEMPERATURE -->
-	<setting propertyKey="@Properties.TICol"
-		title="@Strings.TICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.TTCol"
-		title="@Strings.TTCol">
+	<setting propertyKey="@Properties.TCol"
+		title="@Strings.TCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -603,28 +533,8 @@
 	</setting>
 
 	<!--CALORIES -->
-	<setting propertyKey="@Properties.CICol"
-		title="@Strings.CICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.CTCol"
-		title="@Strings.CTCol">
+	<setting propertyKey="@Properties.CCol"
+		title="@Strings.CCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -644,28 +554,8 @@
 	</setting>
 
 	<!--DISTANCE -->
-	<setting propertyKey="@Properties.DICol"
-		title="@Strings.DICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.DTCol"
-		title="@Strings.DTCol">
+	<setting propertyKey="@Properties.DCol"
+		title="@Strings.DCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -685,28 +575,8 @@
 	</setting>
 
 	<!--FLOORS -->
-	<setting propertyKey="@Properties.FICol"
-		title="@Strings.FICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.FTCol"
-		title="@Strings.FTCol">
+	<setting propertyKey="@Properties.FCol"
+		title="@Strings.FCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -726,28 +596,8 @@
 	</setting>
 
 	<!--ELEVATION -->
-	<setting propertyKey="@Properties.ELICol"
-		title="@Strings.ELICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.ELTCol"
-		title="@Strings.ELTCol">
+	<setting propertyKey="@Properties.ELCol"
+		title="@Strings.ELCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -767,28 +617,8 @@
 	</setting>
 
 	<!--SUNRISE -->
-	<setting propertyKey="@Properties.SRICol"
-		title="@Strings.SRICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.SRTCol"
-		title="@Strings.SRTCol">
+	<setting propertyKey="@Properties.SRCol"
+		title="@Strings.SRCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -808,28 +638,8 @@
 	</setting>
 
 	<!--SUNSET -->
-	<setting propertyKey="@Properties.SSICol"
-		title="@Strings.SSICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.SSTCol"
-		title="@Strings.SSTCol">
+	<setting propertyKey="@Properties.SSCol"
+		title="@Strings.SSCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -849,28 +659,8 @@
 	</setting>
 
 	<!--SUNEVENT -->
-	<setting propertyKey="@Properties.SEICol"
-		title="@Strings.SEICol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.SETCol"
-		title="@Strings.SETCol">
+	<setting propertyKey="@Properties.SECol"
+		title="@Strings.SECol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>

@@ -74,7 +74,7 @@ class WeatherField extends WatchUi.Layer {
 		}
 		var targetDc = getDc();
 		if (mBackgroundColor == null || settingsChanged){
-			mBackgroundColor = Application.Properties.getValue("BkGdCol");
+			mBackgroundColor = Application.Properties.getValue("BkGdCol1");
 		}
 		if (dataInvalid(data, app)){
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);

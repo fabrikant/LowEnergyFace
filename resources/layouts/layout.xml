@@ -8,6 +8,4 @@
 		justification="Graphics.TEXT_JUSTIFY_CENTER"
 		font="Graphics.FONT_XTINY" x="center" y="68">
 	</label>
-
-
 </layout>

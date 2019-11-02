@@ -23,7 +23,7 @@ class AmPmField extends WatchUi.Layer {
 		var value = System.getClockTime().hour >= 12 ? Application.loadResource(Rez.Strings.Pm) : Application.loadResource(Rez.Strings.Am);
 		if (settingsChanged || value != oldValue){
 
-			var backgroundColor = Application.Properties.getValue("BkGdCol");
+			var backgroundColor = Application.Properties.getValue("BkGdCol2");
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();

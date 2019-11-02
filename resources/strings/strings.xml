@@ -2,7 +2,10 @@
 
 	<string id="AppName" scope="foreground">LowEnergyFace</string>
 
-	<string id="BkGdColTitle" scope="foreground">Background Color</string>
+	<string id="BkGdCol1" scope="foreground">Background Color Top</string>
+	<string id="BkGdCol2" scope="foreground">Background Color Mid</string>
+	<string id="BkGdCol3" scope="foreground">Background Color Bottom</string>
+	
 	<string id="TimeCol" scope="foreground">Time Color</string>
 	<string id="DateCol" scope="foreground">Date Color</string>
 	<string id="MilitaryFormatTitle" scope="foreground">Military Format for 24 Hour
@@ -39,52 +42,41 @@
 	<string id="BatLPVal" scope="foreground">Low Battery Value</string>
 
 	<!--Heart Rate -->
-	<string id="HrTCol" scope="foreground">Heart Rate Value Color</string>
-	<string id="HrICol" scope="foreground">Heart Rate Image Color</string>
+	<string id="HrCol" scope="foreground">Heart Rate Color</string>
 
 	<!--Steps -->
-	<string id="StTCol" scope="foreground">Steps Value Color</string>
-	<string id="StICol" scope="foreground">Steps Image Color</string>
+	<string id="StCol" scope="foreground">Steps Color</string>
 
 	<!--Pressure -->
-	<string id="PrTCol" scope="foreground">Pressure Value Color</string>
-	<string id="PrICol" scope="foreground">Pressure Image Color</string>
+	<string id="PrCol" scope="foreground">Pressure Color</string>
 	<string id="PrU" scope="foreground">Pressure Unit</string>
 
 	<!--TEMPERATURE -->
-	<string id="TTCol" scope="foreground">Temperature Value Color</string>
-	<string id="TICol" scope="foreground">Temperature Image Color</string>
+	<string id="TCol" scope="foreground">Temperature Color</string>
 	<string id="TU" scope="foreground">Temperature Unit</string>
 
 	<!--CALORIES -->
-	<string id="CTCol" scope="foreground">Calories Value Color</string>
-	<string id="CICol" scope="foreground">Calories Image Color</string>
+	<string id="CCol" scope="foreground">Calories Color</string>
 
 	<!--DISTANCE -->
-	<string id="DTCol" scope="foreground">Distance Value Color</string>
-	<string id="DICol" scope="foreground">Distance Image Color</string>
+	<string id="DCol" scope="foreground">Distance Color</string>
 	<string id="DU" scope="foreground">Distance Unit</string>
 
 	<!--FLOORS -->
-	<string id="FTCol" scope="foreground">Floors Value Color</string>
-	<string id="FICol" scope="foreground">Floors Image Color</string>
+	<string id="FCol" scope="foreground">Floors Color</string>
 
 	<!--ELEVATION -->
-	<string id="ELTCol" scope="foreground">Elevation Value Color</string>
-	<string id="ELICol" scope="foreground">Elevation Image Color</string>
+	<string id="ELCol" scope="foreground">Elevation Color</string>
 	<string id="ELU" scope="foreground">Elevation Unit</string>
 
 	<!--SUNRISE -->
-	<string id="SRTCol" scope="foreground">Sunrise Value Color</string>
-	<string id="SRICol" scope="foreground">Sunrise Image Color</string>
+	<string id="SRCol" scope="foreground">Sunrise Color</string>
 
 	<!--SUNSET -->
-	<string id="SSTCol" scope="foreground">Sunset Value Color</string>
-	<string id="SSICol" scope="foreground">Sunset Image Color</string>
+	<string id="SSCol" scope="foreground">Sunset Color</string>
 
 	<!--SUNEVENT -->
-	<string id="SETCol" scope="foreground">Sun Event Value Color</string>
-	<string id="SEICol" scope="foreground">Sun Event Image Color</string>
+	<string id="SECol" scope="foreground">Sun Event Color</string>
 	
 	<!--WIND -->
 	<string id="WU" scope="foreground">Wind Speed Unit</string>
