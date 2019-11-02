@@ -70,7 +70,6 @@ class WeatherField extends WatchUi.Layer {
 		var app = Application.getApp();
 		var data = Application.Storage.getValue(app.STORAGE_KEY_WEATHER);
 		if (data == null){
-			drawDataNullBaner();
 			return;
 		}
 		var targetDc = getDc();
@@ -239,69 +238,6 @@ class WeatherField extends WatchUi.Layer {
 			param[:text],
 			Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
 		);
-	}
-
-	private function drawDataNullBaner(){
-		var targetDc = getDc();
-		var color = Application.Properties.getValue("WeathCol");
-		mBackgroundColor = Application.Properties.getValue("BkGdCol");
-		targetDc.setColor(mBackgroundColor, Graphics.COLOR_TRANSPARENT);
-		targetDc.fillRectangle(0, 0, coordinates[:owner][:w], coordinates[:owner][:h]);
-		targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
-		var x = 10;
-		var y = 0;
-		if (Application.Properties.getValue("keyOW").length() > 0){
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Application.loadResource(Rez.Strings.key)+
-				Application.loadResource(Rez.Strings.delimiter)+
-				Application.loadResource(Rez.Strings.ok),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-		}else{
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Application.loadResource(Rez.Strings.key)+
-				Application.loadResource(Rez.Strings.delimiter)+
-				Application.loadResource(Rez.Strings.notset),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-		}
-		y = coordinates[:owner][:h]/2-4;
-		if (Application.Properties.getValue("Lat") > 0){
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Application.loadResource(Rez.Strings.gps)+
-				Application.loadResource(Rez.Strings.delimiter)+
-				Application.loadResource(Rez.Strings.ok),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-		}else{
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Application.loadResource(Rez.Strings.gps)+
-				Application.loadResource(Rez.Strings.delimiter)+
-				Application.loadResource(Rez.Strings.notset),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-		}
-		x = coordinates[:owner][:w]/2;
-		var val = Background.getTemporalEventRegisteredTime();
-		if (val != null){
-			var today = Time.Gregorian.info(val, Time.FORMAT_SHORT);
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Lang.format("$1$:$2$:$3$",
-					[
-						today.hour.format("%02d"),
-						today.min.format("%02d"),
-						today.sec.format("%02d")
-					]
-				),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-			y = 0;
-			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY,
-				Application.loadResource(Rez.Strings.update),
-				Graphics.TEXT_JUSTIFY_LEFT
-			);
-
-		}
 	}
 
 	private function border(coord){

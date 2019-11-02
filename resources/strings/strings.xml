@@ -18,6 +18,7 @@
 	<string id="Lat" scope="foreground">latitude in degrees</string>
 	<string id="Lon" scope="foreground">longitude in degrees</string>
 	<string id="PositionPrompt" scope="foreground">For quick start weather and sun events</string>
+	<string id="WeathCol" scope="foreground">Weather widget color</string>
 	
 	<!--Status -->
 	<string id="ConTrCol" scope="foreground">Connected</string>
@@ -166,7 +167,7 @@
 	<string id="key" scope="foreground">key</string>
 	<string id="ok" scope="foreground">ok</string>
 	<string id="notset" scope="foreground">?</string>
-	<string id="update" scope="foreground">next upd</string>
+	<string id="update" scope="foreground">upd </string>
 	<string id="delimiter" scope="foreground"> :</string>
 	
 </strings>

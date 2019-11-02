@@ -262,7 +262,6 @@ class DataField extends WatchUi.Layer {
 	// SUN EVENTS
 	private function getMomentView(moment){
 		var info = Gregorian.info(moment,Time.FORMAT_SHORT);
-		//System.println(info.day.format("%02d")+"."+info.month.format("%02d")+"."+info.year.format("%d")+" "+info.hour.format("%02d")+":"+info.min.format("%02d"));
 		return info.hour.format("%02d")+":"+info.min.format("%02d");
 	}
 

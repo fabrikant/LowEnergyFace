@@ -58,7 +58,8 @@ class LowEnergyFaceApp extends Application.AppBase {
 	///////////////////////////////////////////////////////////////////////////
 	// Background
 	function onBackgroundData(data) {
-     	if (data[STORAGE_KEY_RESPONCE_CODE] != null){
+    	if (data[STORAGE_KEY_RESPONCE_CODE] != null){
+     		Application.Storage.setValue(STORAGE_KEY_RESPONCE_CODE, data[STORAGE_KEY_RESPONCE_CODE]);
 	        if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
 	        	Application.Storage.setValue(STORAGE_KEY_WEATHER, data);
 	        }
@@ -73,10 +74,6 @@ class LowEnergyFaceApp extends Application.AppBase {
 
 	function registerEvents(){
 
-		var nextTime = Background.getTemporalEventRegisteredTime();
-		if (nextTime != null){
-			return;
-		}
     	var location = Activity.getActivityInfo().currentLocation;
 		if (location != null) {
 			location = location.toDegrees();
@@ -95,10 +92,6 @@ class LowEnergyFaceApp extends Application.AppBase {
 		}
 		var lastTime = Background.getLastTemporalEventTime();
 		var duration = new Time.Duration(600);
-		var data = Application.Storage.getValue(STORAGE_KEY_WEATHER);
-		if (data == null){
-			duration = new Time.Duration(300);
-		}
 		var now = Time.now();
 		if (lastTime == null){
 			Background.registerForTemporalEvent(now);
