@@ -2,6 +2,7 @@
     <iq:application entry="LowEnergyFaceApp" id="2ee2852388f243f2833f6b36a2d6912f" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.1.0" name="@Strings.AppName" type="watchface" version="0.2.17">
         <iq:products>
             <iq:product id="vivoactive3"/>
+            <iq:product id="vivoactive3m"/>
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="Background"/>
@@ -11,6 +12,7 @@
         </iq:permissions>
         <iq:languages>
             <iq:language>eng</iq:language>
+            <iq:language>rus</iq:language>
         </iq:languages>
         <iq:barrels/>
     </iq:application>

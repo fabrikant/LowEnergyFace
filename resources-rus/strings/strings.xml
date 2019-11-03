@@ -1,0 +1,156 @@
+<strings>
+
+	<string id="AppName" scope="foreground">LowEnergyFace</string>
+
+	<string id="BkGdCol1" scope="foreground">Цвет фона верх</string>
+	<string id="BkGdCol2" scope="foreground">Цвет фона центр</string>
+	<string id="BkGdCol3" scope="foreground">Цвет фона низ</string>
+	
+	<string id="TimeCol" scope="foreground">Цвет циферблата</string>
+	<string id="DateCol" scope="foreground">Цвет даты</string>
+	<string id="MilitaryFormatTitle" scope="foreground">Военный формат для 24 часового формата (без знака :)</string>
+	<string id="HFt01" scope="foreground">Выводить лидирующий 0 для часов</string>
+	<string id="AmPm" scope="foreground">Показывать Am и Pm для 12 часового формата</string>
+	<string id="Am" scope="foreground">am</string>
+	<string id="Pm" scope="foreground">pm</string>
+	
+	<!--Weather -->
+	<string id="keyOW" scope="foreground">API ключ для погодыr</string>
+	<string id="KeyOWPrompt" scope="foreground">Получите его бесплатно</string>
+	<string id="Lat" scope="foreground">Широта в градусах</string>
+	<string id="Lon" scope="foreground">Долгота в градусах</string>
+	<string id="PositionPrompt" scope="foreground">Для быстрого запуска погода и расчета закатов.восходов</string>
+	<string id="WeathCol" scope="foreground">Цвет погодного виджета</string>
+	
+	<!--Status -->
+	<string id="ConTrCol" scope="foreground">Подключено</string>
+	<string id="ConFCol" scope="foreground">Не подключено</string>
+	<string id="MesTrCol" scope="foreground">Есть уведомления</string>
+	<string id="MesFCol" scope="foreground">Нет уведомлений</string>
+	<string id="AlTrCol" scope="foreground">Будильники установлены</string>
+	<string id="AlFCol" scope="foreground">Будильники не установлены</string>
+	<string id="DNDTrCol" scope="foreground">Режим не беспокоить активирован</string>
+	<string id="DNDFCol" scope="foreground">Режим не беспокоить не активирован</string>
+	<string id="SetBkGdCol" scope="foreground">Установите цвет фона, чтобы спрятать</string>
+
+	<!--Battery -->
+	<string id="BatTCol" scope="foreground">Цвет значения заряда</string>
+	<string id="BatICol" scope="foreground">Цвет контура батареи</string>
+	<string id="BatHPCol" scope="foreground">Цвет высокого заряда</string>
+	<string id="BatLPCol" scope="foreground">Цвет низкого заряда</string>
+	<string id="BatLPVal" scope="foreground">Значение низкого заряда</string>
+
+	<!--Heart Rate -->
+	<string id="HrCol" scope="foreground">Цвет поля пульса</string>
+
+	<!--Steps -->
+	<string id="StCol" scope="foreground">Цвет поля шагов</string>
+
+	<!--Pressure -->
+	<string id="PrCol" scope="foreground">Цвет поля давления</string>
+	<string id="PrU" scope="foreground">Ед. изм. давления</string>
+
+	<!--TEMPERATURE -->
+	<string id="TCol" scope="foreground">Цвет поля температуры</string>
+	<string id="TU" scope="foreground">Ед. изм. температуры</string>
+
+	<!--CALORIES -->
+	<string id="CCol" scope="foreground">Цвет поля калорий</string>
+
+	<!--DISTANCE -->
+	<string id="DCol" scope="foreground">Цвет поля дистанции</string>
+	<string id="DU" scope="foreground">Ед. изм. дистанции</string>
+
+	<!--FLOORS -->
+	<string id="FCol" scope="foreground">Цвет поля этажей</string>
+
+	<!--ELEVATION -->
+	<string id="ELCol" scope="foreground">Цвет поля высоты над уровнем моря</string>
+	<string id="ELU" scope="foreground">Ед. изм. высоты</string>
+
+	<!--SUNRISE -->
+	<string id="SRCol" scope="foreground">Цвет поля время восхода</string>
+
+	<!--SUNSET -->
+	<string id="SSCol" scope="foreground">Цвет поля время заката</string>
+
+	<!--SUNEVENT -->
+	<string id="SECol" scope="foreground">Цвет поля ближ. солн. события</string>
+	
+	<!--WIND -->
+	<string id="WU" scope="foreground">Ед. изм. скорости ветра</string>
+	
+	<!--MOON PHASE -->
+	<string id="MPCol" scope="foreground">Цвет поля фазы луны</string>
+
+	<!--COLORS -->
+	<string id="COLOR_WHITE" scope="foreground">Белый</string>
+	<string id="COLOR_LT_GRAY" scope="foreground">Светло-серый</string>
+	<string id="COLOR_DK_GRAY" scope="foreground">Темно-серый</string>
+	<string id="COLOR_BLACK" scope="foreground">Черный</string>
+	<string id="COLOR_RED" scope="foreground">Красный</string>
+	<string id="COLOR_DK_RED" scope="foreground">Темно-красный</string>
+	<string id="COLOR_ORANGE" scope="foreground">Оранжевый</string>
+	<string id="COLOR_YELLOW" scope="foreground">Желтый</string>
+	<string id="COLOR_GREEN" scope="foreground">Зеленый</string>
+	<string id="COLOR_DK_GREEN" scope="foreground">Темно-зеленый</string>
+	<string id="COLOR_BLUE" scope="foreground">Синий</string>
+	<string id="COLOR_DK_BLUE" scope="foreground">Темно-синий</string>
+	<string id="COLOR_PURPLE" scope="foreground">Пурпурный</string>
+	<string id="COLOR_PINK" scope="foreground">Розовый</string>
+
+	<!--FIELD TYPES -->
+	<string id="FIELD_TYPE_EMPTY" scope="foreground">Пусто</string>
+	<string id="FIELD_TYPE_BAT" scope="foreground">Заряд батареи</string>
+	<string id="FIELD_TYPE_HR" scope="foreground">Пульс</string>
+	<string id="FIELD_TYPE_STEPS" scope="foreground">Шаги</string>
+	<string id="FIELD_TYPE_PRESSURE" scope="foreground">Давление (внутренний датчик)</string>
+	<string id="FIELD_TYPE_TEMPERATURE" scope="foreground">Температура (внутренний датчик)</string>
+	<string id="FIELD_TYPE_CALORIES" scope="foreground">Калории</string>
+	<string id="FIELD_TYPE_DISTANCE" scope="foreground">Дистанция</string>
+	<string id="FIELD_TYPE_FLOOR" scope="foreground">Этажи</string>
+	<string id="FIELD_TYPE_ELEVATION" scope="foreground">Высота над уровнем моря</string>
+	<string id="FIELD_TYPE_SUN_EVENT" scope="foreground">Ближайший восхода/заката</string>
+	<string id="FIELD_TYPE_SUNRISE" scope="foreground">Восход</string>
+	<string id="FIELD_TYPE_SUNSET" scope="foreground">Закат</string>
+	<string id="FIELD_TYPE_MOON_PHASE" scope="foreground">Фазы луны</string>
+
+	<!--FIELD NAMES -->
+	<string id="F1" scope="foreground">Поле 1</string>
+	<string id="F2" scope="foreground">Поле 2</string>
+	<string id="F3" scope="foreground">Поле 3</string>
+	<string id="F4" scope="foreground">Поле 4</string>
+	<string id="F5" scope="foreground">Поле 5</string>
+	<string id="F6" scope="foreground">Поле 6</string>
+	<string id="F7" scope="foreground">Поле 7</string>
+	<string id="F8" scope="foreground">Поле 8</string>
+
+	<!--PRESSURE UNITS -->
+	<string id="PrUMmHg" scope="foreground">мм ртутного столба</string>
+	<string id="PrUPsi" scope="foreground">фунт/дюйм2</string>
+	<string id="PrUInchHg" scope="foreground">дюймы ртутного столба</string>
+	<string id="PrUBar" scope="foreground">бар</string>
+	<string id="PrUKPa" scope="foreground">кило Паскаль</string>
+	<string id="PrUhPa" scope="foreground">гекто Паскаль</string>
+
+	<!--TEMPERATURE UNITS -->
+	<string id="TUCelsius" scope="foreground">градусы Цельсия</string>
+	<string id="TUFahrenheit" scope="foreground">градусы Фаренгейта</string>
+	<string id="TUKelvin" scope="foreground">градусы Кельвина</string>
+
+	<!--DISTANCE UNITS -->
+	<string id="DUKilometer" scope="foreground">Километры</string>
+	<string id="DUMile" scope="foreground">Мили</string>
+
+	<!--ELEVATION UNITS -->
+	<string id="ELUMeter" scope="foreground">метры</string>
+	<string id="ELUFoot" scope="foreground">футы</string>
+
+	<!--WIND UNITS -->
+	<!--USE VERY!!!! SHOT STRING. its displayed on screen-->
+	<string id="SpeedUnitMSec" scope="foreground">м/с</string>
+	<string id="SpeedUnitKmH" scope="foreground">км/ч</string>
+	<string id="SpeedUnitMileH" scope="foreground">м/ч</string>
+	<string id="SpeedUnitFtSec" scope="foreground">ф/с</string>
+	
+</strings>
