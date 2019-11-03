@@ -1,8 +1,14 @@
 <fonts>
+  
 	<font id="images" scope="foreground"
-		filename="watch-face-images/watch-face-images-14.fnt" />
+		filename="watch-face-images-02/watch-face-images-02-18.fnt" />
+
+<!--
+	<font id="images" scope="foreground"
+		filename="watch-face-images/watch-face-images-18.fnt" />
+-->		
 	<font id="weather" scope="foreground"
 		filename="weather-images/wath-face-weather-36.fnt" />
 	<font id="moon" scope="foreground"
-		filename="moon-phase-images/moon-phase-images-10-14.fnt" />
+		filename="moon-phase-images/moon-phase-images-10-16.fnt" />
 </fonts>
