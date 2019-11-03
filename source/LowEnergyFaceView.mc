@@ -61,9 +61,10 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		var fieldYCoord = new [4];
 		fieldYCoord[0] = verticalOffset;
-		fieldYCoord[1] = timeCoord[1][:y]-10;
+		fieldYCoord[1] = timeCoord[1][:y]-12;
 		fieldYCoord[2] = fieldYCoord[1] + fieldHight;
-		fieldYCoord[3] = fieldYCoord[2] + fieldHight;
+		//fieldYCoord[3] = fieldYCoord[2] + fieldHight;
+		fieldYCoord[3] = screenCoord[1][:y]-verticalOffset-fieldHight;
 
 		fieldLayers[0] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[0], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>1});
 		fieldLayers[1] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>2});

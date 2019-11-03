@@ -266,6 +266,9 @@ class DataField extends WatchUi.Layer {
 					:imageText => imageText[type],
 					:settingsChanged=>settingsChanged});
 		}
+//		var targetDc = getDc();
+//		targetDc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
+//		targetDc.drawRectangle(0,0,mWidth,mHeight);
 	}
 
 	///////////////////////////////////////////////////////////////////////////
@@ -437,7 +440,9 @@ class DataField extends WatchUi.Layer {
 			var targetDc = getDc();
 			fillTextPlace(targetDc, backgroundColor);
 			targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
-			targetDc.drawText(mHeight, 0, font, newValue, Graphics.TEXT_JUSTIFY_LEFT);
+			//targetDc.drawText(mHeight, 0, font, newValue, Graphics.TEXT_JUSTIFY_LEFT);
+			targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, newValue, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
 		}
 	}
 
