@@ -363,15 +363,16 @@ class DataField extends WatchUi.Layer {
 	private function drawBattery(settingsChanged){
 		var absoluteValue = Math.round(System.getSystemStats().battery);
 		if (absoluteValue != oldValue || settingsChanged) {
-			var value = absoluteValue.format("%d")+((absoluteValue<100)?"%":"");
+			//var value = absoluteValue.format("%d")+((absoluteValue<100)?"%":"");
+			var value = absoluteValue.format("%d") + "%";
 			var targetDc = getDc();
 			fillTextPlace(targetDc, backgroundColor);
 			targetDc.setColor(Application.Properties.getValue("BatTCol"),Graphics.COLOR_TRANSPARENT);
-			targetDc.drawText(mHeight, 0, font, value, Graphics.TEXT_JUSTIFY_LEFT);
+			targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, value, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 			//Рисуем батарею
-			var bY = 8;
 			var bW = mHeight-3;
-			var bH = 10;
+			var bH = mHeight-8;
+			var bY = (mHeight-bH)/2;
 			//Первая отрисовка. Рисуем контур батареи
 			if(oldValue==null || settingsChanged){
 				fillPicturePlace(targetDc, backgroundColor);
@@ -380,7 +381,10 @@ class DataField extends WatchUi.Layer {
 				targetDc.setPenWidth(2);
 				targetDc.drawRectangle(0, bY, bW, bH);
 				targetDc.setPenWidth(1);
-				targetDc.fillRectangle(bW, bY+2, 2, 4);
+
+				var pH = bH/3;
+				var pY = bY + (bH-pH)/2;
+				targetDc.fillRectangle(bW, pY, 3, pH);
 				oldValue = 0;
 			}
 			//Перерисовывать будем только если заливка должна поменяться.
