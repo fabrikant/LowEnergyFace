@@ -327,7 +327,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.MesTrCol"
-		title="@Strings.MesTrCol" prompt="@Strings.MesTrCol">
+		title="@Strings.MesTrCol" prompt="@Strings.SetBkGdCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
