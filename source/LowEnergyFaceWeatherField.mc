@@ -256,7 +256,7 @@ class WeatherField extends WatchUi.Layer {
 		if (data[app.STORAGE_KEY_RESPONCE_CODE].toNumber() != 200){
 			result = true;
 		}else{
-			if (Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 7200){
+			if (Time.now().value() - data[app.STORAGE_KEY_RECIEVE].toNumber() > 10800){
 				//Old data
 				result = true;
 			}

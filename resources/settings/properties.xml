@@ -30,8 +30,7 @@
 	<property id="AlFCol" type="number">0xFFFFFF</property>
 
 	<!--BATTERY -->
-	<property id="BatTCol" type="number">0x000000</property>
-	<property id="BatICol" type="number">0x000000</property>
+	<property id="BatCol" type="number">0x000000</property>
 	<property id="BatHPCol" type="number">0x00FF00</property>
 	<property id="BatLPCol" type="number">0xFF0000</property>
 	<property id="BatLPVal" type="number">15</property>
@@ -71,7 +70,7 @@
 	<property id="SSCol" type="number">0x000000</property>
 
 	<!--SUNEVENT -->
-	<property id="SECol" type="number">0x000000F</property>
+	<property id="SECol" type="number">0x000000</property>
 	
 	<!--MOON PHASE -->
 	<property id="MPCol" type="number">0x000000</property>

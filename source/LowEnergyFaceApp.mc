@@ -5,7 +5,6 @@ using Toybox.Time;
 using Toybox.Background;
 using Toybox.Activity;
 
-(:background)
 class LowEnergyFaceApp extends Application.AppBase {
 
 	enum{
@@ -73,18 +72,10 @@ class LowEnergyFaceApp extends Application.AppBase {
     }
 
 	function registerEvents(){
-
-    	var location = Activity.getActivityInfo().currentLocation;
-		if (location != null) {
-			location = location.toDegrees();
-			Application.Properties.setValue("Lat", location[0].toFloat());
-			Application.Properties.setValue("Lon", location[1].toFloat());
-		} else {
-			var geoLatLong = [Application.Properties.getValue("Lat"),
-							  Application.Properties.getValue("Lon")];
-			if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
-				return;
-			}
+		var geoLatLong = [Application.Properties.getValue("Lat"),
+						  Application.Properties.getValue("Lon")];
+		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
+			return;
 		}
 		var kewOw = Application.Properties.getValue("keyOW");
 		if (kewOw.length() == 0){

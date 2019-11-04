@@ -199,28 +199,8 @@
 	</setting>
 
 	<!--BATTERY -->
-	<setting propertyKey="@Properties.BatTCol"
-		title="@Strings.BatTCol">
-		<settingConfig type="list">
-			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
-			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
-			<listEntry value="0xAAAAAA">@Strings.COLOR_LT_GRAY</listEntry>
-			<listEntry value="0x555555">@Strings.COLOR_DK_GRAY</listEntry>
-			<listEntry value="0xFF0000">@Strings.COLOR_RED</listEntry>
-			<listEntry value="0xAA0000">@Strings.COLOR_DK_RED</listEntry>
-			<listEntry value="0xFF5500">@Strings.COLOR_ORANGE</listEntry>
-			<listEntry value="0xFFAA00">@Strings.COLOR_YELLOW</listEntry>
-			<listEntry value="0x00FF00">@Strings.COLOR_GREEN</listEntry>
-			<listEntry value="0x00AA00">@Strings.COLOR_DK_GREEN</listEntry>
-			<listEntry value="0x00AAFF">@Strings.COLOR_BLUE</listEntry>
-			<listEntry value="0x0000FF">@Strings.COLOR_DK_BLUE</listEntry>
-			<listEntry value="0xAA00FF">@Strings.COLOR_PURPLE</listEntry>
-			<listEntry value="0xFF00FF">@Strings.COLOR_PINK</listEntry>
-		</settingConfig>
-	</setting>
-
-	<setting propertyKey="@Properties.BatICol"
-		title="@Strings.BatICol">
+	<setting propertyKey="@Properties.BatCol"
+		title="@Strings.BatCol">
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -286,7 +266,7 @@
 
 	<!--STATUS -->
 	<setting propertyKey="@Properties.ConTrCol"
-		title="@Strings.ConTrCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.ConTrCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -307,7 +287,7 @@
 
 	<setting propertyKey="@Properties.ConFCol"
 		title="@Strings.ConFCol"
-		prompt="@Strings.SetBkGdCol">
+		>
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -327,7 +307,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.MesTrCol"
-		title="@Strings.MesTrCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.MesTrCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -348,7 +328,7 @@
 
 	<setting propertyKey="@Properties.MesFCol"
 		title="@Strings.MesFCol"
-		prompt="@Strings.SetBkGdCol">
+		>
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -368,7 +348,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.DNDTrCol"
-		title="@Strings.DNDTrCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.DNDTrCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -388,7 +368,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.DNDFCol"
-		title="@Strings.DNDFCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.DNDFCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -408,7 +388,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.AlTrCol"
-		title="@Strings.AlTrCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.AlTrCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>
@@ -428,7 +408,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.AlFCol"
-		title="@Strings.AlFCol" prompt="@Strings.SetBkGdCol">
+		title="@Strings.AlFCol" >
 		<settingConfig type="list">
 			<listEntry value="0xFFFFFF">@Strings.COLOR_WHITE</listEntry>
 			<listEntry value="0x000000">@Strings.COLOR_BLACK</listEntry>

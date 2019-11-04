@@ -369,8 +369,9 @@ class DataField extends WatchUi.Layer {
 			//var value = absoluteValue.format("%d")+((absoluteValue<100)?"%":"");
 			var value = absoluteValue.format("%d") + "%";
 			var targetDc = getDc();
+			var color = Application.Properties.getValue("BatCol");
 			fillTextPlace(targetDc, backgroundColor);
-			targetDc.setColor(Application.Properties.getValue("BatTCol"),Graphics.COLOR_TRANSPARENT);
+			targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
 			targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, value, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 			//Рисуем батарею
 			var bW = mHeight-3;
@@ -379,8 +380,7 @@ class DataField extends WatchUi.Layer {
 			//Первая отрисовка. Рисуем контур батареи
 			if(oldValue==null || settingsChanged){
 				fillPicturePlace(targetDc, backgroundColor);
-				var counterColor = Application.Properties.getValue("BatICol");
-				targetDc.setColor(counterColor,Graphics.COLOR_TRANSPARENT);
+				targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
 				targetDc.setPenWidth(2);
 				targetDc.drawRectangle(0, bY, bW, bH);
 				targetDc.setPenWidth(1);

@@ -20,7 +20,6 @@
 	<string id="KeyOWPrompt" scope="foreground">get it for free</string>
 	<string id="Lat" scope="foreground">latitude in degrees</string>
 	<string id="Lon" scope="foreground">longitude in degrees</string>
-	<string id="PositionPrompt" scope="foreground">For quick start weather and sun events</string>
 	<string id="WeathCol" scope="foreground">Weather widget color</string>
 	
 	<!--Status -->
@@ -35,8 +34,7 @@
 	<string id="SetBkGdCol" scope="foreground">Set background color for hide</string>
 
 	<!--Battery -->
-	<string id="BatTCol" scope="foreground">Battery Value Color</string>
-	<string id="BatICol" scope="foreground">Battery Image Color</string>
+	<string id="BatCol" scope="foreground">Battery Color</string>
 	<string id="BatHPCol" scope="foreground">Battery High Power Color</string>
 	<string id="BatLPCol" scope="foreground">Battery Low Power Color</string>
 	<string id="BatLPVal" scope="foreground">Low Battery Value</string>

@@ -8,23 +8,22 @@
 	
 	<string id="TimeCol" scope="foreground">Цвет циферблата</string>
 	<string id="DateCol" scope="foreground">Цвет даты</string>
-	<string id="MilitaryFormatTitle" scope="foreground">Военный формат для 24 часового формата (без знака :)</string>
-	<string id="HFt01" scope="foreground">Выводить лидирующий 0 для часов</string>
+	<string id="MilitaryFormatTitle" scope="foreground">Военный формат для 24 часового формата, т.е. ":"</string>
+	<string id="HFt01" scope="foreground">Выводить лидирующий ноль для часов</string>
 	<string id="AmPm" scope="foreground">Показывать Am и Pm для 12 часового формата</string>
 	<string id="Am" scope="foreground">am</string>
 	<string id="Pm" scope="foreground">pm</string>
 	
 	<!--Weather -->
-	<string id="keyOW" scope="foreground">API ключ для погодыr</string>
+	<string id="keyOW" scope="foreground">API ключ для погоды</string>
 	<string id="KeyOWPrompt" scope="foreground">Получите его бесплатно</string>
 	<string id="Lat" scope="foreground">Широта в градусах</string>
 	<string id="Lon" scope="foreground">Долгота в градусах</string>
-	<string id="PositionPrompt" scope="foreground">Для быстрого запуска погода и расчета закатов.восходов</string>
 	<string id="WeathCol" scope="foreground">Цвет погодного виджета</string>
 	
 	<!--Status -->
-	<string id="ConTrCol" scope="foreground">Подключено</string>
-	<string id="ConFCol" scope="foreground">Не подключено</string>
+	<string id="ConTrCol" scope="foreground">Статус подключено</string>
+	<string id="ConFCol" scope="foreground">Статус не подключено</string>
 	<string id="MesTrCol" scope="foreground">Есть уведомления</string>
 	<string id="MesFCol" scope="foreground">Нет уведомлений</string>
 	<string id="AlTrCol" scope="foreground">Будильники установлены</string>
@@ -34,8 +33,7 @@
 	<string id="SetBkGdCol" scope="foreground">Установите цвет фона, чтобы спрятать</string>
 
 	<!--Battery -->
-	<string id="BatTCol" scope="foreground">Цвет значения заряда</string>
-	<string id="BatICol" scope="foreground">Цвет контура батареи</string>
+	<string id="BatCol" scope="foreground">Цвет батареи</string>
 	<string id="BatHPCol" scope="foreground">Цвет высокого заряда</string>
 	<string id="BatLPCol" scope="foreground">Цвет низкого заряда</string>
 	<string id="BatLPVal" scope="foreground">Значение низкого заряда</string>
@@ -110,7 +108,7 @@
 	<string id="FIELD_TYPE_DISTANCE" scope="foreground">Дистанция</string>
 	<string id="FIELD_TYPE_FLOOR" scope="foreground">Этажи</string>
 	<string id="FIELD_TYPE_ELEVATION" scope="foreground">Высота над уровнем моря</string>
-	<string id="FIELD_TYPE_SUN_EVENT" scope="foreground">Ближайший восхода/заката</string>
+	<string id="FIELD_TYPE_SUN_EVENT" scope="foreground">Ближайший восход/закат</string>
 	<string id="FIELD_TYPE_SUNRISE" scope="foreground">Восход</string>
 	<string id="FIELD_TYPE_SUNSET" scope="foreground">Закат</string>
 	<string id="FIELD_TYPE_MOON_PHASE" scope="foreground">Фазы луны</string>
@@ -150,7 +148,7 @@
 	<!--USE VERY!!!! SHOT STRING. its displayed on screen-->
 	<string id="SpeedUnitMSec" scope="foreground">м/с</string>
 	<string id="SpeedUnitKmH" scope="foreground">км/ч</string>
-	<string id="SpeedUnitMileH" scope="foreground">м/ч</string>
-	<string id="SpeedUnitFtSec" scope="foreground">ф/с</string>
+	<string id="SpeedUnitMileH" scope="foreground">мл/ч</string>
+	<string id="SpeedUnitFtSec" scope="foreground">фт/с</string>
 	
 </strings>
