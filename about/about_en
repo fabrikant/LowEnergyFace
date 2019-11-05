@@ -1,0 +1,18 @@
+Free and configurable dial with weather data and 8 data fields.
+Generate API key on openweathermap.org and paste it in the settings for the weather data.
+Location data is also required for weather and calculation of solar events. Location successfully captured if solar events are calculated
+8 data fields. You can choose to display the following data:
+- empty
+- Battery Status
+- Heart rate
+- Steps per day
+- Calories per day
+- Distance per day
+- Number of floors
+- Pressure from the built-in sensor (mmHg, psi, inches of mercury, bars, kilo Pascals, hecto Pascals)
+- Temperature with built-in sensor (degrees Celsius, Fahrenheit, Kelvin)
+- Altitude with integrated sensor (meters, feet)
+- sunrise time
+- sunset
+- The time of the next upcoming solar event
+- Moon phases.
