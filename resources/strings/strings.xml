@@ -82,6 +82,10 @@
 	<!--MOON PHASE -->
 	<string id="MPCol" scope="foreground">Moon Color</string>
 
+	<!--SECOND TIME -->
+	<string id="T1Col" scope="foreground">Second time zone Color</string>
+	<string id="T1TZ" scope="foreground">Time zone ±UTC (minutes)</string>
+	
 	<!--COLORS -->
 	<string id="COLOR_WHITE" scope="foreground">White</string>
 	<string id="COLOR_LT_GRAY" scope="foreground">Lt Gray</string>
@@ -113,6 +117,7 @@
 	<string id="FIELD_TYPE_SUNRISE" scope="foreground">Sunrise</string>
 	<string id="FIELD_TYPE_SUNSET" scope="foreground">Sunset</string>
 	<string id="FIELD_TYPE_MOON_PHASE" scope="foreground">Moon Phase</string>
+	<string id="FIELD_TYPE_TIME1" scope="foreground">Second time</string>
 
 	<!--FIELD NAMES -->
 	<string id="F1" scope="foreground">Field 1</string>
@@ -154,10 +159,12 @@
 	
 	<!--WEATHER NULL BANNER -->
 	<string id="gps" scope="foreground">gps</string>
+	<string id="notset" scope="foreground">?</string>
+<!--   
 	<string id="key" scope="foreground">key</string>
 	<string id="ok" scope="foreground">ok</string>
-	<string id="notset" scope="foreground">?</string>
 	<string id="update" scope="foreground">upd </string>
 	<string id="delimiter" scope="foreground"> :</string>
+-->
 	
 </strings>

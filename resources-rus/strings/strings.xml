@@ -80,6 +80,10 @@
 	
 	<!--MOON PHASE -->
 	<string id="MPCol" scope="foreground">Цвет поля фазы луны</string>
+	
+	<!--SECOND TIME -->
+	<string id="T1Col" scope="foreground">Цвет времени в другом часовом поясе</string>
+	<string id="T1TZ" scope="foreground">Разница во времени с UTC (± в минутах)</string>
 
 	<!--COLORS -->
 	<string id="COLOR_WHITE" scope="foreground">Белый</string>
@@ -112,6 +116,7 @@
 	<string id="FIELD_TYPE_SUNRISE" scope="foreground">Восход</string>
 	<string id="FIELD_TYPE_SUNSET" scope="foreground">Закат</string>
 	<string id="FIELD_TYPE_MOON_PHASE" scope="foreground">Фазы луны</string>
+	<string id="FIELD_TYPE_TIME1" scope="foreground">Время в другом часовом поясе</string>
 
 	<!--FIELD NAMES -->
 	<string id="F1" scope="foreground">Поле 1</string>

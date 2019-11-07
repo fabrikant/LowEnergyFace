@@ -78,6 +78,10 @@
 	<!--WIND -->
 	<property id="WU" type="number">0</property>
 
+	<!--SECOND TIME -->
+	<property id="T1Col" type="number">0x000000</property>
+	<property id="T1TZ" type="number">10800</property>
+
 	<!--FIELSDS TYPES -->
 	<property id="F1" type="number">13</property>
 	<property id="F2" type="number">11</property>

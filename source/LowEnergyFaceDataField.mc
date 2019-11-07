@@ -27,6 +27,7 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUNRISE,
 		FIELD_TYPE_SUNSET,
 		FIELD_TYPE_MOON_PHASE,
+		FIELD_TYPE_TIME1,
 	}
 	const imageText = {
 		FIELD_TYPE_HR          => "g",
@@ -40,6 +41,7 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUN_EVENT   => "m",
 		FIELD_TYPE_SUNRISE     => "n",
 		FIELD_TYPE_SUNSET      => "o",
+		FIELD_TYPE_TIME1	   => "q",
 	};
 	const fieldSignatures = {
 		FIELD_TYPE_HR          => "Hr",
@@ -53,6 +55,7 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUN_EVENT   => "SE",
 		FIELD_TYPE_SUNRISE     => "SR",
 		FIELD_TYPE_SUNSET      => "SS",
+		FIELD_TYPE_TIME1	   => "T1",
 	};
 	const font = Graphics.FONT_XTINY;
 	private var mImageFont;
@@ -259,6 +262,14 @@ class DataField extends WatchUi.Layer {
 						}
 					}
 				}
+			///////////////////////////////////////////////////////////////////
+			//SECOND TIME
+			}else if (type == FIELD_TYPE_TIME1){
+				var offset = Application.Properties.getValue("T1TZ") - System.getClockTime().timeZoneOffset;
+				var dur = new Time.Duration(offset);
+				var secondTime = Time.now().add(dur);
+				var info = Time.Gregorian.info(secondTime, Time.FORMAT_SHORT);
+				value = info.hour.format("%02d")+":"+info.min.format("%02d");
 			}
 			drawOrdinaryField({
 					:value => value,
