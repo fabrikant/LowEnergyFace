@@ -80,7 +80,7 @@
 
 	<!--SECOND TIME -->
 	<property id="T1Col" type="number">0x000000</property>
-	<property id="T1TZ" type="number">10800</property>
+	<property id="T1TZ" type="number">180</property>
 
 	<!--FIELSDS TYPES -->
 	<property id="F1" type="number">13</property>

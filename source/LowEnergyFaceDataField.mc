@@ -265,7 +265,7 @@ class DataField extends WatchUi.Layer {
 			///////////////////////////////////////////////////////////////////
 			//SECOND TIME
 			}else if (type == FIELD_TYPE_TIME1){
-				var offset = Application.Properties.getValue("T1TZ") - System.getClockTime().timeZoneOffset;
+				var offset = Application.Properties.getValue("T1TZ")*60 - System.getClockTime().timeZoneOffset;
 				var dur = new Time.Duration(offset);
 				var secondTime = Time.now().add(dur);
 				var info = Time.Gregorian.info(secondTime, Time.FORMAT_SHORT);

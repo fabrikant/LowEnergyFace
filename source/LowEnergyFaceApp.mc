@@ -5,6 +5,7 @@ using Toybox.Time;
 using Toybox.Background;
 using Toybox.Activity;
 
+(:background)
 class LowEnergyFaceApp extends Application.AppBase {
 
 	enum{

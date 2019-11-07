@@ -703,7 +703,7 @@
 	</setting>
 
 	<setting propertyKey="@Properties.T1TZ" title="@Strings.T1TZ">
-		<settingConfig type="numeric" min="-43200" max="50400"/>
+		<settingConfig type="numeric" min="-720" max="840"/>
 	</setting>
 
 	<!--FIELD TYPES -->
