@@ -18,8 +18,6 @@
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API key for weather</string>
 	<string id="KeyOWPrompt" scope="foreground">get it for free</string>
-	<string id="Lat" scope="foreground">latitude in degrees</string>
-	<string id="Lon" scope="foreground">longitude in degrees</string>
 	<string id="WeathCol" scope="foreground">Weather widget color</string>
 	
 	<!--Status -->
@@ -34,56 +32,26 @@
 	<string id="SetBkGdCol" scope="foreground">Set background color for hide</string>
 
 	<!--Battery -->
-	<string id="BatCol" scope="foreground">Battery Color</string>
 	<string id="BatHPCol" scope="foreground">Battery High Power Color</string>
 	<string id="BatLPCol" scope="foreground">Battery Low Power Color</string>
 	<string id="BatLPVal" scope="foreground">Low Battery Value</string>
 
-	<!--Heart Rate -->
-	<string id="HrCol" scope="foreground">Heart Rate Color</string>
-
-	<!--Steps -->
-	<string id="StCol" scope="foreground">Steps Color</string>
-
 	<!--Pressure -->
-	<string id="PrCol" scope="foreground">Pressure Color</string>
 	<string id="PrU" scope="foreground">Pressure Unit</string>
 
 	<!--TEMPERATURE -->
-	<string id="TCol" scope="foreground">Temperature Color</string>
 	<string id="TU" scope="foreground">Temperature Unit</string>
 
-	<!--CALORIES -->
-	<string id="CCol" scope="foreground">Calories Color</string>
-
 	<!--DISTANCE -->
-	<string id="DCol" scope="foreground">Distance Color</string>
 	<string id="DU" scope="foreground">Distance Unit</string>
 
-	<!--FLOORS -->
-	<string id="FCol" scope="foreground">Floors Color</string>
-
 	<!--ELEVATION -->
-	<string id="ELCol" scope="foreground">Elevation Color</string>
 	<string id="ELU" scope="foreground">Elevation Unit</string>
 
-	<!--SUNRISE -->
-	<string id="SRCol" scope="foreground">Sunrise Color</string>
-
-	<!--SUNSET -->
-	<string id="SSCol" scope="foreground">Sunset Color</string>
-
-	<!--SUNEVENT -->
-	<string id="SECol" scope="foreground">Sun Event Color</string>
-	
 	<!--WIND -->
 	<string id="WU" scope="foreground">Wind Speed Unit</string>
 	
-	<!--MOON PHASE -->
-	<string id="MPCol" scope="foreground">Moon Color</string>
-
 	<!--SECOND TIME -->
-	<string id="T1Col" scope="foreground">Second time zone Color</string>
 	<string id="T1TZ" scope="foreground">Time zone ±UTC (minutes)</string>
 	
 	<!--COLORS -->
@@ -128,6 +96,17 @@
 	<string id="F6" scope="foreground">Field 6</string>
 	<string id="F7" scope="foreground">Field 7</string>
 	<string id="F8" scope="foreground">Field 8</string>
+
+	<!--FIELD COLORS -->
+	<string id="C1" scope="foreground">Field 1 Color</string>
+	<string id="C2" scope="foreground">Field 2 Color</string>
+	<string id="C3" scope="foreground">Field 3 Color</string>
+	<string id="C4" scope="foreground">Field 4 Color</string>
+	<string id="C5" scope="foreground">Field 5 Color</string>
+	<string id="C6" scope="foreground">Field 6 Color</string>
+	<string id="C7" scope="foreground">Field 7 Color</string>
+	<string id="C8" scope="foreground">Field 8 Color</string>
+
 
 	<!--PRESSURE UNITS -->
 	<string id="PrUMmHg" scope="foreground">mmHg</string>

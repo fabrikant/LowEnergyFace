@@ -73,13 +73,16 @@ class LowEnergyFaceApp extends Application.AppBase {
     }
 
 	function registerEvents(){
-		var geoLatLong = [Application.Properties.getValue("Lat"),
-						  Application.Properties.getValue("Lon")];
+		var geoLatLong = [Application.Storage.getValue("Lat"),
+						  Application.Storage.getValue("Lon")];
+		if (geoLatLong[0] == null || geoLatLong[1] == null){
+			return;
+		}
 		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
 			return;
 		}
 		var kewOw = Application.Properties.getValue("keyOW");
-		if (kewOw.length() == 0){
+		if (kewOw.equals("")){
 			return;
 		}
 		var lastTime = Background.getLastTemporalEventTime();

@@ -17,8 +17,6 @@
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API ключ для погоды</string>
 	<string id="KeyOWPrompt" scope="foreground">Получите его бесплатно</string>
-	<string id="Lat" scope="foreground">Широта в градусах</string>
-	<string id="Lon" scope="foreground">Долгота в градусах</string>
 	<string id="WeathCol" scope="foreground">Цвет погодного виджета</string>
 	
 	<!--Status -->
@@ -33,56 +31,27 @@
 	<string id="SetBkGdCol" scope="foreground">Установите цвет фона, чтобы спрятать</string>
 
 	<!--Battery -->
-	<string id="BatCol" scope="foreground">Цвет батареи</string>
 	<string id="BatHPCol" scope="foreground">Цвет высокого заряда</string>
 	<string id="BatLPCol" scope="foreground">Цвет низкого заряда</string>
 	<string id="BatLPVal" scope="foreground">Значение низкого заряда</string>
 
-	<!--Heart Rate -->
-	<string id="HrCol" scope="foreground">Цвет поля пульса</string>
-
-	<!--Steps -->
-	<string id="StCol" scope="foreground">Цвет поля шагов</string>
 
 	<!--Pressure -->
-	<string id="PrCol" scope="foreground">Цвет поля давления</string>
 	<string id="PrU" scope="foreground">Ед. изм. давления</string>
 
 	<!--TEMPERATURE -->
-	<string id="TCol" scope="foreground">Цвет поля температуры</string>
 	<string id="TU" scope="foreground">Ед. изм. температуры</string>
 
-	<!--CALORIES -->
-	<string id="CCol" scope="foreground">Цвет поля калорий</string>
-
 	<!--DISTANCE -->
-	<string id="DCol" scope="foreground">Цвет поля дистанции</string>
 	<string id="DU" scope="foreground">Ед. изм. дистанции</string>
-
-	<!--FLOORS -->
-	<string id="FCol" scope="foreground">Цвет поля этажей</string>
-
 	<!--ELEVATION -->
-	<string id="ELCol" scope="foreground">Цвет поля высоты над уровнем моря</string>
 	<string id="ELU" scope="foreground">Ед. изм. высоты</string>
 
-	<!--SUNRISE -->
-	<string id="SRCol" scope="foreground">Цвет поля время восхода</string>
-
-	<!--SUNSET -->
-	<string id="SSCol" scope="foreground">Цвет поля время заката</string>
-
-	<!--SUNEVENT -->
-	<string id="SECol" scope="foreground">Цвет поля ближ. солн. события</string>
-	
 	<!--WIND -->
 	<string id="WU" scope="foreground">Ед. изм. скорости ветра</string>
 	
-	<!--MOON PHASE -->
-	<string id="MPCol" scope="foreground">Цвет поля фазы луны</string>
 	
 	<!--SECOND TIME -->
-	<string id="T1Col" scope="foreground">Цвет времени в другом часовом поясе</string>
 	<string id="T1TZ" scope="foreground">Разница во времени с UTC (± в минутах)</string>
 
 	<!--COLORS -->
@@ -128,6 +97,16 @@
 	<string id="F7" scope="foreground">Поле 7</string>
 	<string id="F8" scope="foreground">Поле 8</string>
 
+	<!--FIELD COLORS -->
+	<string id="C1" scope="foreground">Поле 1 Цвет</string>
+	<string id="C2" scope="foreground">Поле 2 Цвет</string>
+	<string id="C3" scope="foreground">Поле 3 Цвет</string>
+	<string id="C4" scope="foreground">Поле 4 Цвет</string>
+	<string id="C5" scope="foreground">Поле 5 Цвет</string>
+	<string id="C6" scope="foreground">Поле 6 Цвет</string>
+	<string id="C7" scope="foreground">Поле 7 Цвет</string>
+	<string id="C8" scope="foreground">Поле 8 Цвет</string>
+	
 	<!--PRESSURE UNITS -->
 	<string id="PrUMmHg" scope="foreground">мм ртутного столба</string>
 	<string id="PrUPsi" scope="foreground">фунт/дюйм2</string>

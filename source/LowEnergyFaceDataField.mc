@@ -43,20 +43,6 @@ class DataField extends WatchUi.Layer {
 		FIELD_TYPE_SUNSET      => "o",
 		FIELD_TYPE_TIME1	   => "q",
 	};
-	const fieldSignatures = {
-		FIELD_TYPE_HR          => "Hr",
-		FIELD_TYPE_STEPS       => "St",
-		FIELD_TYPE_PRESSURE    => "Pr",
-		FIELD_TYPE_TEMPERATURE => "T",
-		FIELD_TYPE_CALORIES    => "C",
-		FIELD_TYPE_DISTANCE    => "D",
-		FIELD_TYPE_FLOOR       => "F",
-		FIELD_TYPE_ELEVATION   => "EL",
-		FIELD_TYPE_SUN_EVENT   => "SE",
-		FIELD_TYPE_SUNRISE     => "SR",
-		FIELD_TYPE_SUNSET      => "SS",
-		FIELD_TYPE_TIME1	   => "T1",
-	};
 	const font = Graphics.FONT_XTINY;
 	private var mImageFont;
 	private var mWidth, mHeight, oldValue = null, backgroundColor = null, type = null;
@@ -273,7 +259,7 @@ class DataField extends WatchUi.Layer {
 			}
 			drawOrdinaryField({
 					:value => value,
-					:propNameColor => fieldSignatures[type]+"Col",
+					:propNameColor => "C"+getId(),
 					:imageText => imageText[type],
 					:settingsChanged=>settingsChanged});
 		}
@@ -290,8 +276,11 @@ class DataField extends WatchUi.Layer {
 	}
 
 	private function getSunEvent(event, allowTomorrow){
-		var geoLatLong = [Application.Properties.getValue("Lat"),
-						  Application.Properties.getValue("Lon")];
+		var geoLatLong = [Application.Storage.getValue("Lat"),
+						  Application.Storage.getValue("Lon")];
+		if (geoLatLong[0] == null || geoLatLong[1] == null){
+			return null;
+		}
 		if (geoLatLong[0] == 0 && geoLatLong[1] == 0){
 			return null;
 		}
@@ -332,7 +321,7 @@ class DataField extends WatchUi.Layer {
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
-			targetDc.setColor(Application.Properties.getValue("MPCol"), backgroundColor);
+			targetDc.setColor(Application.Properties.getValue("C"+getId()), backgroundColor);
 			var font = Application.loadResource(Rez.Fonts.moon);
 			var daysPict = {
 				0 => "0",
@@ -380,7 +369,7 @@ class DataField extends WatchUi.Layer {
 			//var value = absoluteValue.format("%d")+((absoluteValue<100)?"%":"");
 			var value = absoluteValue.format("%d") + "%";
 			var targetDc = getDc();
-			var color = Application.Properties.getValue("BatCol");
+			var color = Application.Properties.getValue("C"+getId());
 			fillTextPlace(targetDc, backgroundColor);
 			targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
 			targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, value, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);

@@ -169,9 +169,14 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     	var location = Activity.getActivityInfo().currentLocation;
     	if (location != null) {
 			location = location.toDegrees();
-			Application.Properties.setValue("Lat", location[0].toFloat());
-			Application.Properties.setValue("Lon", location[1].toFloat());
+			Application.Storage.setValue("Lat", location[0].toFloat());
+			Application.Storage.setValue("Lon", location[1].toFloat());
 		}
+		//////////////////////////////////////////////////////////
+		//DEBUG
+//		Application.Storage.setValue("Lat", 55);
+//		Application.Storage.setValue("Lon", 43);
+		//////////////////////////////////////////////////////////
     }
 
     // Update the view

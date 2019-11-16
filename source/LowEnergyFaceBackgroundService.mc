@@ -58,8 +58,8 @@ class BackgroundService extends System.ServiceDelegate {
 
 	function onTemporalEvent() {
 		var url = "https://api.openweathermap.org/data/2.5/weather";
-		var lat = Application.Properties.getValue("Lat");
-		var lon = Application.Properties.getValue("Lon");
+		var lat = Application.Storage.getValue("Lat");
+		var lon = Application.Storage.getValue("Lon");
 		var appid = Application.Properties.getValue("keyOW");
 		Communications.makeWebRequest(
 			url,

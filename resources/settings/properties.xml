@@ -15,8 +15,6 @@
 
 	<!--WEATHER AND LOCATION -->
 	<property id="keyOW" type="string"></property>
-	<property id="Lat" type="float">0</property>
-	<property id="Lon" type="float">0</property>
 	<property id="WeathCol" type="number">0x000000</property>
 
 	<!--STATUS -->
@@ -30,66 +28,51 @@
 	<property id="AlFCol" type="number">0xFFFFFF</property>
 
 	<!--BATTERY -->
-	<property id="BatCol" type="number">0x000000</property>
 	<property id="BatHPCol" type="number">0x00FF00</property>
 	<property id="BatLPCol" type="number">0xFF0000</property>
 	<property id="BatLPVal" type="number">15</property>
 
-	<!--HEART RATE -->
-	<property id="HrCol" type="number">0x000000</property>
-
-	<!--STEPS -->
-	<property id="StCol" type="number">0x000000</property>
-
 	<!--PRESSURE -->
-	<property id="PrCol" type="number">0x000000</property>
 	<property id="PrU" type="number">0</property>
 
 	<!--TEMPERATURE -->
-	<property id="TCol" type="number">0x000000</property>
 	<property id="TU" type="number">0</property>
 
-	<!--CALORIES -->
-	<property id="CCol" type="number">0x000000</property>
-
 	<!--DISTANCE -->
-	<property id="DCol" type="number">0x000000</property>
 	<property id="DU" type="number">0</property>
 
-	<!--FLOORS -->
-	<property id="FCol" type="number">0x000000</property>
-
 	<!--ELEVATION -->
-	<property id="ELCol" type="number">0x000000</property>
 	<property id="ELU" type="number">0</property>
-
-	<!--SUNRISE -->
-	<property id="SRCol" type="number">0x000000</property>
-
-	<!--SUNSET -->
-	<property id="SSCol" type="number">0x000000</property>
-
-	<!--SUNEVENT -->
-	<property id="SECol" type="number">0x000000</property>
-	
-	<!--MOON PHASE -->
-	<property id="MPCol" type="number">0x000000</property>
 	
 	<!--WIND -->
 	<property id="WU" type="number">0</property>
 
 	<!--SECOND TIME -->
-	<property id="T1Col" type="number">0x000000</property>
 	<property id="T1TZ" type="number">180</property>
 
 	<!--FIELSDS TYPES -->
 	<property id="F1" type="number">13</property>
+	<property id="C1" type="number">0x000000</property>
+
 	<property id="F2" type="number">11</property>
+	<property id="C2" type="number">0x000000</property>
+
 	<property id="F3" type="number">2</property>
+	<property id="C3" type="number">0x000000</property>
+
 	<property id="F4" type="number">12</property>
+	<property id="C4" type="number">0x000000</property>
+
 	<property id="F5" type="number">6</property>
+	<property id="C5" type="number">0x000000</property>
+
 	<property id="F6" type="number">7</property>
+	<property id="C6" type="number">0x000000</property>
+
 	<property id="F7" type="number">3</property>
+	<property id="C7" type="number">0x000000</property>
+
 	<property id="F8" type="number">1</property>
+	<property id="C8" type="number">0x000000</property>
 
 </properties>
