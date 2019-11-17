@@ -5,14 +5,14 @@
 //   },
 //   "weather":[
 //      {
-//         "id":803,
+//         "id":803,on temp
 //         "main":"Clouds",
 //         "description":"пасмурно",
 //         "icon":"04d"
 //      }
 //   ],
 //   "base":"stations",
-//   "main":{
+//   "main":{on temp
 //      "temp":11,
 //      "pressure":996,
 //      "humidity":57,
@@ -47,6 +47,7 @@ using Toybox.Background;
 using Toybox.Communications;
 using Toybox.System;
 using Toybox.Position;
+using Toybox.Time;
 
 
 (:background)
@@ -61,6 +62,10 @@ class BackgroundService extends System.ServiceDelegate {
 		var lat = Application.Storage.getValue("Lat");
 		var lon = Application.Storage.getValue("Lon");
 		var appid = Application.Properties.getValue("keyOW");
+		//////////////////////////////////////////////////////////
+		//DEBUG
+		System.println("onTemporalEvent: "+Time.now().value());
+		//////////////////////////////////////////////////////////
 		Communications.makeWebRequest(
 			url,
 			{
@@ -77,6 +82,12 @@ class BackgroundService extends System.ServiceDelegate {
 	function responseCallback(responseCode, data) {
 		var backgroundData;
 		var app = Application.getApp();
+		//////////////////////////////////////////////////////////
+		//DEBUG
+		System.println("responseCallback: "+Time.now().value());
+		System.println("responseCode: "+responseCode);
+		System.println("data: "+data);
+		//////////////////////////////////////////////////////////
 		if (responseCode == 200) {
 			backgroundData = {
 				app.STORAGE_KEY_RESPONCE_CODE => responseCode,
