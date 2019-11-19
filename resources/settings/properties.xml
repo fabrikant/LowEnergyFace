@@ -13,10 +13,11 @@
 	<property id="TimeCol" type="number">0x000000</property>
 	<property id="DateCol" type="number">0x000000</property>
 
-	<!--WEATHER AND LOCATION -->
+	<!--WEATHER OR GRAPH -->
 	<property id="keyOW" type="string"></property>
 	<property id="WeathCol" type="number">0x000000</property>
-
+	<property id="WidTp" type="number">0</property>
+	
 	<!--STATUS -->
 	<property id="ConTrCol" type="number">0x000000</property>
 	<property id="ConFCol" type="number">0xFFFFFF</property>

@@ -18,7 +18,8 @@
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API key for weather</string>
 	<string id="KeyOWPrompt" scope="foreground">get it for free</string>
-	<string id="WeathCol" scope="foreground">Weather widget color</string>
+	<string id="WeathCol" scope="foreground">Widget color</string>
+	<string id="WidTp" scope="foreground">Widget type</string>
 	
 	<!--Status -->
 	<string id="ConTrCol" scope="foreground">Connected</string>
@@ -139,11 +140,12 @@
 	<!--WEATHER NULL BANNER -->
 	<string id="gps" scope="foreground">gps</string>
 	<string id="notset" scope="foreground">?</string>
-<!--   
-	<string id="key" scope="foreground">key</string>
-	<string id="ok" scope="foreground">ok</string>
-	<string id="update" scope="foreground">upd </string>
-	<string id="delimiter" scope="foreground"> :</string>
--->
+	
+	<!-- WIDGET TYPES -->
+	<string id="Weather" scope="foreground">Weather</string>
+	<string id="ElevationHistory" scope="foreground">Elevation graph</string>
+	<string id="HeartRateHistory" scope="foreground">Heart rate graph</string>
+	<string id="PressureHistory" scope="foreground">Pressure graph</string>
+	<string id="TemperatureHistory" scope="foreground">Temperature graph</string>
 	
 </strings>

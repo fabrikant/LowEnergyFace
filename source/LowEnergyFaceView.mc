@@ -80,22 +80,25 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
 		///////////////////////////////////////////////////////////////////////
 		// Status fields
-		var App = Application.getApp();
+		var app = Application.getApp();
 		var statusHight = fieldHight - 2;
-		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y], 				:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_CONNECT});
-		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+statusHight, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_MESSAGE});
-		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_DND});
-		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>App.STATUS_TYPE_ALARM});
+		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y], 				:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_CONNECT});
+		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+statusHight, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
+		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
+		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
 
 		///////////////////////////////////////////////////////////////////////
-		// Weather field
+		// Weather or graph field
 		var weatherY = fieldYCoord[0]+fieldHight;
 		var weatherH = dateTop - weatherY;
 		var weatherX = r-Math.round(Math.sqrt(Math.pow(r, 2)-Math.pow(r-weatherY-weatherH/2, 2)));//yes. its off screen. I know.
 		var weatherW = (r-weatherX)*2;
 
-		fieldLayers[13] = new WeatherField({:x=>weatherX, :y=>weatherY,  :w =>weatherW, :h=>weatherH, :imageFont=>imageFont});
-
+		if (Application.Properties.getValue("WidTp") == 0){
+			fieldLayers[13] = new WeatherField({:x=>weatherX, :y=>weatherY,  :w =>weatherW, :h=>weatherH, :imageFont=>imageFont});
+		}else{
+			fieldLayers[13] = new GraphField({:x=>weatherX, :y=>weatherY,  :w =>weatherW, :h=>weatherH});
+		}
 
 		for (var i=0 ; i < countFields; i+=1){
 			View.addLayer(fieldLayers[i]);
@@ -182,6 +185,34 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     	//cViews[:background].drawIfNeed(dc, settingsChanged);
 		drawTime();
 		drawDate();
+		//check change widget type
+		if (settingsChanged){
+			var newWidgetType = Application.Properties.getValue("WidTp");
+			var ind = countFields-1;
+			var classChanged = false;
+			if (newWidgetType == 0 && !(fieldLayers[ind] instanceof WeatherField)){
+				classChanged = true;
+			} else if (!(fieldLayers[ind] instanceof GraphField)){
+				classChanged = true;
+			}
+			if (classChanged){
+				var options = {
+					:x =>fieldLayers[ind].getX(),
+					:y =>fieldLayers[ind].getY(),
+					:h =>fieldLayers[ind].coordinates[:owner][:h],
+					:w =>fieldLayers[ind].coordinates[:owner][:w],
+				};
+				View.removeLayer(fieldLayers[ind]);
+				fieldLayers[ind] = null;
+				if (newWidgetType == 0){
+					options[:imageFont]=imageFont;
+					fieldLayers[ind] = new WeatherField(options);
+				} else {
+					fieldLayers[ind] = new GraphField(options);
+				}
+				View.addLayer(fieldLayers[ind]);
+			}
+		}
         for (var i=0 ; i < countFields; i+=1){
 			fieldLayers[i].draw(settingsChanged);
 		}

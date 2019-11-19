@@ -5,7 +5,7 @@ using Toybox.System;
 using Toybox.Math;
 using Toybox.Time;
 
-class WeatherField extends WatchUi.Layer {
+class WeatherField extends Widget {
 
 	private var mImageFont, mBackgroundColor = null;
 	const weatherFont = Application.loadResource(Rez.Fonts.weather);
@@ -30,7 +30,7 @@ class WeatherField extends WatchUi.Layer {
         	:height => params.get(:h)
         };
 
-        Layer.initialize(iniParams);
+        Widget.initialize(iniParams);
 		mImageFont = params.get(:imageFont);
 		coordinates[:owner] = {:x => 0, :y => 0,:w => params.get(:w), :h => params.get(:h)};
 		var targetDc = getDc();
@@ -222,32 +222,6 @@ class WeatherField extends WatchUi.Layer {
         	result[i][1] = result[i][1] + offset[1];
 		}
         return result;
-	}
-
-
-	private function drawValue(param){
-		if (param[:clear]){
-			clearField(param[:targetDc], param[:backgroundColor], param[:coord]);
-		}
-		param[:targetDc].setColor(param[:color],Graphics.COLOR_TRANSPARENT);
-		param[:targetDc].drawText(
-			param[:coord][:x]+param[:coord][:w]/2,
-			param[:coord][:y]+param[:coord][:h]/2,
-			param[:font],
-			param[:text],
-			Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-		);
-	}
-
-	private function border(coord){
-		var targetDc = getDc();
-	    targetDc.setColor(Application.Properties.getValue("WeathCol"), Graphics.COLOR_TRANSPARENT);
-		targetDc.drawRectangle(coord[:x], coord[:y], coord[:w], coord[:h]);
-	}
-
-	private function clearField(targetDc, bckgrndColor, coord){
-	    targetDc.setColor(bckgrndColor, Graphics.COLOR_TRANSPARENT);
-		targetDc.fillRectangle(coord[:x], coord[:y], coord[:w], coord[:h]);
 	}
 
 	private function dataInvalid(data, app){

@@ -17,7 +17,8 @@
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API ключ для погоды</string>
 	<string id="KeyOWPrompt" scope="foreground">Получите его бесплатно</string>
-	<string id="WeathCol" scope="foreground">Цвет погодного виджета</string>
+	<string id="WeathCol" scope="foreground">Цвет виджета</string>
+	<string id="WidTp" scope="foreground">Тип виджета</string>
 	
 	<!--Status -->
 	<string id="ConTrCol" scope="foreground">Статус подключено</string>
@@ -134,5 +135,13 @@
 	<string id="SpeedUnitKmH" scope="foreground">км/ч</string>
 	<string id="SpeedUnitMileH" scope="foreground">мл/ч</string>
 	<string id="SpeedUnitFtSec" scope="foreground">фт/с</string>
+	
+	<!-- WIDGET TYPES -->
+	<string id="Weather" scope="foreground">Погода</string>
+	<string id="ElevationHistory" scope="foreground">График высоты</string>
+	<string id="HeartRateHistory" scope="foreground">График пульса</string>
+	<string id="PressureHistory" scope="foreground">График давления</string>
+	<string id="TemperatureHistory" scope="foreground">График температуры</string>
+	
 	
 </strings>

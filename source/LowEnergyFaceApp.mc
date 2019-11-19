@@ -58,8 +58,11 @@ class LowEnergyFaceApp extends Application.AppBase {
 	///////////////////////////////////////////////////////////////////////////
 	// Background
 	function onBackgroundData(data) {
-		System.println("onBackgroundData "+Time.now().value());
-		System.println("data: "+data);
+		//////////////////////////////////////////////////////////
+		//DEBUG
+//		System.println("onBackgroundData "+Time.now().value());
+//		System.println("data: "+data);
+		//////////////////////////////////////////////////////////
     	if (data[STORAGE_KEY_RESPONCE_CODE] != null){
      		Application.Storage.setValue(STORAGE_KEY_RESPONCE_CODE, data[STORAGE_KEY_RESPONCE_CODE]);
 	        if (data[STORAGE_KEY_RESPONCE_CODE].toNumber() == 200){
@@ -75,6 +78,9 @@ class LowEnergyFaceApp extends Application.AppBase {
     }
 
 	function registerEvents(){
+		if (Application.Properties.getValue("WidTp") != 0){
+			return;
+		}
 		var geoLatLong = [Application.Storage.getValue("Lat"),
 						  Application.Storage.getValue("Lon")];
 		if (geoLatLong[0] == null || geoLatLong[1] == null){
