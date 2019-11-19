@@ -64,7 +64,7 @@ class BackgroundService extends System.ServiceDelegate {
 		var appid = Application.Properties.getValue("keyOW");
 		//////////////////////////////////////////////////////////
 		//DEBUG
-		System.println("onTemporalEvent: "+Time.now().value());
+		//System.println("onTemporalEvent: "+Time.now().value());
 		//////////////////////////////////////////////////////////
 		Communications.makeWebRequest(
 			url,
@@ -84,9 +84,9 @@ class BackgroundService extends System.ServiceDelegate {
 		var app = Application.getApp();
 		//////////////////////////////////////////////////////////
 		//DEBUG
-		System.println("responseCallback: "+Time.now().value());
-		System.println("responseCode: "+responseCode);
-		System.println("data: "+data);
+//		System.println("responseCallback: "+Time.now().value());
+//		System.println("responseCode: "+responseCode);
+//		System.println("data: "+data);
 		//////////////////////////////////////////////////////////
 		if (responseCode == 200) {
 			backgroundData = {

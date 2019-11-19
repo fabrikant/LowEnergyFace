@@ -9,8 +9,6 @@ using Toybox.Math;
 
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
-
-
 	const countColumns = 3;
 	const countFields =14;//8 data fields + am-pm + 4 ststus icons + weather
 	const imageFont = Application.loadResource(Rez.Fonts.images);

@@ -91,7 +91,7 @@ class LowEnergyFaceApp extends Application.AppBase {
 		if (registeredTime != null){
 			//////////////////////////////////////////////////////////
 			//DEBUG
-			System.println("now: "+Time.now().value()+" Event already set: "+registeredTime.value());
+			//System.println("now: "+Time.now().value()+" Event already set: "+registeredTime.value());
 			//////////////////////////////////////////////////////////
 			return;
 		}
@@ -101,21 +101,21 @@ class LowEnergyFaceApp extends Application.AppBase {
 		if (lastTime == null){
 			//////////////////////////////////////////////////////////
 			//DEBUG
-			System.println("reg ev now 1");
+			//System.println("reg ev now 1");
 			//////////////////////////////////////////////////////////
 			Background.registerForTemporalEvent(now);
 		}else{
 			if (now.greaterThan(lastTime.add(duration))){
 				//////////////////////////////////////////////////////////
 				//DEBUG
-				System.println("reg ev now 2");
+				//System.println("reg ev now 2");
 				//////////////////////////////////////////////////////////
 				Background.registerForTemporalEvent(now);
 			}else{
 			    var nextTime = lastTime.add(duration);
 				//////////////////////////////////////////////////////////
 				//DEBUG
-			    System.println("reg ev "+nextTime.value());
+			    //System.println("reg ev "+nextTime.value());
 				//////////////////////////////////////////////////////////
 			    Background.registerForTemporalEvent(nextTime);
 			}

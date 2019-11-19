@@ -4,7 +4,6 @@ using Toybox.Graphics;
 using Toybox.System;
 using Toybox.Math;
 using Toybox.Time;
-using Toybox.Background;
 
 class WeatherField extends WatchUi.Layer {
 
