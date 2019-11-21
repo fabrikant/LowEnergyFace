@@ -62,6 +62,8 @@ class WeatherField extends Widget {
 		coordinates[:hum] = {:x => x, :y => 0, :w => w, :h => halfH};
 		coordinates[:pres] = {:x => x, :y => halfH, :w => w, :h => halfH};
 		Application.Storage.setValue(Application.getApp().STORAGE_KEY_WEATHER_OLD, null);
+
+		clearField(targetDc, Application.Properties.getValue("BkGdCol1"), coordinates[:owner]);
     }
 
 
@@ -75,6 +77,10 @@ class WeatherField extends Widget {
 		if (mBackgroundColor == null || settingsChanged){
 			mBackgroundColor = Application.Properties.getValue("BkGdCol1");
 		}
+		var color = Application.Properties.getValue("WeathCol");
+		if(!settingsChanged && color == mBackgroundColor){
+			return;
+		}
 		if (dataInvalid(data, app)){
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
 			Application.Storage.setValue(app.STORAGE_KEY_WEATHER, null);
@@ -85,7 +91,6 @@ class WeatherField extends Widget {
 		if (!settingsChanged && dataEqual(data, oldData, app)){
 			return;
 		}
-		var color = Application.Properties.getValue("WeathCol");
 		if (settingsChanged || oldData == null){
 			clearField(targetDc, mBackgroundColor, coordinates[:owner]);
 			drawValue({:targetDc => targetDc,

@@ -1,4 +1,7 @@
-Free and configurable dial with weather data and 8 data fields.
+ATTENTION! Requires Connect IQ version 3.1.0 or higher. You can see the version in the clock system menu.
+Weather not work on VA3 firmware 7.0. Its firmware bug. There are no workarounds yet.
+
+Free, open sourse and configurable dial with weather data and 8 data fields.
 Generate API key on openweathermap.org and paste it in the settings for the weather data.
 Location data is also required for weather and calculation of solar events. Location successfully captured if solar events are calculated
 8 data fields. You can choose to display the following data:
@@ -15,4 +18,10 @@ Location data is also required for weather and calculation of solar events. Loca
 - sunrise time
 - sunset
 - The time of the next upcoming solar event
-- Moon phases.
+- Moon phases
+- Second time
+
+1.0.8 - Small optimization
+1.0.7 - Now you can change the widget type. It can be weather or a graph from the internal sensor (altitude, atmospheric pressure, pulse, temperature).
+1.0.5 - Changed color settings. Now the color is assigned to the field, not the field type.
+1.0.2 - add new type field. Second time.

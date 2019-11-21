@@ -77,7 +77,7 @@ class GraphField extends Widget {
 		if (color == backgroundColor){
 			return;
 		}
-		var iterator = getIteratorHistory(fieldType);
+		var iterator = getIteratorHistory(fieldType, coordinates[:graph][:w]);
 		if (iterator != null){
 			var value = convetValue(iterator.getMax(),fieldType);
 			var symbol = :maxValue;
@@ -130,45 +130,56 @@ class GraphField extends Widget {
 				var when = sample.when;
 				symbol = :graph;
 				if ( when.value() != oldValues[symbol] || settingsChanged){
-					oldValues[symbol] = when.value();
-					clearField(targetDc, backgroundColor, coordinates[:graph]);
-					targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
-					targetDc.setPenWidth(2);
-					targetDc.drawLine(0, 0, 0, coordinates[:graph][:h]);
-					targetDc.drawLine(0, coordinates[:graph][:h]-1, coordinates[:graph][:w],coordinates[:graph][:h]-1);
-					var lastPoint = null;
-					var min = iterator.getMin();
-					var max = iterator.getMax();
-					var x = coordinates[:graph][:w];
-					var y = coordinates[:graph][:h] / 2;
-					do{
-						data = sample.data;
-						//draw line
-						targetDc.setPenWidth(2);
-						if (!(max-min).equals(0)){
-							y = coordinates[:graph][:h] - (data - min)*coordinates[:graph][:h]/(max-min);
+					//redraw no more than once every 10 minutes
+					var needRedraw = true;
+					if (!settingsChanged){
+						if (oldValues[symbol] != null){
+							if (Time.now().value() - oldValues[symbol] < 600){
+								needRedraw = false;
+							}
 						}
-						if (lastPoint == null){
-							lastPoint = [x,y];
-						} else {
-							targetDc.drawLine(x, y, lastPoint[0], lastPoint[1]);
-							lastPoint[0] = x;
-							lastPoint[1] = y;
-						}
-						//draw hours label
+					}
 
-						if(sample.when.subtract(when).greaterThan(new Time.Duration(3600))){
-							when = sample.when;
-							targetDc.drawLine(x, coordinates[:graph][:h]-1, x, coordinates[:graph][:h]-5);
-						}
-						x -= 1;
-						sample = iterator.next();
-					} while (sample.data != null && x > 0);
-					targetDc.setPenWidth(1);
+					if (needRedraw){
+						oldValues[symbol] = when.value();
+						clearField(targetDc, backgroundColor, coordinates[:graph]);
+						targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
+						//targetDc.setPenWidth(2);
+						targetDc.drawLine(0, 0, 0, coordinates[:graph][:h]);
+						targetDc.drawLine(0, coordinates[:graph][:h]-1, coordinates[:graph][:w],coordinates[:graph][:h]-1);
+						var lastPoint = null;
+						var min = iterator.getMin();
+						var max = iterator.getMax();
+						var x = coordinates[:graph][:w];
+						var y = coordinates[:graph][:h] / 2;
+						do{
+							data = sample.data;
+							//draw line
+							//targetDc.setPenWidth(2);
+							if (!(max-min).equals(0)){
+								y = coordinates[:graph][:h] - (data - min)*coordinates[:graph][:h]/(max-min);
+							}
+							if (lastPoint == null){
+								lastPoint = [x,y];
+							} else {
+								targetDc.drawLine(x, y, lastPoint[0], lastPoint[1]);
+								lastPoint[0] = x;
+								lastPoint[1] = y;
+							}
+							//draw hours label
+
+							if(sample.when.subtract(when).greaterThan(new Time.Duration(3600))){
+								when = sample.when;
+								targetDc.drawLine(x, coordinates[:graph][:h]-1, x, coordinates[:graph][:h]-6);
+							}
+							x -= 1;
+							sample = iterator.next();
+						} while (sample.data != null && x > 0);
+						//targetDc.setPenWidth(1);
+					}
 				}
 			}
 		}
-
 
 //		border(coordinates[:owner]);
 //		border(coordinates[:curValue]);
@@ -180,12 +191,10 @@ class GraphField extends Widget {
 	function drawTextField(value, symbol, settingsChanged, targetDc, col, bkgCol, font){
 	}
 
-	function getIteratorHistory(fieldType){
-
+	function getIteratorHistory(fieldType, period){
 		var options = {
-			//:period => new Time.Duration(14400),
-			//:period => 1000,
-			//:order => SensorHistory.ORDER_NEWEST_FIRST
+			:period => period.toNumber()+1,
+			:order => SensorHistory.ORDER_NEWEST_FIRST
 		};
 
 		if (fieldType == 1){

@@ -8,7 +8,7 @@
 	
 	<string id="TimeCol" scope="foreground">Цвет циферблата</string>
 	<string id="DateCol" scope="foreground">Цвет даты</string>
-	<string id="MilitaryFormatTitle" scope="foreground">Военный формат для 24 часового формата, т.е. ":"</string>
+	<string id="MilitaryFormatTitle" scope="foreground">Военный формат для 24 часового формата, без знака ':'</string>
 	<string id="HFt01" scope="foreground">Выводить лидирующий ноль для часов</string>
 	<string id="AmPm" scope="foreground">Показывать Am и Pm для 12 часового формата</string>
 	<string id="Am" scope="foreground">am</string>
