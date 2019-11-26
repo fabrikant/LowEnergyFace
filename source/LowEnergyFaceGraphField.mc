@@ -79,7 +79,7 @@ class GraphField extends Widget {
 		}
 		var iterator = getIteratorHistory(fieldType, coordinates[:graph][:w]);
 		if (iterator != null){
-			var value = convetValue(iterator.getMax(),fieldType);
+			var value = convertValue(iterator.getMax(),fieldType);
 			var symbol = :maxValue;
 			if (!value.equals(oldValues[symbol]) || settingsChanged){
 				drawValue({
@@ -93,7 +93,7 @@ class GraphField extends Widget {
 				});
 				oldValues[symbol] = value;
 			}
-			value = convetValue(iterator.getMin(),fieldType);
+			value = convertValue(iterator.getMin(),fieldType);
 			symbol = :minValue;
 			if (!value.equals(oldValues[symbol]) || settingsChanged){
 				drawValue({
@@ -110,7 +110,7 @@ class GraphField extends Widget {
 			var sample = iterator.next();
 			if (sample != null){
 				var data = sample.data;
-				value = convetValue(data,fieldType);
+				value = convertValue(data,fieldType);
 				symbol = :curValue;
 				if (!value.equals(oldValues[symbol]) || settingsChanged){
 					drawValue({
@@ -154,6 +154,9 @@ class GraphField extends Widget {
 						var y = coordinates[:graph][:h] / 2;
 						do{
 							data = sample.data;
+							if (data == null){
+								continue;
+							}
 							//draw line
 							//targetDc.setPenWidth(2);
 							if (!(max-min).equals(0)){
@@ -210,8 +213,11 @@ class GraphField extends Widget {
 		}
 	}
 
-	function convetValue(value,fieldType){
+	function convertValue(value,fieldType){
 		var result = "";
+		if (value == null){
+			return result;
+		}
 		if (fieldType == 1){
 			result = Converter.elevation(value);
 		} else if (fieldType == 2){

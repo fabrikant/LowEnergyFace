@@ -172,7 +172,11 @@ class WeatherField extends Widget {
 		if (settingsChanged || !(fieldEqual(data, oldData, app.STORAGE_KEY_WIND_DEG) && fieldEqual(data, oldData, app.STORAGE_KEY_WIND_SPEED))){
 			clearField(targetDc, mBackgroundColor, coordinates[:wind]);
 			targetDc.setColor(color, Graphics.COLOR_TRANSPARENT);
-			var windDirection = windDirection(22, data[app.STORAGE_KEY_WIND_DEG].toNumber(), [coordinates[:wind][:x], coordinates[:wind][:y]+3]);
+			var dataWD = data[app.STORAGE_KEY_WIND_DEG];
+			if (dataWD == null){
+				dataWD = 0;
+			}
+			var windDirection = windDirection(22, dataWD.toNumber(), [coordinates[:wind][:x], coordinates[:wind][:y]+3]);
 			targetDc.fillPolygon(windDirection);
 
 			var str = Converter.speed(data[app.STORAGE_KEY_WIND_SPEED].toNumber()).format("%d");
@@ -185,7 +189,9 @@ class WeatherField extends Widget {
 			targetDc.drawText(x, y, Graphics.FONT_SYSTEM_XTINY, str, Graphics.TEXT_JUSTIFY_LEFT);
 		}
 
-		Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, data);
+		if (data != null){
+			Application.Storage.setValue(app.STORAGE_KEY_WEATHER_OLD, data);
+		}
 
 		/////////////////////////////////////////////////////////////
 		// DEBUG
