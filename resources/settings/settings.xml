@@ -6,6 +6,12 @@
 		<settingConfig type="alphaNumeric" />
 	</setting>
 
+	<!--DATE FORMAT -->
+	<setting propertyKey="@Properties.DF"
+		title="@Strings.DF" prompt="@Strings.DFHELP" helpUrl="https://apps.garmin.com/ru-RU/apps/18364e0a-2f82-4b27-a0bc-f495635052ae">
+		<settingConfig type="alphaNumeric" />
+	</setting>
+	
 	<!--CLOCK SETTING -->
 	<setting propertyKey="@Properties.MilFt"
 		title="@Strings.MilitaryFormatTitle">

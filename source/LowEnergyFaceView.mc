@@ -136,18 +136,41 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	}
 
 	function drawDate(){
-		var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+		var now = Time.now();
+		var today = Gregorian.info(now, Time.FORMAT_MEDIUM);
 		if (settingsChanged || oldDate != today.day){
-			cViews[:date].setColor(Application.Properties.getValue("DateCol"));
-			var dateString = Lang.format(
-			    "$1$ $2$ $3$ $4$",
-			    [
-			        today.day_of_week,
-			        today.day,
-			        today.month,
-			        today.year
-			    ]
+			var todayShort = Gregorian.info(now, Time.FORMAT_SHORT);
+			var firstDayOfYear = Gregorian.moment(
+				{
+					:year => today.year,
+					:month => 1,
+					:day =>1,
+				}
 			);
+			var dur = firstDayOfYear.subtract(now);
+			var dayOfYear = 1+dur.value()/Gregorian.SECONDS_PER_DAY;
+			var weekFromFirstDay = dur.value()/(Gregorian.SECONDS_PER_DAY*7);
+			var firstDayOfWeekSettings = System.getDeviceSettings().firstDayOfWeek;
+			var dayOfWeek = todayShort.day_of_week;
+			if (firstDayOfWeekSettings == 2){
+				dayOfWeek = dayOfWeek == 1 ? 7 : dayOfWeek-1;
+			} else if(firstDayOfWeekSettings == 7){
+				dayOfWeek = dayOfWeek == 7 ? 1 : dayOfWeek+1;
+			}
+
+			cViews[:date].setColor(Application.Properties.getValue("DateCol"));
+
+			var dateString = Application.Properties.getValue("DF");
+			dateString = Converter.stringReplace(dateString,"WN",Converter.weekOfYear(now));
+			dateString = Converter.stringReplace(dateString,"DN",dayOfYear);
+			dateString = Converter.stringReplace(dateString,"w",dayOfWeek);
+			dateString = Converter.stringReplace(dateString,"W",today.day_of_week);
+			dateString = Converter.stringReplace(dateString,"d",today.day);
+			dateString = Converter.stringReplace(dateString,"D",today.day.format("%02d"));
+			dateString = Converter.stringReplace(dateString,"m",todayShort.month.format("%02d"));
+			dateString = Converter.stringReplace(dateString,"M",today.month);
+			dateString = Converter.stringReplace(dateString,"y",today.year.toString().substring(2, 4));
+			dateString = Converter.stringReplace(dateString,"Y",today.year);
 	        cViews[:date].setText(dateString);
 		}
 		oldDate = today.day;

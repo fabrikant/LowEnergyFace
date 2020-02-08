@@ -174,7 +174,8 @@ class DataField extends WatchUi.Layer {
 			//FLOOR
 			}else if (type == FIELD_TYPE_FLOOR){
 
-				value = ActivityMonitor.getInfo().floorsClimbed;
+				value = ActivityMonitor.getInfo().floorsClimbed.toString()
+					+"/"+ActivityMonitor.getInfo().floorsDescended.toString();
 			///////////////////////////////////////////////////////////////////
 			//ELEVATION
 			}else if (type == FIELD_TYPE_ELEVATION){

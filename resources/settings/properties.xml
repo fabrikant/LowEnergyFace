@@ -11,6 +11,7 @@
 
 
 	<property id="TimeCol" type="number">0x000000</property>
+	<property id="DF" type="string">W D M Y</property>
 	<property id="DateCol" type="number">0x000000</property>
 
 	<!--WEATHER OR GRAPH -->

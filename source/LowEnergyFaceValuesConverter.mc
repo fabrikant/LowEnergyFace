@@ -2,6 +2,7 @@ using Toybox.Application;
 using Toybox.System;
 using Toybox.Math;
 using Toybox.Time;
+using Toybox.Time.Gregorian;
 
 module Converter {
 
@@ -135,5 +136,63 @@ module Converter {
 	        v = v + 1;
 		}
 	    return v;
+	}
+
+	function stringReplace(str, find, replace){
+		var res = str;
+		var ind = res.find(find);
+		var len = find.length();
+		var first;
+		while (ind != null){
+			if (ind == 0) {
+				first = "";
+			} else {
+				first = res.substring(0, ind);
+			}
+			res = first + replace + res.substring(ind + len, res.length());
+			ind = res.find(find);
+		}
+		return res;
+	}
+
+	function weekOfYear(moment){
+
+		var momentInfo = Gregorian.info(moment, Gregorian.FORMAT_SHORT);
+		var jan1 = 	Gregorian.moment(
+			{
+				:year => momentInfo.year,
+				:month => 1,
+				:day =>1,
+			}
+		);
+
+		var jan1DayOfWeek = Gregorian.info(jan1, Gregorian.FORMAT_SHORT).day_of_week;
+		jan1DayOfWeek = jan1DayOfWeek == 1 ? 7 : jan1DayOfWeek - 1;
+
+		if (jan1DayOfWeek < 5){
+
+			var beginMoment = jan1;
+			if (jan1DayOfWeek > 1){
+				beginMoment = Gregorian.moment(
+					{
+						:year => momentInfo.year-1,
+						:month => 12,
+						:day =>33-jan1DayOfWeek,
+					}
+				);
+			}
+			return 1 + beginMoment.subtract(moment).value()/(Gregorian.SECONDS_PER_DAY*7);
+		} else{
+
+			return weekOfYear(
+				Gregorian.moment(
+					{
+						:year => momentInfo.year-1,
+						:month => 12,
+						:day =>31,
+					}
+				)
+			);
+		}
 	}
 }
