@@ -21,6 +21,7 @@ Location data is also required for weather and calculation of solar events. Loca
 - Moon phases
 - Second time
 
+1.1.1 - Fixed description error.
 1.1.0 - Changed floor data field. Add floor descent.
 Add date format string for date field. Use this keys:
 w - day of week number, 
@@ -32,7 +33,7 @@ M - month name,
 y - year 2 digits,
 Y - year 4 digits, 
 DN - day of year, 
-DW - week of year ISO 8601
+WN - week of year ISO 8601
 1.0.9 - Fixed errors leading to crash. I hope...
 1.0.8 - Small optimization
 1.0.7 - Now you can change the widget type. It can be weather or a graph from the internal sensor (altitude, atmospheric pressure, pulse, temperature).
