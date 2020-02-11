@@ -77,6 +77,9 @@ class GraphField extends Widget {
 		if (color == backgroundColor){
 			return;
 		}
+		if (!(Toybox has :SensorHistory)){
+			return;
+		}
 		var iterator = getIteratorHistory(fieldType, coordinates[:graph][:w]);
 		if (iterator != null){
 			var value = convertValue(iterator.getMax(),fieldType);
@@ -201,16 +204,24 @@ class GraphField extends Widget {
 		};
 
 		if (fieldType == 1){
-			return SensorHistory.getElevationHistory(options);
+			if (Toybox.SensorHistory has :getElevationHistory){
+				return SensorHistory.getElevationHistory(options);
+			}
 		} else if (fieldType == 2){
-			return SensorHistory.getHeartRateHistory(options);
+			if (Toybox.SensorHistory has :getHeartRateHistory){
+				return SensorHistory.getHeartRateHistory(options);
+			}
 		} else if (fieldType == 3){
-			return SensorHistory.getPressureHistory(options);
+			if (Toybox.SensorHistory has :getPressureHistory){
+				return SensorHistory.getPressureHistory(options);
+			}
 		} else if (fieldType == 4){
-			return SensorHistory.getTemperatureHistory(options);
-		} else {
-			return null;
+			if (Toybox.SensorHistory has :getTemperatureHistory){
+				return SensorHistory.getTemperatureHistory(options);
+			}
 		}
+		return null;
+
 	}
 
 	function convertValue(value,fieldType){

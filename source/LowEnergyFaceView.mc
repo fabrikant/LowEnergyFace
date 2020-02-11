@@ -34,7 +34,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		var screenCoord = [{:x=>0,:y=>0},{:x=>dc.getWidth(),:y=>dc.getHeight()}];
 		var timeCoord = [{},{}];
 		timeCoord[0][:y] = cViews[:time].locY;
-		timeCoord[1][:y] = timeCoord[0][:y]+Graphics.getFontHeight(useFonts[:time]);
+		timeCoord[1][:y] = timeCoord[0][:y]+Graphics.getFontHeight(useFonts[:time])-Graphics.getFontDescent(useFonts[:date]);
+		//timeCoord[1][:y] = timeCoord[0][:y]+Graphics.getFontHeight(useFonts[:time]);
 		timeCoord[0][:x] = (screenCoord[1][:x]-dc.getTextWidthInPixels("00:00", useFonts[:time]))/2;
 		timeCoord[1][:x] = screenCoord[1][:x]-timeCoord[0][:x];
 
@@ -50,19 +51,27 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		//Ширина поля = отрезок равный высоте, чтобы получился квадрат под иконку + место под 4 символа
 		var fieldWidth = fieldHight+dc.getTextWidthInPixels("00001", useFonts[:fields]);
 		var r = screenCoord[1][:x]/2;
-		var verticalOffset = Math.round((r - Math.sqrt(Math.pow(r, 2)-Math.pow(fieldWidth, 2)))/2);
 		var fieldXCoord = new [countColumns];
 		fieldXCoord[0] = Math.round((screenCoord[1][:x]-fieldWidth*countColumns)/2);
 		for (var i=1 ; i < countColumns; i+=1){
 			fieldXCoord[i] = fieldXCoord[i-1] + fieldWidth;
 		}
 
+		var verticalOffset = Math.round((r - Math.sqrt(Math.pow(r, 2)-Math.pow(fieldWidth, 2)))/2);
 		var fieldYCoord = new [4];
-		fieldYCoord[0] = verticalOffset;
-		fieldYCoord[1] = timeCoord[1][:y]-12;
-		fieldYCoord[2] = fieldYCoord[1] + fieldHight;
-		//fieldYCoord[3] = fieldYCoord[2] + fieldHight;
-		fieldYCoord[3] = screenCoord[1][:y]-verticalOffset-fieldHight;
+		fieldYCoord[0] = verticalOffset;//Верхнее поле данных
+		fieldYCoord[3] = screenCoord[1][:y]-verticalOffset-fieldHight;//Нижнее поле данных
+
+		fieldYCoord[2] = r + Math.sqrt(Math.pow(r, 2)-Math.pow(1.5*fieldWidth,2))-fieldHight;
+		if (fieldYCoord[2] - timeCoord[1][:y] < fieldHight){
+			fieldYCoord[2] = fieldYCoord[2] + fieldHight - (fieldYCoord[2] - timeCoord[1][:y]);
+			if (fieldYCoord[2]+fieldHight > fieldYCoord[3]){
+				fieldYCoord[2] = fieldYCoord[2] - (fieldYCoord[2]+fieldHight-fieldYCoord[3])-0.3*fieldHight;
+			}
+			fieldYCoord[1] = fieldYCoord[2] - fieldHight+1;
+		}else{
+			fieldYCoord[1] = timeCoord[1][:y] + (fieldYCoord[2] - timeCoord[1][:y] - fieldHight)/2;
+		}
 
 		fieldLayers[0] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[0], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>1});
 		fieldLayers[1] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>2});
@@ -81,11 +90,12 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		///////////////////////////////////////////////////////////////////////
 		// Status fields
 		var app = Application.getApp();
-		var statusHight = fieldHight - 2;
+		var shift = (fieldYCoord[1]-timeCoord[0][:y]-fieldHight)/3;
+		var statusHight = fieldHight;
 		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y], 				:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_CONNECT});
-		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+statusHight, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
-		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
-		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*statusHight,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
+		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+shift, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
+		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
+		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
 
 		///////////////////////////////////////////////////////////////////////
 		// Weather or graph field
@@ -256,5 +266,9 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
+    }
+
+    function onPartialUpdate( dc ) {
+
     }
 }

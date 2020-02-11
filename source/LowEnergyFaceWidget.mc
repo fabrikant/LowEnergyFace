@@ -14,13 +14,23 @@ class Widget extends WatchUi.Layer {
 			clearField(param[:targetDc], param[:backgroundColor], param[:coord]);
 		}
 		param[:targetDc].setColor(param[:color],Graphics.COLOR_TRANSPARENT);
-		param[:targetDc].drawText(
-			param[:coord][:x]+param[:coord][:w]/2,
-			param[:coord][:y]+param[:coord][:h]/2,
-			param[:font],
-			param[:text],
-			Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-		);
+		if (param[:justify] == null){
+			param[:targetDc].drawText(
+				param[:coord][:x]+param[:coord][:w]/2,
+				param[:coord][:y]+param[:coord][:h]/2,
+				param[:font],
+				param[:text],
+				Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+			);
+		}else if ((param[:justify] == Graphics.TEXT_JUSTIFY_LEFT)){
+			param[:targetDc].drawText(
+				param[:coord][:x],
+				param[:coord][:y]+param[:coord][:h]/2,
+				param[:font],
+				param[:text],
+				Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER
+			);
+		}
 	}
 
 	 function border(coord){

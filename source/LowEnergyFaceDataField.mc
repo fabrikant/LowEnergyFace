@@ -98,28 +98,35 @@ class DataField extends WatchUi.Layer {
 				value = null;
 				var info = Activity.getActivityInfo();
 				if (info != null){
-					value = info.currentHeartRate;
+					if (info has :currentHeartRate){
+						value = info.currentHeartRate;
+					}
 				}
 				if (value == null){
-					var iter = SensorHistory.getHeartRateHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
-					if (iter != null){
-						var sample = iter.next();
-						if (sample != null){
-							if (sample.data != null){
-								value = sample.data.toString();
+					if (Toybox has :SensorHistory){
+						if (Toybox.SensorHistory has :getHeartRateHistory){
+							var iter = SensorHistory.getHeartRateHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+							if (iter != null){
+								var sample = iter.next();
+								if (sample != null){
+									if (sample.data != null){
+										value = sample.data.toString();
+									}
+								}
 							}
 						}
 					}
 				}
-				if (value == null) {
-					value = "";
-				}
+
 			///////////////////////////////////////////////////////////////////
 			//STEPS
 			}else if (type == FIELD_TYPE_STEPS){
-				value = ActivityMonitor.getInfo().steps;
-				if (value > 9999){
-					value = (value/1000).format("%.1f")+"k";
+				var info = ActivityMonitor.getInfo();
+				if (info has :steps){
+					value = info.steps;
+					if (value > 9999){
+						value = (value/1000).format("%.1f")+"k";
+					}
 				}
 			///////////////////////////////////////////////////////////////////
 			//PRESSURE
@@ -127,55 +134,68 @@ class DataField extends WatchUi.Layer {
 				value = null;
 				var info = Activity.getActivityInfo();
 				if (info != null){
-					if (info.ambientPressure != null){
-						value = Converter.pressure(info.ambientPressure);
+					if (info has :ambientPressure){
+						if (info.ambientPressure != null){
+							value = Converter.pressure(info.ambientPressure);
+						}
 					}
 				}
 				if (value == null){
-					var iter = SensorHistory.getPressureHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
-					if (iter != null){
-						var sample = iter.next();
-						if (sample != null){
-							if (sample.data != null){
-								value = Converter.pressure(sample.data);
+					if (Toybox has :SensorHistory){
+						if (Toybox.SensorHistory has :getPressureHistory){
+							var iter = SensorHistory.getPressureHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+							if (iter != null){
+								var sample = iter.next();
+								if (sample != null){
+									if (sample.data != null){
+										value = Converter.pressure(sample.data);
+									}
+								}
 							}
 						}
 					}
 				}
-				if (value == null) {
-					value = "";
-				}
+
 			///////////////////////////////////////////////////////////////////
 			//TEMPERATURE
 			}else if (type == FIELD_TYPE_TEMPERATURE){
 				value = "";
-				var iter = SensorHistory.getTemperatureHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
-				if (iter != null){
-					var sample = iter.next();
-					if (sample != null){
-						if (sample.data != null){
-							value = Converter.temperature(sample.data);
+				if (Toybox has :SensorHistory){
+					if (Toybox.SensorHistory has :getTemperatureHistory){
+						var iter = SensorHistory.getTemperatureHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+						if (iter != null){
+							var sample = iter.next();
+							if (sample != null){
+								if (sample.data != null){
+									value = Converter.temperature(sample.data);
+								}
+							}
 						}
 					}
 				}
+
 			///////////////////////////////////////////////////////////////////
 			//CALORIES
 			}else if (type == FIELD_TYPE_CALORIES){
-
-				value = ActivityMonitor.getInfo().calories;
-
+				var info = ActivityMonitor.getInfo();
+				if (info has :calories){
+					value = info.calories;
+				}
 			///////////////////////////////////////////////////////////////////
 			//DISTANCE
-
 			}else if (type == FIELD_TYPE_DISTANCE){
-
-				value = Converter.distance(ActivityMonitor.getInfo().distance);
+				var info = ActivityMonitor.getInfo();
+				if (info has :distance){
+					value = Converter.distance(info.distance);
+				}
 			///////////////////////////////////////////////////////////////////
 			//FLOOR
 			}else if (type == FIELD_TYPE_FLOOR){
-
-				value = ActivityMonitor.getInfo().floorsClimbed.toString()
-					+"/"+ActivityMonitor.getInfo().floorsDescended.toString();
+				var info = ActivityMonitor.getInfo();
+				if (info has :floorsClimbed){
+					value = info.floorsClimbed.toString()
+						+"/"+info.floorsDescended.toString();
+				}
 			///////////////////////////////////////////////////////////////////
 			//ELEVATION
 			}else if (type == FIELD_TYPE_ELEVATION){
@@ -183,17 +203,23 @@ class DataField extends WatchUi.Layer {
 
 				var info = Activity.getActivityInfo();
 				if (info != null){
-					if (info.altitude != null){
-						value = Converter.elevation(info.altitude);
+					if (info has :altitude){
+						if (info.altitude != null){
+							value = Converter.elevation(info.altitude);
+						}
 					}
 				}
 				if (value == null){
-					var iter = SensorHistory.getElevationHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
-					if (iter != null){
-						var sample = iter.next();
-						if (sample != null){
-							if (sample.data != null){
-								value = Converter.elevation(sample.data);
+					if (Toybox has :SensorHistory){
+						if (Toybox.SensorHistory has :getElevationHistory){
+							var iter = SensorHistory.getElevationHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+							if (iter != null){
+								var sample = iter.next();
+								if (sample != null){
+									if (sample.data != null){
+										value = Converter.elevation(sample.data);
+									}
+								}
 							}
 						}
 					}
@@ -257,6 +283,10 @@ class DataField extends WatchUi.Layer {
 				var secondTime = Time.now().add(dur);
 				var info = Time.Gregorian.info(secondTime, Time.FORMAT_SHORT);
 				value = info.hour.format("%02d")+":"+info.min.format("%02d");
+			}
+
+			if (value == null) {
+				value = "";
 			}
 			drawOrdinaryField({
 					:value => value,
@@ -441,8 +471,8 @@ class DataField extends WatchUi.Layer {
 			var targetDc = getDc();
 			fillTextPlace(targetDc, backgroundColor);
 			targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
-			//targetDc.drawText(mHeight, 0, font, newValue, Graphics.TEXT_JUSTIFY_LEFT);
-			targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, newValue, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+			targetDc.drawText(mHeight*1.15, 0, font, newValue, Graphics.TEXT_JUSTIFY_LEFT);
+			//targetDc.drawText(mHeight+(mWidth-mHeight)/2, mHeight/2, font, newValue, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
 		}
 	}

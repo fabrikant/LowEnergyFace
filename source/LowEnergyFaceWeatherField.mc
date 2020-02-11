@@ -47,7 +47,8 @@ class WeatherField extends Widget {
 		///////////////////////////////////////////////////////////////////////
 		//WIND
 		x += w;
-		w = targetDc.getTextWidthInPixels("999", Graphics.FONT_NUMBER_MEDIUM)-7;
+		//w = targetDc.getTextWidthInPixels("99.", Graphics.FONT_NUMBER_MEDIUM)-7;
+		w = targetDc.getTextWidthInPixels("911", Graphics.FONT_SYSTEM_SMALL);
 		var halfH = coordinates[:owner][:h]/2;
 		coordinates[:wind] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
 		///////////////////////////////////////////////////////////////////////
@@ -150,7 +151,8 @@ class WeatherField extends Widget {
 					:text => Converter.pressure(data[key].toNumber()*100),
 					:font => Graphics.FONT_SYSTEM_XTINY,
 					:color =>  color,
-					:backgroundColor => mBackgroundColor
+					:backgroundColor => mBackgroundColor,
+					:justify => Graphics.TEXT_JUSTIFY_LEFT
 				});
 		}
 		///////////////////////////////////////////////////////////////////////
@@ -164,7 +166,8 @@ class WeatherField extends Widget {
 					:text => data[key].toNumber().format("%d")+"%",
 					:font => Graphics.FONT_SYSTEM_XTINY,
 					:color =>  color,
-					:backgroundColor => mBackgroundColor
+					:backgroundColor => mBackgroundColor,
+					:justify => Graphics.TEXT_JUSTIFY_LEFT
 				});
 		}
 		///////////////////////////////////////////////////////////////////////
