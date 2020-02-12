@@ -2,7 +2,7 @@
 
 	<string id="AppName" scope="foreground">LowEnergyFace</string>
 	<string id="DF" scope="foreground">Формат даты</string>
-	<string id="DFHELP" scope="foreground">w - номер дня недели, W - название дня недели, d - день месяца (одна цифра если меньше 10), D - день месяца 2 цифры, m - номер месяца 2 цифры, M - название месяца, y - год 2 цифры, Y - год 4 цифры, DN - день года, WN - неделя года ISO 8601</string>
+	<string id="DFHELP" scope="foreground">%w - номер дня недели, %W - название дня недели, %d - день месяца (одна цифра если меньше 10), %D - день месяца 2 цифры, %m - номер месяца 2 цифры, %M - название месяца, %y - год 2 цифры, %Y - год 4 цифры, %DN - день года, %WN - неделя года ISO 8601</string>
 
 	<string id="BkGdCol1" scope="foreground">Цвет фона верх</string>
 	<string id="BkGdCol2" scope="foreground">Цвет фона центр</string>

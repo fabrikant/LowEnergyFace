@@ -139,19 +139,21 @@ module Converter {
 	}
 
 	function stringReplace(str, find, replace){
-		var res = str;
-		var ind = res.find(find);
+		var res = "";
+		var ind = str.find(find);
 		var len = find.length();
 		var first;
 		while (ind != null){
 			if (ind == 0) {
 				first = "";
 			} else {
-				first = res.substring(0, ind);
+				first = str.substring(0, ind);
 			}
-			res = first + replace + res.substring(ind + len, res.length());
-			ind = res.find(find);
+			res = res + first + replace;
+			str = str.substring(ind + len, str.length());
+			ind = str.find(find);
 		}
+		res = res + str;
 		return res;
 	}
 

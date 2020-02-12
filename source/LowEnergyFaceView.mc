@@ -171,16 +171,16 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 			cViews[:date].setColor(Application.Properties.getValue("DateCol"));
 
 			var dateString = Application.Properties.getValue("DF");
-			dateString = Converter.stringReplace(dateString,"WN",Converter.weekOfYear(now));
-			dateString = Converter.stringReplace(dateString,"DN",dayOfYear);
-			dateString = Converter.stringReplace(dateString,"w",dayOfWeek);
-			dateString = Converter.stringReplace(dateString,"W",today.day_of_week);
-			dateString = Converter.stringReplace(dateString,"d",today.day);
-			dateString = Converter.stringReplace(dateString,"D",today.day.format("%02d"));
-			dateString = Converter.stringReplace(dateString,"m",todayShort.month.format("%02d"));
-			dateString = Converter.stringReplace(dateString,"M",today.month);
-			dateString = Converter.stringReplace(dateString,"y",today.year.toString().substring(2, 4));
-			dateString = Converter.stringReplace(dateString,"Y",today.year);
+			dateString = Converter.stringReplace(dateString,"%WN",Converter.weekOfYear(now));
+			dateString = Converter.stringReplace(dateString,"%DN",dayOfYear);
+			dateString = Converter.stringReplace(dateString,"%w",dayOfWeek);
+			dateString = Converter.stringReplace(dateString,"%W",today.day_of_week);
+			dateString = Converter.stringReplace(dateString,"%d",today.day);
+			dateString = Converter.stringReplace(dateString,"%D",today.day.format("%02d"));
+			dateString = Converter.stringReplace(dateString,"%m",todayShort.month.format("%02d"));
+			dateString = Converter.stringReplace(dateString,"%M",today.month);
+			dateString = Converter.stringReplace(dateString,"%y",today.year.toString().substring(2, 4));
+			dateString = Converter.stringReplace(dateString,"%Y",today.year);
 	        cViews[:date].setText(dateString);
 		}
 		oldDate = today.day;
