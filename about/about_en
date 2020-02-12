@@ -1,5 +1,5 @@
 ATTENTION! Requires Connect IQ version 3.1.0 or higher. You can see the version in the clock system menu.
-Weather not work on VA3 firmware 7.0. Its firmware bug. There are no workarounds yet.
+Date format keys have changed. At the beginning of all keys, the character "%".
 
 Free, open sourse and configurable dial with weather data and 8 data fields.
 Generate API key on openweathermap.org and paste it in the settings for the weather data.
