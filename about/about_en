@@ -21,6 +21,7 @@ Location data is also required for weather and calculation of solar events. Loca
 - Moon phases
 - Second time
 
+1.5.1 - Little changed the size of the weather widget.
 1.5.0 - Fix errors, add suport new devices, change format string for data field.
 1.1.1 - Fixed description error.
 1.1.0 - Changed floor data field. Add floor descent.

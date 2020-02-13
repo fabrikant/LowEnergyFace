@@ -48,7 +48,7 @@ class WeatherField extends Widget {
 		//WIND
 		x += w;
 		//w = targetDc.getTextWidthInPixels("99.", Graphics.FONT_NUMBER_MEDIUM)-7;
-		w = targetDc.getTextWidthInPixels("911", Graphics.FONT_SYSTEM_SMALL);
+		w = targetDc.getTextWidthInPixels("km/h..", Graphics.FONT_SYSTEM_XTINY);
 		var halfH = coordinates[:owner][:h]/2;
 		coordinates[:wind] = {:x => x, :y => 0, :w => w, :h => coordinates[:owner][:h]};
 		///////////////////////////////////////////////////////////////////////

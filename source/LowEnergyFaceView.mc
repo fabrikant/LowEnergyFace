@@ -101,6 +101,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		// Weather or graph field
 		var weatherY = fieldYCoord[0]+fieldHight;
 		var weatherH = dateTop - weatherY;
+		weatherH = Converter.min(weatherH, 2*fieldHight);
 		var weatherX = r-Math.round(Math.sqrt(Math.pow(r, 2)-Math.pow(r-weatherY-weatherH/2, 2)));//yes. its off screen. I know.
 		var weatherW = (r-weatherX)*2;
 
