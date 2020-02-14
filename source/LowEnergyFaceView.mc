@@ -10,7 +10,7 @@ using Toybox.Math;
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
 	const countColumns = 3;
-	const countFields =14;//8 data fields + am-pm + 4 ststus icons + weather
+	const countFields =14;//8 data fields + am-pm + 4 ststus icons + seconds + weather
 	const imageFont = Application.loadResource(Rez.Fonts.images);
 	var cViews = {};
 	var fieldLayers = new [countFields];
@@ -96,6 +96,11 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+shift, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
 		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
 		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
+
+		///////////////////////////////////////////////////////////////////////
+		// Seconds fields
+//		shift = timeCoord[1][:y] -  Graphics.getFontDescent(useFonts[:time]) - fieldHight + 2*Graphics.getFontDescent(useFonts[:fields])-1;
+//		fieldLayers[13] = new SecondsField({:x=>fieldLayers[8].getX(), :y=>shift, :w =>amW, :h=>fieldHight, :id=>"P6"});
 
 		///////////////////////////////////////////////////////////////////////
 		// Weather or graph field
@@ -270,6 +275,6 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     }
 
     function onPartialUpdate( dc ) {
-
+//    	fieldLayers[13].draw(settingsChanged);
     }
 }

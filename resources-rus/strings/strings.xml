@@ -15,7 +15,10 @@
 	<string id="AmPm" scope="foreground">Показывать Am и Pm для 12 часового формата</string>
 	<string id="Am" scope="foreground">am</string>
 	<string id="Pm" scope="foreground">pm</string>
-	
+<!-- 	
+	<string id="Sec" scope="foreground">Секунды</string>
+ -->
+ 	
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API ключ для погоды</string>
 	<string id="KeyOWPrompt" scope="foreground">Получите его бесплатно</string>

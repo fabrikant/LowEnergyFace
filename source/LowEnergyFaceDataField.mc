@@ -281,8 +281,7 @@ class DataField extends WatchUi.Layer {
 				var offset = Application.Properties.getValue("T1TZ")*60 - System.getClockTime().timeZoneOffset;
 				var dur = new Time.Duration(offset);
 				var secondTime = Time.now().add(dur);
-				var info = Time.Gregorian.info(secondTime, Time.FORMAT_SHORT);
-				value = info.hour.format("%02d")+":"+info.min.format("%02d");
+				value = getMomentView(secondTime);
 			}
 
 			if (value == null) {
@@ -303,7 +302,17 @@ class DataField extends WatchUi.Layer {
 	// SUN EVENTS
 	private function getMomentView(moment){
 		var info = Gregorian.info(moment,Time.FORMAT_SHORT);
-		return info.hour.format("%02d")+":"+info.min.format("%02d");
+		var hours = info.hour;
+		if (!System.getDeviceSettings().is24Hour) {
+			if (hours > 12) {
+				hours = hours - 12;
+			}
+		}
+		var f = "%d";
+		if (Application.Properties.getValue("HFt01")){
+			f = "%02d";
+		}
+		return hours.format(f)+":"+info.min.format("%02d");
 	}
 
 	private function getSunEvent(event, allowTomorrow){
