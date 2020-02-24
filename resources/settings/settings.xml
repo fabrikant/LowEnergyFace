@@ -28,12 +28,12 @@
 		<settingConfig type="boolean" />
 	</setting>
 
-<!-- 
+
 	<setting propertyKey="@Properties.Sec"
 		title="@Strings.Sec">
 		<settingConfig type="boolean" />
 	</setting>
- -->
+
  
 	<!--UNIT TEMPERATURE -->
 	<setting propertyKey="@Properties.TU"

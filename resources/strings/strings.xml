@@ -16,9 +16,9 @@
 	<string id="AmPm" scope="foreground">Show am-pm for 12 Hour Time</string>
 	<string id="Am" scope="foreground">am</string>
 	<string id="Pm" scope="foreground">pm</string>
-<!-- 	
+ 	
 	<string id="Sec" scope="foreground">Seconds</string>
- -->
+
  	
 	<!--Weather -->
 	<string id="keyOW" scope="foreground">API key for weather</string>

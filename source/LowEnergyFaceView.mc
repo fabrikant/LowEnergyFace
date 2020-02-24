@@ -17,6 +17,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	var settingsChanged = false;
 	var oldTime = null, oldDate = null;
 	var sunEventsCache = {};
+	var secField = null, showSec = null, secCoord = {};
 
 	function resizeView(dc){
 
@@ -88,20 +89,21 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		fieldLayers[8] = new AmPmField({:x=>timeCoord[1][:x]+5, :y=>timeCoord[0][:y]+fieldHight, :w =>amW, :h=>fieldHight, :id=>"AmPm"});
 
 		///////////////////////////////////////////////////////////////////////
+		// Seconds fields
+		var shift = timeCoord[1][:y] -  Graphics.getFontDescent(useFonts[:time]) - fieldHight + 2*Graphics.getFontDescent(useFonts[:fields])-1;
+		secCoord = {:x=>fieldLayers[8].getX(), :y=>shift, :w =>amW, :h=>fieldHight};
+		showSec = Application.Properties.getValue("Sec");
+
+		///////////////////////////////////////////////////////////////////////
 		// Status fields
 		var app = Application.getApp();
-		var shift = (fieldYCoord[1]-timeCoord[0][:y]-fieldHight)/3;
+		shift = (fieldYCoord[1]-timeCoord[0][:y]-fieldHight)/3;
 		var statusHight = fieldHight;
 		fieldLayers[9] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y], 				:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_CONNECT});
 		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+shift, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
 		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
 		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
-
-		///////////////////////////////////////////////////////////////////////
-		// Seconds fields
-//		shift = timeCoord[1][:y] -  Graphics.getFontDescent(useFonts[:time]) - fieldHight + 2*Graphics.getFontDescent(useFonts[:fields])-1;
-//		fieldLayers[13] = new SecondsField({:x=>fieldLayers[8].getX(), :y=>shift, :w =>amW, :h=>fieldHight, :id=>"P6"});
-
+		
 		///////////////////////////////////////////////////////////////////////
 		// Weather or graph field
 		var weatherY = fieldYCoord[0]+fieldHight;
@@ -251,10 +253,27 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 				}
 				View.addLayer(fieldLayers[ind]);
 			}
+			
+			
+			showSec = Application.Properties.getValue("Sec");
 		}
         for (var i=0 ; i < countFields; i+=1){
 			fieldLayers[i].draw(settingsChanged);
 		}
+
+		if (showSec){
+			if (secField == null){
+				secField = new SecondsField(secCoord);
+				View.addLayer(secField);
+			}
+			secField.draw(settingsChanged);
+		} else {
+			if (!(secField == null)){
+				View.removeLayer(secField);
+				secField = null;
+			}
+		}
+			
 		View.onUpdate(dc);
 		settingsChanged = false;
     }
@@ -275,6 +294,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     }
 
     function onPartialUpdate( dc ) {
-//    	fieldLayers[13].draw(settingsChanged);
+     	if (!(secField == null)){ 
+    		secField.draw(settingsChanged);
+    	}
     }
 }
