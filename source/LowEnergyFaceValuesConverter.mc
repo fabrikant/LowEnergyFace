@@ -40,11 +40,11 @@ module Converter {
 		var value = rawData;//santimeters
 		var unit =  Application.Properties.getValue("DU");
 		if (unit == 0){ /*km*/
-			value = rawData/100000;
+			value = rawData/100000.0;
 		}else if (unit == 1){ /*mile*/
 			value = rawData/160934.4;
 		}
-		return value.format("%.1f");
+		return value.format("%.2f");
 	}
 
 	function elevation(rawData){
