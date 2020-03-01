@@ -9,6 +9,21 @@ using Toybox.Activity;
 class LowEnergyFaceApp extends Application.AppBase {
 
 	enum{
+		FIELD_TYPE_EMPTY,
+		FIELD_TYPE_BAT,
+		FIELD_TYPE_HR,
+		FIELD_TYPE_STEPS,
+		FIELD_TYPE_PRESSURE,
+		FIELD_TYPE_TEMPERATURE,
+		FIELD_TYPE_CALORIES,
+		FIELD_TYPE_DISTANCE,
+		FIELD_TYPE_FLOOR,
+		FIELD_TYPE_ELEVATION,
+		FIELD_TYPE_SUN_EVENT,
+		FIELD_TYPE_SUNRISE,
+		FIELD_TYPE_SUNSET,
+		FIELD_TYPE_MOON_PHASE,
+		FIELD_TYPE_TIME1,
 		STATUS_TYPE_CONNECT,
 		STATUS_TYPE_MESSAGE,
 		STATUS_TYPE_DND,
@@ -26,6 +41,22 @@ class LowEnergyFaceApp extends Application.AppBase {
 		STORAGE_KEY_DT,
 		STORAGE_KEY_WEATHER_OLD,
 	}
+
+	var imageText = {
+		FIELD_TYPE_HR          => "g",
+		FIELD_TYPE_STEPS       => "l",
+		FIELD_TYPE_PRESSURE    => "b",
+		FIELD_TYPE_TEMPERATURE => "p",
+		FIELD_TYPE_CALORIES    => "d",
+		FIELD_TYPE_DISTANCE    => "e",
+		FIELD_TYPE_FLOOR       => "f",
+		FIELD_TYPE_ELEVATION   => "j",
+		FIELD_TYPE_SUN_EVENT   => "m",
+		FIELD_TYPE_SUNRISE     => "n",
+		FIELD_TYPE_SUNSET      => "o",
+		FIELD_TYPE_TIME1	   => "q",
+	};
+
 	var gView;
 
     function initialize() {
@@ -60,8 +91,8 @@ class LowEnergyFaceApp extends Application.AppBase {
 	function onBackgroundData(data) {
 		//////////////////////////////////////////////////////////
 		//DEBUG
-//		System.println("onBackgroundData "+Time.now().value());
-//		System.println("data: "+data);
+		//System.println("onBackgroundData "+Time.now().value());
+		//System.println("data: "+data);
 		//////////////////////////////////////////////////////////
     	if (data[STORAGE_KEY_RESPONCE_CODE] != null){
      		Application.Storage.setValue(STORAGE_KEY_RESPONCE_CODE, data[STORAGE_KEY_RESPONCE_CODE]);

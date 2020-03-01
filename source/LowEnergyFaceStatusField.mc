@@ -20,13 +20,10 @@ class StatusField extends WatchUi.Layer {
 		App.STATUS_TYPE_DND => "DND"
 	};
 	private var oldValue = null;
-	private var mImageFont;
-
 	private var center;
 
     function initialize(params) {
 
-		mImageFont = params.get(:imageFont);
         var iniParams = {
         	:locX => params.get(:x),
         	:locY => params.get(:y),
@@ -60,7 +57,8 @@ class StatusField extends WatchUi.Layer {
 
 			if (color != backgroundColor && imageText[id] != null) {
 				targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
-				targetDc.drawText(center, center, mImageFont, imageText[id], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+				var imageFont = Application.getApp().gView.imageFont;
+				targetDc.drawText(center, center, imageFont, imageText[id], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 			}
 		}
 		oldValue = value;

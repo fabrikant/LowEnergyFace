@@ -7,6 +7,7 @@ using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.Math;
 
+
 class LowEnergyFaceView extends WatchUi.WatchFace {
 
 	const countColumns = 3;
@@ -18,6 +19,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	var oldTime = null, oldDate = null;
 	var sunEventsCache = {};
 	var secField = null, showSec = null, secCoord = {};
+
 
 	function resizeView(dc){
 
@@ -74,14 +76,14 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 			fieldYCoord[1] = timeCoord[1][:y] + (fieldYCoord[2] - timeCoord[1][:y] - fieldHight)/2;
 		}
 
-		fieldLayers[0] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[0], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>1});
-		fieldLayers[1] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>2});
-		fieldLayers[2] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>3});
-		fieldLayers[3] = new DataField({:x=> fieldXCoord[2], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>4});
-		fieldLayers[4] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>5});
-		fieldLayers[5] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>6});
-		fieldLayers[6] = new DataField({:x=> fieldXCoord[2], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>7});
-		fieldLayers[7] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[3], :w =>fieldWidth, :h=>fieldHight, :imageFont=>imageFont, :id=>8});
+		fieldLayers[0] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[0], :w =>fieldWidth, :h=>fieldHight, :id=>1});
+		fieldLayers[1] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :id=>2});
+		fieldLayers[2] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :id=>3});
+		fieldLayers[3] = new DataField({:x=> fieldXCoord[2], :y=>fieldYCoord[1], :w =>fieldWidth, :h=>fieldHight, :id=>4});
+		fieldLayers[4] = new DataField({:x=> fieldXCoord[0], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :id=>5});
+		fieldLayers[5] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :id=>6});
+		fieldLayers[6] = new DataField({:x=> fieldXCoord[2], :y=>fieldYCoord[2], :w =>fieldWidth, :h=>fieldHight, :id=>7});
+		fieldLayers[7] = new DataField({:x=> fieldXCoord[1], :y=>fieldYCoord[3], :w =>fieldWidth, :h=>fieldHight, :id=>8});
 
 		///////////////////////////////////////////////////////////////////////
 		// AM PM
@@ -103,7 +105,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 		fieldLayers[10] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+shift, 	:w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_MESSAGE});
 		fieldLayers[11] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+2*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_DND});
 		fieldLayers[12] = new StatusField({:x=>timeCoord[0][:x]-statusHight, :y=>timeCoord[0][:y]+3*shift,  :w =>statusHight, :h=>statusHight, :imageFont=>imageFont, :id=>app.STATUS_TYPE_ALARM});
-		
+
 		///////////////////////////////////////////////////////////////////////
 		// Weather or graph field
 		var weatherY = fieldYCoord[0]+fieldHight;
@@ -138,7 +140,6 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 	            if (hours > 12) {
 	                hours = hours - 12;
 	            }
-	        } else {
 	            if (Application.Properties.getValue("MilFt")) {
 	                timeFormat = "$1$$2$";
 	            }
@@ -253,8 +254,8 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 				}
 				View.addLayer(fieldLayers[ind]);
 			}
-			
-			
+
+
 			showSec = Application.Properties.getValue("Sec");
 		}
         for (var i=0 ; i < countFields; i+=1){
@@ -273,7 +274,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
 				secField = null;
 			}
 		}
-			
+
 		View.onUpdate(dc);
 		settingsChanged = false;
     }
@@ -294,7 +295,7 @@ class LowEnergyFaceView extends WatchUi.WatchFace {
     }
 
     function onPartialUpdate( dc ) {
-     	if (!(secField == null)){ 
+     	if (!(secField == null)){
     		secField.draw(settingsChanged);
     	}
     }

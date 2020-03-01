@@ -12,46 +12,13 @@ using Toybox.Activity;
 
 class DataField extends WatchUi.Layer {
 
-	enum{
-		FIELD_TYPE_EMPTY,
-		FIELD_TYPE_BAT,
-		FIELD_TYPE_HR,
-		FIELD_TYPE_STEPS,
-		FIELD_TYPE_PRESSURE,
-		FIELD_TYPE_TEMPERATURE,
-		FIELD_TYPE_CALORIES,
-		FIELD_TYPE_DISTANCE,
-		FIELD_TYPE_FLOOR,
-		FIELD_TYPE_ELEVATION,
-		FIELD_TYPE_SUN_EVENT,
-		FIELD_TYPE_SUNRISE,
-		FIELD_TYPE_SUNSET,
-		FIELD_TYPE_MOON_PHASE,
-		FIELD_TYPE_TIME1,
-	}
-	const imageText = {
-		FIELD_TYPE_HR          => "g",
-		FIELD_TYPE_STEPS       => "l",
-		FIELD_TYPE_PRESSURE    => "b",
-		FIELD_TYPE_TEMPERATURE => "p",
-		FIELD_TYPE_CALORIES    => "d",
-		FIELD_TYPE_DISTANCE    => "e",
-		FIELD_TYPE_FLOOR       => "f",
-		FIELD_TYPE_ELEVATION   => "j",
-		FIELD_TYPE_SUN_EVENT   => "m",
-		FIELD_TYPE_SUNRISE     => "n",
-		FIELD_TYPE_SUNSET      => "o",
-		FIELD_TYPE_TIME1	   => "q",
-	};
 	const font = Graphics.FONT_XTINY;
-	private var mImageFont;
 	private var mWidth, mHeight, oldValue = null, backgroundColor = null, type = null;
 
 
     function initialize(params) {
     	mWidth = params.get(:w);
     	mHeight = params.get(:h);
-		mImageFont = params.get(:imageFont);
         var iniParams = {
         	:locX => params.get(:x),
         	:locY => params.get(:y),
@@ -74,19 +41,20 @@ class DataField extends WatchUi.Layer {
 				backgroundColor = Application.Properties.getValue(bkGndColorId+"3");
 			}
 		}
-		if (type == FIELD_TYPE_EMPTY && settingsChanged){
+		var app = Application.getApp();
+		if (type == app.FIELD_TYPE_EMPTY && settingsChanged){
 			var targetDc = getDc();
 			targetDc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor);
         	targetDc.clear();
-		}else if (type == FIELD_TYPE_EMPTY){
+		}else if (type == app.FIELD_TYPE_EMPTY){
 			//Do nothing, its required
 		///////////////////////////////////////////////////////////////////
 		//BATTERY
-		}else if (type == FIELD_TYPE_BAT){
+		}else if (type == app.FIELD_TYPE_BAT){
 			drawBattery(settingsChanged);
 		///////////////////////////////////////////////////////////////////
 		//MOON PHASE
-		}else if (type == FIELD_TYPE_MOON_PHASE){
+		}else if (type == app.FIELD_TYPE_MOON_PHASE){
 			drawMoonPhase(settingsChanged);
 		///////////////////////////////////////////////////////////////////
 		//ALL SIMPLE FIELDS
@@ -94,7 +62,7 @@ class DataField extends WatchUi.Layer {
 			var value = "";
 			///////////////////////////////////////////////////////////////////
 			//HEART RATE
-			if (type == FIELD_TYPE_HR){
+			if (type == app.FIELD_TYPE_HR){
 				value = null;
 				var info = Activity.getActivityInfo();
 				if (info != null){
@@ -120,7 +88,7 @@ class DataField extends WatchUi.Layer {
 
 			///////////////////////////////////////////////////////////////////
 			//STEPS
-			}else if (type == FIELD_TYPE_STEPS){
+			}else if (type == app.FIELD_TYPE_STEPS){
 				var info = ActivityMonitor.getInfo();
 				if (info has :steps){
 					value = info.steps;
@@ -130,7 +98,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//PRESSURE
-			}else if (type == FIELD_TYPE_PRESSURE){
+			}else if (type == app.FIELD_TYPE_PRESSURE){
 				value = null;
 				var info = Activity.getActivityInfo();
 				if (info != null){
@@ -158,7 +126,7 @@ class DataField extends WatchUi.Layer {
 
 			///////////////////////////////////////////////////////////////////
 			//TEMPERATURE
-			}else if (type == FIELD_TYPE_TEMPERATURE){
+			}else if (type == app.FIELD_TYPE_TEMPERATURE){
 				value = "";
 				if (Toybox has :SensorHistory){
 					if (Toybox.SensorHistory has :getTemperatureHistory){
@@ -176,21 +144,21 @@ class DataField extends WatchUi.Layer {
 
 			///////////////////////////////////////////////////////////////////
 			//CALORIES
-			}else if (type == FIELD_TYPE_CALORIES){
+			}else if (type == app.FIELD_TYPE_CALORIES){
 				var info = ActivityMonitor.getInfo();
 				if (info has :calories){
 					value = info.calories;
 				}
 			///////////////////////////////////////////////////////////////////
 			//DISTANCE
-			}else if (type == FIELD_TYPE_DISTANCE){
+			}else if (type == app.FIELD_TYPE_DISTANCE){
 				var info = ActivityMonitor.getInfo();
 				if (info has :distance){
 					value = Converter.distance(info.distance);
 				}
 			///////////////////////////////////////////////////////////////////
 			//FLOOR
-			}else if (type == FIELD_TYPE_FLOOR){
+			}else if (type == app.FIELD_TYPE_FLOOR){
 				var info = ActivityMonitor.getInfo();
 				if (info has :floorsClimbed){
 					value = info.floorsClimbed.toString()
@@ -198,7 +166,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//ELEVATION
-			}else if (type == FIELD_TYPE_ELEVATION){
+			}else if (type == app.FIELD_TYPE_ELEVATION){
 				value = null;
 
 				var info = Activity.getActivityInfo();
@@ -234,7 +202,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//SUNRISE
-			}else if (type == FIELD_TYPE_SUNRISE){
+			}else if (type == app.FIELD_TYPE_SUNRISE){
 
 				var moment = getSunEvent(SUNRISE, true);
 				if (moment == null) {
@@ -245,7 +213,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//SUNSET
-			}else if (type == FIELD_TYPE_SUNSET){
+			}else if (type == app.FIELD_TYPE_SUNSET){
 
 				var moment = getSunEvent(SUNSET, true);
 				if (moment == null) {
@@ -256,7 +224,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//SUN EVENT
-			}else if (type == FIELD_TYPE_SUN_EVENT){
+			}else if (type == app.FIELD_TYPE_SUN_EVENT){
 
 				var sunset =  getSunEvent(SUNSET, false);
 				var now = Time.now().value();
@@ -277,7 +245,7 @@ class DataField extends WatchUi.Layer {
 				}
 			///////////////////////////////////////////////////////////////////
 			//SECOND TIME
-			}else if (type == FIELD_TYPE_TIME1){
+			}else if (type == app.FIELD_TYPE_TIME1){
 				var offset = Application.Properties.getValue("T1TZ")*60 - System.getClockTime().timeZoneOffset;
 				var dur = new Time.Duration(offset);
 				var secondTime = Time.now().add(dur);
@@ -290,7 +258,7 @@ class DataField extends WatchUi.Layer {
 			drawOrdinaryField({
 					:value => value,
 					:propNameColor => "C"+getId(),
-					:imageText => imageText[type],
+					:imageText => app.imageText[type],
 					:settingsChanged=>settingsChanged});
 		}
 //		var targetDc = getDc();
@@ -468,11 +436,12 @@ class DataField extends WatchUi.Layer {
 
 	private function drawSimpleImage(imageText, color){
 		var targetDc = getDc();
+		var ImageFont = Application.getApp().gView.imageFont;
 		fillPicturePlace(targetDc, backgroundColor);
 		targetDc.setColor(color,Graphics.COLOR_TRANSPARENT);
-		targetDc.drawText((mHeight-targetDc.getTextWidthInPixels(imageText,mImageFont))/2,
-		                  (mHeight-targetDc.getFontHeight(mImageFont))/2,
-		                  mImageFont, imageText, Graphics.TEXT_JUSTIFY_LEFT);
+		targetDc.drawText((mHeight-targetDc.getTextWidthInPixels(imageText,ImageFont))/2,
+		                  (mHeight-targetDc.getFontHeight(ImageFont))/2,
+		                  ImageFont, imageText, Graphics.TEXT_JUSTIFY_LEFT);
 	}
 
 	private function drawSimpleTextValue(newValue, color, settingsChanged){
