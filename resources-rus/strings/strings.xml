@@ -140,6 +140,7 @@
 	<string id="SpeedUnitKmH" scope="foreground">км/ч</string>
 	<string id="SpeedUnitMileH" scope="foreground">мл/ч</string>
 	<string id="SpeedUnitFtSec" scope="foreground">фт/с</string>
+	<string id="SpeedUnitBof" scope="foreground">баллы</string>
 	
 	<!-- WIDGET TYPES -->
 	<string id="Weather" scope="foreground">Погода</string>

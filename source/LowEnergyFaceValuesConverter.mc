@@ -65,8 +65,40 @@ module Converter {
 			value = rawData*2.237;
 		}else if (unit == 3){ /*ft/s*/
 			value = rawData*3.281;
+		}else if (unit == 4){ /*ft/s*/
+			value = getBeaufort(rawData);
 		}
 		return value;
+	}
+
+	function getBeaufort(rawData){
+		if(rawData >= 33){
+			return 12;
+		}else if(rawData >= 28.5){
+			return 11;
+		}else if(rawData >= 24.5){
+			return 10;
+		}else if(rawData >= 20.8){
+			return 9;
+		}else if(rawData >= 17.2){
+			return 8;
+		}else if(rawData >= 13.9){
+			return 7;
+		}else if(rawData >= 10.8){
+			return 6;
+		}else if(rawData >= 8){
+			return 5;
+		}else if(rawData >= 5.5){
+			return 4;
+		}else if(rawData >= 3.4){
+			return 3;
+		}else if(rawData >= 1.6){
+			return 2;
+		}else if(rawData >= 0.3){
+			return 1;
+		}else {
+			return 0;
+		}
 	}
 
 	function speedUnitName(){
@@ -78,6 +110,8 @@ module Converter {
 			value = Application.loadResource(Rez.Strings.SpeedUnitMileH);
 		}else if (unit == 3){ /*ft/s*/
 			value = Application.loadResource(Rez.Strings.SpeedUnitFtSec);
+		}else if (unit == 4){ /*ft/s*/
+			value = Application.loadResource(Rez.Strings.SpeedUnitBof);
 		}
 		return value;
 	}

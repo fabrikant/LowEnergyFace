@@ -84,6 +84,7 @@
 			<listEntry value="1">@Strings.SpeedUnitKmH</listEntry>
 			<listEntry value="2">@Strings.SpeedUnitMileH</listEntry>
 			<listEntry value="3">@Strings.SpeedUnitFtSec</listEntry>
+			<listEntry value="4">@Strings.SpeedUnitBof</listEntry>
 		</settingConfig>
 	</setting>
 

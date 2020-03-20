@@ -141,6 +141,7 @@
 	<string id="SpeedUnitKmH" scope="foreground">km/h</string>
 	<string id="SpeedUnitMileH" scope="foreground">m/h</string>
 	<string id="SpeedUnitFtSec" scope="foreground">f/s</string>
+	<string id="SpeedUnitBof" scope="foreground">boufort</string>
 	
 	<!--WEATHER NULL BANNER -->
 	<string id="gps" scope="foreground">gps</string>
